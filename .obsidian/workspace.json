@@ -222,7 +222,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 517.5
+    "width": 430.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -236,19 +236,19 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "ed2c2115c584d9d4",
+  "active": "020c909354db21c9",
   "lastOpenFiles": [
-    "assets/p.7z.part.ae",
-    "assets/p.7z.part.ad",
-    "assets/p.7z.part.ac",
-    "assets/p.7z.part.ab",
-    "assets/p.7z.part.aa",
-    "assets/p.7z.part.an",
-    "assets/p.7z.part.am",
-    "assets/p.7z.part.al",
-    "assets/p.7z.part.ak",
-    "assets/p.7z.part.aj",
-    "assets/p.7z.part.ai",
+    "assets/p.7z.part.bg",
+    "assets/p.7z.part.bf",
+    "assets/p.7z.part.be",
+    "assets/p.7z.part.bd",
+    "assets/p.7z.part.bc",
+    "assets/p.7z.part.bb",
+    "assets/p.7z.part.ba",
+    "assets/p.7z.part.az",
+    "assets/p.7z.part.ay",
+    "assets/p.7z.part.ax",
+    "assets/p.7z.part.aw",
     "SVModuleRadio.md",
     "MusicStatusUtils.md",
     "RadioStatusUtils.md",
