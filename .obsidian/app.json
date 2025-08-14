@@ -1,3 +1,10 @@
 {
-  "promptDelete": false
+  "promptDelete": false,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "assets",
+  "trashOption": "none",
+  "userIgnoreFilters": [
+    "*.png",
+    "*.jpg"
+  ]
 }

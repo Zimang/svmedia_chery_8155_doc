@@ -90,7 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 219.5
   },
   "right": {
     "id": "f43d2c42d7464954",
@@ -191,6 +191,13 @@
   },
   "active": "020c909354db21c9",
   "lastOpenFiles": [
+    "dd/dd.md",
+    "dd/assets/image-20250814114450974.png",
+    "dd/assets",
+    "MainActivity.md",
+    "dd",
+    "assets/image-20250814114432713.png",
+    "assets",
     "欢迎.md"
   ]
 }
