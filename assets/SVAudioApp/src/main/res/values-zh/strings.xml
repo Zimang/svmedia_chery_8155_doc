@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">畅听</string>
+    <!--下拉列表-->
+    <string name="pop_radio">收音机</string>
+    <string name="pop_btmusic">蓝牙音乐</string>
+    <string name="pop_localmusic">本地音乐</string>
+</resources>

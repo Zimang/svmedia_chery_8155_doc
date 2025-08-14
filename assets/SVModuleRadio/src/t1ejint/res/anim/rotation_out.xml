@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<set xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="MissingDefaultResource,ResourceName">
+    <rotate
+        android:fromDegrees="@integer/radio_singarm_1"
+        android:toDegrees="@integer/radio_singarm_0"
+        android:duration="1000"
+        android:repeatCount="0"
+        android:pivotX="0%"
+        android:pivotY="0%"
+        android:fillBefore="false"
+        android:fillAfter="true"
+        />
+</set>  

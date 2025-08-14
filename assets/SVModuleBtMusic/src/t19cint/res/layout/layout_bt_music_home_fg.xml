@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_bt_music_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="390dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="175dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_music_state_card"
+            android:layout_width="910dp"
+            android:layout_height="390dp"
+            android:background="@mipmap/img_card_bluetooth_f1_n">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="53dp"
+                android:layout_marginEnd="43dp">
+
+                <TextView
+                    android:id="@+id/tv_card1_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxWidth="320dp"
+                    android:maxLines="1"
+                    android:text="@string/string_bt_music"
+                    android:textColor="@color/color_card_title"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:id="@+id/tv_bt_music_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="60dp"
+                    android:ellipsize="end"
+                    android:gravity="end"
+                    android:maxWidth="240dp"
+                    android:maxLines="1"
+                    android:textColor="@color/color_card_music_title"
+                    android:textSize="24sp"
+                    android:visibility="gone" />
+
+                <com.desaysv.mediacommonlib.view.AudioWaveView
+                    android:id="@+id/av_music_play_state_icon"
+                    android:layout_width="33dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="12dp"
+                    android:visibility="gone"
+                    app:pointer_color="@color/color_bt_music_playing_wave_view"
+                    app:pointer_num="5"
+                    app:pointer_padding="0dp"
+                    app:pointer_sing_law_rate="0.2"
+                    app:pointer_top_fillet="1"
+                    app:pointer_type="center"
+                    app:pointer_width="3.5dp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_bt_music_icon"
+                android:layout_width="176dp"
+                android:layout_height="176dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="85dp"
+                android:src="@mipmap/img_bluetooth_default_bluetooth" />
+
+            <RelativeLayout
+                android:id="@+id/rl_bt_music_btn"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="269dp"
+                android:background="@drawable/drawable_bt_setting_button_bg">
+
+                <TextView
+                    android:id="@+id/tv_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxWidth="410dp"
+                    android:maxLines="1"
+                    android:minWidth="280dp"
+                    android:paddingHorizontal="50dp"
+                    android:text="@string/string_bt_setting"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_card_setting"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:background="@mipmap/icon_bluetooth_arrow_r40"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_music_collection_card"
+            android:layout_width="670dp"
+            android:layout_height="390dp"
+            android:background="@mipmap/img_card_bluetooth_n"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="53dp"
+                android:layout_marginEnd="43dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_card2_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:maxWidth="400dp"
+                    android:maxLines="1"
+                    android:text="@string/string_bt_music_collection_list"
+                    android:textColor="@color/color_card_title"
+                    android:textSize="28sp" />
+
+                <ImageView
+                    android:id="@+id/iv_collection_play_icon"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/drawable_btn_collection_card_play_bg"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_collection_list"
+                android:layout_width="590dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="91dp"
+                android:layout_marginBottom="20dp"
+                android:fadeScrollbars="true"
+                android:scrollbarStyle="outsideInset"
+                android:scrollbarThumbVertical="@drawable/drawable_scrollbar"
+                android:scrollbars="vertical"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_collection_list_mask"
+                android:layout_width="590dp"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="331dp"
+                android:background="@mipmap/img_mask_songlist_btm_660_80"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_music_collection_icon"
+                android:layout_width="176dp"
+                android:layout_height="176dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="85dp"
+                android:src="@mipmap/img_bluetooth_default_record" />
+
+            <TextView
+                android:id="@+id/tv_no_collection_notice"
+                android:layout_width="540dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="288dp"
+                android:gravity="center"
+                android:text="@string/string_none_collection_notice"
+                android:textColor="@color/color_card_none_collection_notice"
+                android:textSize="24sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mini_play"
+        android:layout_width="280dp"
+        android:layout_height="88dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="30dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/drawable_mini_play_bg" />
+
+        <com.desaysv.mediacommonlib.view.CircleImageView
+            android:id="@+id/iv_mini_play_icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="26dp"
+            android:src="@mipmap/img_miniplayer_defacult_cover_bluetooth_n" />
+
+        <com.desaysv.modulebtmusic.view.MarqueeTextView
+            android:id="@+id/tv_mini_music_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="55dp"
+            android:layout_toEndOf="@id/iv_mini_play_icon"
+            android:textColor="@color/color_mini_play_title"
+            android:textSize="24sp" />
+    </RelativeLayout>
+</RelativeLayout>

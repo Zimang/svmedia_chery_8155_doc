@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="radio_tab_text_select_color">#DBFFFFFF</color>
+    <color name="radio_tab_text_unselect_color">#80FFFFFF</color>
+    <color name="radio_scrollbar_color">#4CACB5BD</color>
+    <color name="radio_text_main_color">#DBFFFFFF</color>
+    <color name="radio_text_sub_color">#80FFFFFF</color>
+    <color name="radio_play_name_color">#80FFFFFF</color>
+
+    <color name="radio_frequency_gray">#FFFFFF</color>
+    <color name="radio_dividing_item_color">#33FFFFFF</color>
+    <color name="radio_ta_dialog_bg_star">#7C7D8C</color>
+    <color name="radio_ta_dialog_bg_end">#7C7D8C</color>
+    <color name="radio_loading_text_color">#80FFFFFF</color>
+    <color name="radio_item_play_color">#C5AB99</color>
+    <color name="radio_loading_bg_color">#7C7D8C</color>
+    <color name="dab_playani_color">#C5AB99</color>
+    <color name="radio_item_play_color1">#C5AB99</color>
+    <color name="radio_ta_text_color">#FFFFFFFF</color>
+    <color name="radio_text_sub_color1">#4dFFFFFF</color>
+    <color name="radio_multi_type_bg">#0DFFFFFF</color>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="radio_tab_pading">16dp</dimen>
+    <dimen name="radio_item_w">100dp</dimen>
+    <dimen name="radio_item_margins">60dp</dimen>
+    <dimen name="radio_itemtext_size">32dp</dimen>
+    <dimen name="radio_item_radius">20dp</dimen>
+    <dimen name="radio_item_margins1">80dp</dimen>
+    <dimen name="radio_item_like_w">100dp</dimen>
+    <dimen name="radio_item_h">130dp</dimen>
+    <dimen name="radio_cursor_margin_start">203dp</dimen>
+    <dimen name="radio_cursor_margin_start2">251dp</dimen>
+    <dimen name="radio_cursor_margin_top">270dp</dimen>
+    <dimen name="radio_cursor_width">745dp</dimen>
+
+    <item name="radio_ivsingarm_roate_0" format="float" type="dimen">0</item>
+    <item name="radio_ivsingarm_roate_1" format="float" type="dimen">-26</item>
+
+    <dimen name="radio_indicator_w">28dp</dimen>
+    <dimen name="radio_indicator_h">6dp</dimen>
+    <dimen name="radio_list_pading_end">24dp</dimen>
+    <dimen name="radio_list_pading_start">0dp</dimen>
+</resources>

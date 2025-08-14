@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/img_cover_player_bluetooth" />
+    <item
+        android:width="336dp"
+        android:height="7dp"
+        android:drawable="@mipmap/img_player_cover_lighting"
+        android:top="336dp" />
+</layer-list>

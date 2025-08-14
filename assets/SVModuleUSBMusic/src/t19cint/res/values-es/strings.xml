@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="ResourceName">ModuleUSBMusic</string>
+    <string name="usbmusic_unknown">NO SABER</string>
+    <string name="usb_music_music_error_text">Archivo de música actual \"\" Error de formato</string>
+    <string name="usb_music_tab_local_text">Música Local</string>
+    <string name="usb_music_tab_usb_text">Música USB</string>
+    <string name="usb_music_tab_recent_text">Reproducido recientemente</string>
+    <string name="usb_music_no_lyrics">No hay letra disponible</string>
+    <string name="usb_music_unknown_song_name">Tema desconocido</string>
+    <string name="usb_music_unknown_album">Álbum desconocido</string>
+    <string name="usb_music_usb_check">No se ha detectado ningún dispositivo USB, compruebe el dispositivo</string>
+    <string name="usb_music_local_list_empty">Aún no has descargado música</string>
+    <string name="usb_music_recent_list_empty">No has reproducido música</string>
+    <string name="usb_music_all_music_text">Toda la música</string>
+    <string name="usb_music_folder_text">Carpetas</string>
+    <string name="usb_music_folder_item_size_text">Canciones principales</string>
+    <string name="usb_music_all_select">Seleccionar todo</string>
+    <string name="usb_music_select_cancel">Cancelar</string>
+    <string name="usb_music_select_download">Descargar</string>
+    <string name="usb_music_select_delete">Eliminar</string>
+    <string name="usb_music_delete_dialog_text">¿Confirma la eliminación de esta canción?</string>
+    <string name="usb_music_play_list_text">Lista de reproducción&#160;</string>
+    <string name="usb_music_download_limit_confirm">yo veo</string>
+    <string name="usb_music_download_limit_content">El tamaño total de la música local está limitado a 2G, primero elimine otras canciones en la música local</string>
+</resources>

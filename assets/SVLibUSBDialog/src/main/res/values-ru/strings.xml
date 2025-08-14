@@ -1,0 +1,12 @@
+<resources>
+    <string name="dialog_title">Найдено подключенное устройство USB</string>
+    <string name="dialog_tips">Пожалуйста, выберите для воспроизведения содержимое с подключенного устройства</string>
+    <string name="dialog_type_music">Музыка</string>
+    <string name="dialog_type_picture">Картинки</string>
+    <string name="dialog_type_video">Видео</string>
+
+    <string name="toast_no_video">Нет видео</string>
+    <string name="toast_no_picture">Нет изображений</string>
+    <string name="toast_no_music">Нет музыки</string>
+
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Аудио</string>
+    <!--下拉列表-->
+    <string name="pop_radio">Радио</string>
+    <string name="pop_btmusic">Музыка по Bluetooth</string>
+    <string name="pop_localmusic">Локальная музыка</string>
+</resources>

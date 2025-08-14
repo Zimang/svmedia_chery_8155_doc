@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.desaysv.svusbpictureapp_overlay">
+
+    <overlay android:priority="1"
+        android:targetPackage="com.desaysv.usbpicture"/>
+    <application
+        android:label="eee"
+        android:hasCode="false"/>
+
+</manifest>

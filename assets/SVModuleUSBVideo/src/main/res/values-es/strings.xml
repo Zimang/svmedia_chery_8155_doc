@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vídeo</string>
+    <string name="usbvideo_unknown">NO SABER</string>
+    <string name="no_video_show">El archivo que se está reproduciendo sólo tiene contenido de audio</string>
+    <string name="no_error_show">El archivo de reproducción actual es incorrecto</string>
+    <string name="tab_usb">Vídeo</string>
+    <string name="tab_usb1">Vídeo USB1</string>
+    <string name="tab_usb2">Vídeo USB2</string>
+    <string name="tab_video_mode">Modo de vídeo</string>
+    <string name="tab_folder_mode">Modo carpeta</string>
+    <string name="no_equipment_access">No hay acceso a dispositivo disponible</string>
+    <string name="no_content_access">No hay contenido en el dispositivo</string>
+    <string name="loading">Cargando ...</string>
+    <string name="double_speed">Velocidad</string>
+    <string name="anthology">antología</string>
+    <string name="speed_tips">¡Por su seguridad al volante, se recomienda no reproducir vídeos mientras conduce!</string>
+    <string name="play_without_prompting">Reproducir sin preguntar</string>
+    <string name="exit_video">Salir del vídeo</string>
+    <string name="novice_guidance_left">Desliza arriba y abajo con un dedo hacia la izquierda</string>
+    <string name="novice_guidance_adjust_brightness">Ajustar el brillo</string>
+    <string name="novice_guidance_content">Deslizar un dedo a izquierda y derecha</string>
+    <string name="novice_guidance_adjust_forward_and_backward">Avanzar y retroceder rápidamente</string>
+    <string name="novice_guidance_right">Deslizar arriba y abajo con un dedo a la derecha</string>
+    <string name="novice_guidance_adjust_adjust_sound">Ajustar el sonido</string>
+    <string name="novice_guidance_got_it">Comprendo</string>
+    <string name="rv_list_line">Tengo una línea de fondo</string>
+
+    <string name="media_video_pre_time">&#160;&#160;/&#160;&#160;</string>
+    <string name="media_video_play_time">%1$s&#160;&#160;/&#160;&#160;%2$s</string>
+
+</resources>

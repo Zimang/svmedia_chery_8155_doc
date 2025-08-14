@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="radio_singarm_0">0</integer>
+
+    <integer name="radio_singarm_1">5</integer>
+</resources>

@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="ResourceName">ModuleUSBMusic</string>
+    <string name="usbmusic_unknown">UNKNOW</string>
+    <string name="usb_music_music_error_text">The current music file \"\" is in the wrong format</string>
+    <string name="usb_music_tab_local_text">Local Music</string>
+    <string name="usb_music_tab_usb_text">USB Music</string>
+    <string name="usb_music_tab_recent_text">Recently Played</string>
+    <string name="usb_music_play_list_number_text">Playlist</string>
+    <string name="usb_music_no_lyrics">No lyrics available</string>
+    <string name="usb_music_unknown_song_name">Unknown track</string>
+    <string name="usb_music_unknown_album">Unknown album</string>
+    <string name="usb_music_unknown_singer">Unknown Singer</string>
+    <string name="usb_music_usb_check">No USB device detected, please check the device</string>
+    <string name="usb_music_local_list_empty">You haven\'t download any music yet</string>
+    <string name="usb_music_recent_list_empty">You haven\'t played any music</string>
+    <string name="usb_music_all_music_text">All music</string>
+    <string name="usb_music_folder_text">Folder</string>
+    <string name="usb_music_folder_item_size_text"> songs</string>
+    <string name="usb_music_all_select">Select All</string>
+    <string name="usb_music_select_cancel">Cancel</string>
+    <string name="usb_music_select_download">Download</string>
+    <string name="usb_music_select_delete">Delete</string>
+    <string name="usb_music_delete_dialog_text">Confirm deletion of this song?</string>
+    <string name="usb_music_play_list_text">Playlist&#160;</string>
+    <string name="usb_music_download_limit_confirm">I see</string>
+    <string name="usb_music_download_limit_content">The total size of local music is limited to 2G, please delete other songs in local music first</string>
+    <string name="usb_music_without_content">No content</string>
+
+</resources>

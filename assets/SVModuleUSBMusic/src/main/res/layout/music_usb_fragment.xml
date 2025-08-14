@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ResourceName">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_music_list"
+        style="@style/list_scrollbars_vertical_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="40dp" />
+
+    <!--列表底部的遮罩背景-->
+    <ImageView
+        android:id="@+id/iv_list_bottom_bg"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/img_list_mask" />
+
+    <RelativeLayout
+        android:id="@+id/rl_no_content"
+        android:layout_width="wrap_content"
+        android:layout_height="360dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/img_default_resource_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:maxHeight="360dp"
+            android:minHeight="42dp"
+            android:text="@string/usb_music_without_content"
+            android:textColor="@color/usb_music_device_check_text_color"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_usb_check"
+        android:layout_width="wrap_content"
+        android:layout_height="360dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_music_usb_device" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="@string/usb_music_usb_check"
+            android:textColor="@color/usb_music_device_check_text_color"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom_download"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/usb_music_bottom_select_bg"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/bt_all_select"
+            android:layout_width="314dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="166dp"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/music_local_item_select_icon_selector"
+            android:drawablePadding="30dp"
+            android:gravity="start|center_vertical"
+            android:text="@string/usb_music_all_select"
+            android:textAllCaps="false"
+            android:textColor="@color/usb_music_select_bottom_all_color"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_select_number"
+            android:layout_width="480dp"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/bt_all_select"
+            android:gravity="center"
+            android:textColor="@color/usb_music_select_bottom_number_zero_color"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/iv_spit_line"
+            android:layout_width="2dp"
+            android:layout_height="44dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/music_usb_select_bottom_spit_line_bg_shape" />
+
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="360dp"
+            android:layout_height="41dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="100dp"
+            android:layout_toEndOf="@+id/iv_spit_line"
+            android:background="@android:color/transparent"
+            android:text="@string/usb_music_select_cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/usb_music_select_bottom_cancel_color"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/ib_switch_file_mode"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="130dp"
+        android:background="@drawable/music_usb_switch_file_mode_icon_selector" />
+
+    <ImageView
+        android:id="@+id/ib_download_select"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="60dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/music_usb_download_select_icon_selector" />
+
+    <RelativeLayout
+        android:id="@+id/rl_switch_file_mode"
+        android:layout_width="300dp"
+        android:layout_height="170dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="130dp"
+        android:background="@drawable/music_usb_switch_file_mode_bg_shape"
+        android:visibility="gone">
+        <!--用于避免穿透-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/bt_all_music"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="40dp"
+            android:background="@android:color/transparent"
+            android:drawableEnd="@drawable/music_usb_switch_file_mode_select_icon_selector"
+            android:gravity="left|center_vertical"
+            android:text="@string/usb_music_all_music_text"
+            android:textAllCaps="false"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/bt_folder"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/bt_all_music"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="@android:color/transparent"
+            android:drawableEnd="@drawable/music_usb_switch_file_mode_select_icon_selector"
+            android:gravity="left|center_vertical"
+            android:text="@string/usb_music_folder_text"
+            android:textAllCaps="false"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_folder_back"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/ib_folder_back"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/music_usb_folder_back_icon_selector" />
+
+        <TextView
+            android:id="@+id/tv_folder_name"
+            android:layout_width="1480dp"
+            android:layout_height="46dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/ib_folder_back"
+            android:textColor="@color/usb_music_play_list_item_song_text_color"
+            android:textSize="34sp" />
+    </RelativeLayout>
+</RelativeLayout>

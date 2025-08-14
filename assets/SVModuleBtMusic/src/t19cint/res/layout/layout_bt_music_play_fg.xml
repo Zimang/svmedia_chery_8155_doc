@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_play_start_bg"
+        android:layout_width="1140dp"
+        android:layout_height="720dp"
+        android:src="@mipmap/img_bg_player_1140_720" />
+
+    <RelativeLayout
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="620dp"
+        android:layout_marginTop="446dp"
+        android:layoutDirection="ltr">
+
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="00:00"
+            android:textColor="@color/color_play_progress_duration"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:text="00:00"
+            android:textColor="@color/color_play_progress_duration"
+            android:textSize="20sp" />
+
+        <com.desaysv.modulebtmusic.view.MyProgressBar
+            android:id="@+id/progress_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="600dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:max="1000"
+            android:progress="0"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="1140dp"
+        android:layout_height="720dp">
+
+        <ImageView
+            android:id="@+id/iv_sing_arm"
+            android:layout_width="140dp"
+            android:layout_height="442dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="28dp"
+            android:background="@mipmap/img_player_singarm" />
+
+        <com.desaysv.mediacommonlib.view.CircleImageView
+            android:id="@+id/iv_album_cover_art"
+            android:layout_width="256dp"
+            android:layout_height="256dp"
+            android:layout_marginStart="232dp"
+            android:layout_marginTop="221dp"
+            android:src="@mipmap/img_player_cover_default_bluetooth" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/drawable_btn_back_bg" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="650dp"
+        android:layout_marginTop="192dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="395dp"
+            android:layout_height="wrap_content">
+
+            <com.desaysv.modulebtmusic.view.MarqueeTextView
+                android:id="@+id/tv_music_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:maxWidth="350dp"
+                android:maxLines="1"
+                android:text="@string/string_unknown_song"
+                android:textColor="@color/color_music_title"
+                android:textSize="42sp" />
+
+            <ImageView
+                android:id="@+id/iv_music_title_mask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:src="@mipmap/img_text_mask" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/bt_icon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_music_cp_6"
+                android:visibility="gone" />
+
+            <com.desaysv.modulebtmusic.view.MarqueeTextView
+                android:id="@+id/tv_music_artist_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/bt_icon"
+                android:maxWidth="450dp"
+                android:maxLines="1"
+                android:text="@string/string_unknown_artist"
+                android:textColor="@color/color_music_artist_name"
+                android:textSize="28sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="650dp"
+        android:layout_marginTop="334dp"
+        android:gravity="center_vertical"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_previous"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/drawable_btn_previous_bg" />
+
+        <ImageView
+            android:id="@+id/iv_play_or_pause"
+            android:layout_width="126dp"
+            android:layout_height="126dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/drawable_btn_pause_bg" />
+
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/drawable_btn_next_bg" />
+
+        <ImageView
+            android:id="@+id/iv_like"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="54dp"
+            android:src="@drawable/drawable_btn_like_bg"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="440dp"
+        android:layout_height="390dp"
+        android:layout_marginStart="1380dp"
+        android:layout_marginTop="170dp">
+
+        <TextView
+            android:id="@+id/tv_music_play_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/string_bt_music_playing_notice"
+            android:textColor="@color/color_music_play_notice"
+            android:textSize="28sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

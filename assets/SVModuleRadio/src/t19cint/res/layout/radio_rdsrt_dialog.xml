@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlRDSTADialog"
+    android:layout_width="800dp"
+    android:layout_height="540dp"
+    android:layout_gravity="center"
+    android:background="@mipmap/dialog_bg">
+
+
+        <ImageView
+            android:id="@+id/ivRDSRTCLose"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="24dp"
+            android:src="@mipmap/ta_dialog_close">
+
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/tvRDSRTTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:text="@string/radio_rds_info"
+            android:textColor="@color/radio_play_color2"
+            android:textSize="30sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvRDSRTInfo"
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="118dp"
+            android:layout_marginEnd="60dp"
+            android:gravity="center"
+            android:textColor="@color/radio_rt_color"
+            android:textSize="28sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="110dp"
+            android:src="@mipmap/ta_dialog_top_mask">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:src="@mipmap/ta_dialog_foot_mask">
+
+        </ImageView>
+</RelativeLayout>

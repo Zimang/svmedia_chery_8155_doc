@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dab_rt_dialog_padding_end">60dp</dimen>
+    <dimen name="dab_rt_dialog_padding_start">0dp</dimen>
+    <dimen name="dab_list_padding_start">0dp</dimen>
+    <dimen name="dab_list_padding_end">72dp</dimen>
+    <dimen name="dab_mainlist_padding_end">24dp</dimen>
+    <dimen name="dab_epg_margin_end">125dp</dimen>
+</resources>

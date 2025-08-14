@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false"> <!-- 设置为true表示只播放一次 -->
+    <item android:drawable="@mipmap/download_dark_70_0" android:duration="100" />
+    <item android:drawable="@mipmap/download_dark_70_1" android:duration="100" />
+    <item android:drawable="@mipmap/download_dark_70_2" android:duration="100" />
+    <item android:drawable="@mipmap/download_dark_70_3" android:duration="100" />
+    <item android:drawable="@mipmap/download_dark_70_4" android:duration="100" />
+    <item android:drawable="@mipmap/download_dark_70_5" android:duration="100" />
+    <item android:drawable="@mipmap/download_dark_70_6" android:duration="100" />
+    <item android:drawable="@mipmap/download_dark_70_7" android:duration="100" />
+    <item android:drawable="@mipmap/download_dark_70_8" android:duration="100" />
+    <item android:drawable="@mipmap/download_dark_70_9" android:duration="100" />
+    <item android:drawable="@mipmap/download_dark_70_10" android:duration="100" />
+    <item android:drawable="@mipmap/download_dark_70_11" android:duration="100" />
+    <!-- 继续添加更多帧 -->
+</animation-list>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="media_usbvideo_openusbvideo_playing">当前正在播放USB视频</string>
+    <string name="media_usbvideo_openusbvideo_play">好的，为你打开USB视频</string>
+    <string name="media_usbvideo_openusbvideo_empty">对不起，当前没有可播放的视频</string>
+    <string name="media_usbvideo_continueplaying_empty">对不起，当前没有可播放的视频</string>
+    <string name="media_video_replay_noplaying">你当前没有播放视频</string>
+    <string name="media_usbvideo_previous_firstone">当前已是第一个</string>
+    <string name="media_usbvideo_next_lastone">当前已是最后一个</string>
+    <string name="media_video_replay_playing">好的，现在为你重新播放</string>
+    <string name="general_uncollect_playing_nosupport">当前媒体源不支持收藏功能</string>
+    <string name="general_opencollect_nosupport">没有可以打开的收藏列表</string>
+    <string name="general_openplaylist_open">好的，为你打开播放列表</string>
+    <string name="general_openplaylist_nosupport">对不起，当前媒体源不支持播放列表功能</string>
+    <string name="general_closeplaylist_close">为你关闭播放列表</string>
+    <string name="general_closeplaylist_nosupport">对不起，当前媒体源不支持播放列表功能</string>
+</resources>

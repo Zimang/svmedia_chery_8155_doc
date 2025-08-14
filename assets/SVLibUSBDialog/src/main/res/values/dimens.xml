@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="font_alpha_0" type="dimen" format="float">0.5</item>
+    <item name="font_alpha_1" type="dimen" format="float">0.86</item>
+    <item name="font_alpha_2" type="dimen" format="float">0.66</item>
+    <item name="font_alpha_3" type="dimen" format="float">0.66</item>
+    <dimen name="dialog_bg_width">740dp</dimen>
+    <dimen name="dialog_bg_height">500dp</dimen>
+    <dimen name="dialog_title_size">30sp</dimen>
+    <dimen name="dialog_icon_w">90dp</dimen>
+    <dimen name="dialog_icon_h">90dp</dimen>
+    <dimen name="dialog_icon_w1">60dp</dimen>
+    <dimen name="dialog_icon_h1">60dp</dimen>
+    <dimen name="dialog_icon_margin">60dp</dimen>
+    <dimen name="dialog_text_margin">248dp</dimen>
+    <dimen name="dialog_title_close_margin">24dp</dimen>
+    <dimen name="dialog_title_text_margin">51dp</dimen>
+</resources>

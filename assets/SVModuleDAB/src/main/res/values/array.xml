@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dab_list_tab">
+        <item>@string/dab_array_list_all</item>
+        <item>@string/dab_array_list_ensemble</item>
+        <item>@string/dab_array_list_type</item>
+        <item>@string/dab_array_list_collect</item>
+    </string-array>
+</resources>

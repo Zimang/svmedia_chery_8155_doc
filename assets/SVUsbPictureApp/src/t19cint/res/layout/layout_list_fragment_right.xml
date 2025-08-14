@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    tools:context=".ui.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_pictureList_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="ltr">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_pictureList_root_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="61dp"
+            android:layout_marginBottom="23dp"
+            android:layoutDirection="rtl">
+
+            <RelativeLayout
+                android:id="@+id/rl_pictureList_root_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/usb_picture_all_back">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/tv_current_dir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/iv_back"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical|start"
+                    android:textColor="#FF000000"
+                    android:text="Current dir"
+                    android:textSize="34px"
+                    android:maxLines="1">
+
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_pictureList_root_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_centerVertical="true"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/tv_usb_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical|start"
+                    android:text="@string/usb_name"
+                    android:textColor="@color/usb_no_link"
+                    android:textSize="34px">
+
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_usb_pictureList_root_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_usb_all_picture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/list_type_bg"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:paddingStart="35px"
+                    android:paddingTop="21px"
+                    android:paddingEnd="35px"
+                    android:paddingBottom="21px"
+                    android:text="@string/usb_all_picture"
+                    android:textColor="@color/selector_color"
+                    android:textSize="30px">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/tv_usb_folder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/tv_usb_all_picture"
+                    android:background="@drawable/list_type_bg"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:paddingStart="35px"
+                    android:paddingTop="21px"
+                    android:paddingEnd="35px"
+                    android:paddingBottom="21px"
+                    android:text="@string/usb_folder_picture"
+                    android:textColor="@color/selector_color"
+                    android:textSize="30px">
+
+                </TextView>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <com.desaysv.usbpicture.view.VerticalRecycleView
+            android:id="@+id/rv_picture_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="135dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="15dp"
+            android:scrollbarSize="6dp"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbarThumbVertical="@mipmap/img_slider"
+            android:scrollbars="vertical"
+            app:verticalOffset="15dp">
+
+        </com.desaysv.usbpicture.view.VerticalRecycleView>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivTopMask"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:src="@mipmap/img_up_mask">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/ivBottomMask"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/img_down_mask"
+        android:layout_alignParentBottom="true">
+
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/ll_no_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/img_usb_unlink">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/usb_statues_no_connect_t26"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="330dp"
+            android:textColor="@color/usb_no_link"
+            android:textSize="30sp">
+
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_loading"
+        android:layout_width="494dp"
+        android:layout_height="122dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/picture_loading_bg"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_loading"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="137dp"
+            android:src="@mipmap/icon_loading_60">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="@string/loading"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="207dp"
+            android:textColor="@color/loading_text_color">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_no_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/img_content_empty">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/usb_statues_no_content"
+            android:layout_marginTop="330dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/usb_no_link"
+            android:textSize="30sp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tv_reloading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/usb_picture_white"
+            android:text="@string/loading_again"
+            android:layout_gravity="center"
+            android:background="@drawable/usb_picture_rect_shape"
+            android:layout_marginTop="10dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textSize="40sp"
+            android:visibility="gone">
+
+        </TextView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_empty_folder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/img_content_empty">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/album_no_content"
+            android:layout_marginTop="330dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/usb_no_link"
+            android:textSize="28sp">
+
+        </TextView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_toast_bad"
+        android:layout_width="494dp"
+        android:layout_height="122dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="139dp"
+        android:background="@mipmap/toast_494"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="@string/bad_item"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="@color/loading_text_color">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

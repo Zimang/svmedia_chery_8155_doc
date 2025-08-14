@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="t22_color_type_selected">#DBFFFFFF</color>
+    <color name="t22_color_type_unselected">#9AFFFFFF</color>
+    <color name="loading_text_color" tools:ignore="ResourceName">#FFFFFF</color>
+
+    <color name="btn_play_tips">#7C838C</color>
+    <color name="btn_exit_video_bg">#8C8585</color>
+
+</resources>

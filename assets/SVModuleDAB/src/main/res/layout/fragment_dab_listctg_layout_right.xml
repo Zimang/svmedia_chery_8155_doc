@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDABList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="120dp"
+        android:scrollbarThumbVertical="@color/dab_scrollbar_color"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="vertical"
+        android:layoutDirection="ltr">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <!--进入二级列表的布局-->
+    <RelativeLayout
+        android:id="@+id/rlDABSecondList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivDABSecondListBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toEndOf="@id/tvDABSecondListName"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:src="@mipmap/icon_dab_settings_back_right">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tvDABSecondListName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="25dp"
+            android:textSize="34sp"
+            android:textColor="@color/dab_text_color4">
+
+        </TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDABSecondList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ivDABSecondListBack"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="120dp"
+            android:scrollbarThumbVertical="@color/dab_scrollbar_color"
+            android:scrollbars="vertical"
+            android:layoutDirection="ltr">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

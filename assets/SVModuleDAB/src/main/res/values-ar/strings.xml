@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dab_program_name">اسم محطة البرنامج</string>
+    <string name="dab_service_name">اسم مجموعة التسمية</string>
+
+    <string name="program_type_0">لا شيء</string>
+    <string name="program_type_1">أخبار</string>
+    <string name="program_type_2">محليات</string>
+    <string name="program_type_3">معلومات</string>
+    <string name="program_type_4">رياضة</string>
+    <string name="program_type_5">تعليم</string>
+    <string name="program_type_6">دراما</string>
+    <string name="program_type_7">ثقافة</string>
+    <string name="program_type_8">علوم</string>
+    <string name="program_type_9">متنوعة</string>
+    <string name="program_type_10">بوب</string>
+    <string name="program_type_11">روك</string>
+    <string name="program_type_12">موسيقى بسيطة</string>
+    <string name="program_type_13">موسيقى خفيفة</string>
+    <string name="program_type_14">كلاسيكيات</string>
+    <string name="program_type_15">موسيقى أخرى</string>
+    <string name="program_type_16">طقس</string>
+    <string name="program_type_17">تمويل</string>
+    <string name="program_type_18">أطفال</string>
+    <string name="program_type_19">اجتماعي</string>
+    <string name="program_type_20">دِين</string>
+    <string name="program_type_21">على الهاتف</string>
+    <string name="program_type_22">سفر</string>
+    <string name="program_type_23">ترفيه</string>
+    <string name="program_type_24">جاز</string>
+    <string name="program_type_25">البلد</string>
+    <string name="program_type_26">موسيقى وطنية</string>
+    <string name="program_type_27">قديم</string>
+    <string name="program_type_28">موسيقى شعبية</string>
+    <string name="program_type_29">وثائقي</string>
+    <string name="program_type_30">اختبار</string>
+    <string name="program_type_31">إنذار!</string>
+
+    <string name="dab_station_list">قائمة المحطات (%1$d)</string>
+    <string name="dab_epg">EPG</string>
+    <string name="dab_collect_fully">محطة التجميع ممتلئة</string>
+    <string name="dab_rt_title">تفاصيل البرنامج</string>
+    <string name="dab_settings">الإعدادات</string>
+    <string name="dab_settings_sf">خدمة التتبع</string>
+    <string name="dab_settings_sf_hl">رابط ثابث لخدمة التتبع</string>
+    <string name="dab_settings_sf_sl">رابط ناعم لخدمة التتبع</string>
+    <string name="dab_settings_reminder">إعدادات التذكير</string>
+    <!--公告设置-->
+    <string name="dab_reminder_alarm">إنذار</string>
+    <string name="dab_reminder_ta">فلاش المرور على الطرق</string>
+    <string name="dab_reminder_tf">فلاش النقل</string>
+    <string name="dab_reminder_warning">تحذير/ خدمة</string>
+    <string name="dab_reminder_news">فلاش الأخبار</string>
+    <string name="dab_reminder_weather">فلاش منطقة الطقس</string>
+    <string name="dab_reminder_event">إعلان الحدث</string>
+    <string name="dab_reminder_special">حدث خاص</string>
+    <string name="dab_reminder_program">معلومات البرنامج</string>
+    <string name="dab_reminder_sport">تقرير رياضي</string>
+    <string name="dab_reminder_financial">تقرير مالي</string>
+
+    <string name="dab_array_list_all">كل المحطات</string>
+    <string name="dab_array_list_ensemble">قائمة المحطات</string>
+    <string name="dab_array_list_type">قائمة الفئات</string>
+    <string name="dab_array_list_collect">قائمة التجميع</string>
+
+    <string name="dab_no_collect">لا يوجد تجميع</string>
+
+    <string name="dab_ann_alarm">إنذار</string>
+    <string name="dab_ann_ta">إعلان مروري</string>
+    <string name="dab_ann_other">آخر</string>
+
+    <string name="epg_arrival_title">تذكير بمواعيد البرامج الإذاعية</string>
+    <string name="epg_arrival_listen">استمع الآن</string>
+    <string name="epg_arrival_cancel">إلغاء (%dS)</string>
+    <string name="epg_arrival_content">سيبدأ تشغيل %1$s الذي حجزته خلال دقيقة واحدة. هل ترغب في الاستماع إليها الآن؟</string>
+    <string name="dab_loading">تحميل…</string>
+    <string name="dab_playlist_no_list">لا توجد محطة تأثير</string>
+    <string name="dab_no_signal">لا توجد تغطية</string>
+    <string name="dab_research">فشل المسح، انقر للمحاولة مرة أخرى</string>
+
+    <string name="dab_ann_title">نوع الإعلان</string>
+    <string name="dab_ann_title1">إعدادات DAB</string>
+    <string name="dab_epg_format">شهر %s يوم %s</string>
+    <string name="dab_cancel_collected">تم إلغاء المفضلة</string>
+    <string name="dab_epg_tips">تذكير مضاف</string>
+    <string name="dab_cancle_epg_tips">تم تجاهل التذكير</string>
+    <string name="dab_no_epg">لا توجد وظيفة</string>
+</resources>

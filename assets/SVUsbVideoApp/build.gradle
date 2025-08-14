@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+apply from: "${rootDir}/common/config/android_tools_config.gradle"
+apply from: "${rootDir}/SVMedia/International/build_type_config.gradle"
+//加载多渠道配置
+apply from: "${rootDir}/SVMedia/International/product_flavors_config.gradle"
+
+android {
+    compileSdkVersion COMPILE_SDK_VERSION
+    buildToolsVersion BUILD_TOOL_VERSION
+    defaultConfig {
+        minSdkVersion MIN_SDK_VERSION
+        targetSdkVersion TARGET_SDK_VERSION
+        versionCode 1
+        versionName "1.0"
+    }
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            File configFile2 = file("${rootDir}/common/Lib/framework.jar")
+            String absolutePath2 = configFile2.absolutePath.replaceAll("\\\\", "\\\\\\\\")
+            String Path2 = '-Xbootclasspath/p:' + absolutePath2
+            options.compilerArgs.add(Path2)
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    //noinspection GradleDependency
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation project(':SVMedia:International:SVModuleUSBVideo')
+    compileOnly files("${rootDir}/common/Lib/framework.jar")
+    //已经在SVLibUSBBase中包含了
+    compileOnly project(':SVMedia:International:SVLibMediaCommon')
+    //已经在SVLibUSBBase中包含了
+    compileOnly project(':SVMedia:International:SVLibUSBStatus')
+    //已经在SVLibMediaCommon中包含了
+    compileOnly project(':SVMedia:International:SVSDKAudio')
+    //已经在SVLibMediaCommon中包含了
+    compileOnly project(':SVMedia:International:SVSDKLocalMedia')
+}

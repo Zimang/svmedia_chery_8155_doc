@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="radio_ivsingarm_roate_0" format="float" type="dimen">0</item>
+    <item name="radio_ivsingarm_roate_1" format="float" type="dimen">28</item>
+    <dimen name="radio_cursor_margin_start">229dp</dimen>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRadioCollectList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:paddingEnd="@dimen/radio_list_pading_end"
+        android:paddingStart="@dimen/radio_list_pading_start"
+        android:scrollbarThumbVertical="@color/radio_scrollbar_color"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="vertical"
+        android:scrollbarSize="6dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rlRadioCollectEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="360dp"
+            android:layout_height="360dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/radio_default_empty"
+            android:scaleType="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="319dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="28sp"
+            android:textColor="@color/radio_loading_text_color"
+            android:text="@string/dab_no_collect"
+            android:gravity="center">
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>

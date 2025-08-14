@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <!--中间专辑图部分-->
+    <RelativeLayout
+        android:id="@+id/rlDABAlbum"
+        android:layout_width="660dp"
+        android:layout_height="660dp"
+        android:layout_marginTop="64dp"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/dab_player_bg"
+        android:layoutDirection="ltr">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="40dp"
+            android:src="@mipmap/dab"
+            android:scaleType="center">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/ivSingArm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/dab_sigarm">
+
+        </ImageView>
+
+        <com.desaysv.mediacommonlib.view.CircleImageView
+            android:id="@+id/ivDABLogo"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_centerInParent="true"
+            android:scaleType="center">
+
+        </com.desaysv.mediacommonlib.view.CircleImageView>
+
+        <ImageView
+            android:id="@+id/ivDABLike"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/dab_img_collect"
+            android:scaleType="center">
+        </ImageView>
+
+    </RelativeLayout>
+
+    <!--名称部分-->
+    <TextView
+        android:id="@+id/tvDABName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        android:textColor="@color/dab_text_color"
+        android:text="@string/dab_program_name"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rlDABAlbum"
+        android:layout_marginTop="60dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvDABPTYType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="@color/dab_text_color1"
+        android:text="@string/program_type_1"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvDABName"
+        android:layout_marginTop="12dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvDABEnsemble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="@color/dab_text_color1"
+        android:text="@string/dab_service_name"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvDABPTYType"
+        android:layout_marginTop="12dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvDABRT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/dab_text_color2"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvDABEnsemble"
+        android:layout_marginTop="40dp"
+        android:maxLines="4">
+
+    </TextView>
+
+
+</RelativeLayout>

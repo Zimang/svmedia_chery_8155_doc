@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+    <item android:drawable="@mipmap/icon_music_random_p" android:state_pressed="true" />
+    <item android:drawable="@mipmap/icon_music_random_d" android:state_enabled="false" />
+    <item android:drawable="@mipmap/icon_music_random_n" />
+</selector>

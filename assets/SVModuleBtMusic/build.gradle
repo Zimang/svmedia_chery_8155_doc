@@ -1,0 +1,87 @@
+apply plugin: 'com.android.library'
+
+apply from: "${rootDir}/common/config/android_tools_config.gradle"//工程配置
+apply from: "${rootDir}/SVMedia/International/build_type_config.gradle"//build_type、签名配置
+apply from: "${rootDir}/SVMedia/International/vdb_imp_config.gradle"//vdb配置
+apply from: "${rootDir}/SVMedia/International/product_flavors_config.gradle"//多渠道配置
+//apply from: "${rootDir}/common/config/app_dependences_dc_configs.gradle"
+
+android {
+    compileSdkVersion COMPILE_SDK_VERSION
+    buildToolsVersion BUILD_TOOL_VERSION
+
+    defaultConfig {
+        minSdkVersion MIN_SDK_VERSION
+        targetSdkVersion TARGET_SDK_VERSION
+        versionCode 1
+        versionName "1.0"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets{
+        chery_8155_int_t22{
+            java.srcDirs = ['src/main/java', 'src/t22int/java']
+            res.srcDirs = ['src/main/res', 'src/t22int/res']
+            manifest.srcFile('src/t22int/AndroidManifest.xml')
+        }
+
+        chery_8155_int_t19c{
+            java.srcDirs = ['src/main/java', 'src/t19cint/java']
+            res.srcDirs = ['src/main/res', 'src/t19cint/res']
+            manifest.srcFile('src/t19cint/AndroidManifest.xml')
+        }
+
+        chery_8155_int_t18fl3{
+            java.srcDirs = ['src/main/java', 'src/t19cint/java']
+            res.srcDirs = ['src/main/res', 'src/t19cint/res']
+            manifest.srcFile('src/t19cint/AndroidManifest.xml')
+        }
+
+        chery_8155_int_t1ej{
+            java.srcDirs = ['src/main/java', 'src/t19cint/java']
+            res.srcDirs = ['src/main/res', 'src/t19cint/res']
+            manifest.srcFile('src/t19cint/AndroidManifest.xml')
+        }
+    }
+
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            File configFile = file("${rootDir}/common/Lib/android-car.jar")
+            String absolutePath = configFile.absolutePath.replaceAll("\\\\", "\\\\\\\\")
+            String Path = '-Xbootclasspath/p:' + absolutePath
+            options.compilerArgs.add(Path)
+            File configFile2 = file("${rootDir}/common/Lib/framework.jar")
+            String absolutePath2 = configFile2.absolutePath.replaceAll("\\\\", "\\\\\\\\")
+            String Path2 = '-Xbootclasspath/p:' + absolutePath2
+            options.compilerArgs.add(Path2)
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    /*An update regarding Bintray's shutdown: The library has been successfuly republished onto maven central,
+     but with a different Group ID; Please update your Gradle dependencies as follows:*/
+    implementation 'io.github.everythingme:overscroll-decor-android:1.1.1'
+
+    compileOnly files("${rootDir}/common/Lib/android-car.jar")
+    compileOnly files("${rootDir}/common/Lib/framework.jar")
+    compileOnly project(':SVMedia:International:SVLibMediaCommon')
+//    compileOnly project(':SVMedia:International:SVExtLionPointAARLibs')
+
+    api files("${rootDir}/common/Lib/gson-2.3.1.jar")
+
+//    chery_8155_int_t22Implementation project(path: ':DesayWidget:SVLibToast')
+//    chery_8155_int_t19cImplementation project(path: ':SVLib')
+//    chery_8155_int_t18fl3Implementation project(path: ':SVLib')
+    api project(':SVMedia:International:SVLibMediaObserver')
+    apply from: "${rootDir}/common/config/app_dependences_tracking_configs.gradle"
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation project(':SVMedia:International:SVModuleBtMusicTranslateRes')
+    implementation files("${rootDir}/common/Lib/svcommonutils.jar")
+}

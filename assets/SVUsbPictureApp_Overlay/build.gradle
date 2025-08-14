@@ -1,0 +1,60 @@
+plugins {
+    id 'com.android.application'
+}
+apply from: "${rootDir}/SVMedia/International/build_type_config.gradle"
+apply from: "${rootDir}/common/config/android_tools_config.gradle"
+android {
+    compileSdkVersion COMPILE_SDK_VERSION
+
+    defaultConfig {
+        minSdkVersion MIN_SDK_VERSION
+        targetSdkVersion TARGET_SDK_VERSION
+        versionCode 1
+        versionName "1.0"
+        flavorDimensions "default"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("${rootDir}/common/SignedKey/platform.keystore")
+            storePassword "sv2655888"
+            keyAlias "desaysv"
+            keyPassword "sv2655888"
+        }
+
+        debug {
+            storeFile file("${rootDir}/common/SignedKey/platform.keystore")
+            storePassword "sv2655888"
+            keyAlias "desaysv"
+            keyPassword "sv2655888"
+        }
+    }
+
+    productFlavors {
+        chery_8155_int_t22_overlay1 {applicationId "com.desaysv.svusbpictureapp.overlay1"}
+        chery_8155_int_t22_overlay2 {applicationId "com.desaysv.svusbpictureapp.overlay2"}
+        chery_8155_int_t22_overlay3 {applicationId "com.desaysv.svusbpictureapp.overlay3"}
+        chery_8155_int_t22_overlay4 {applicationId "com.desaysv.svusbpictureapp.overlay4"}
+        chery_8155_int_t19c_overlay1 {applicationId "com.desaysv.svusbpictureapp.overlay1"}
+        chery_8155_int_t19c_overlay2 {applicationId "com.desaysv.svusbpictureapp.overlay2"}
+        chery_8155_int_t19c_overlay3 {applicationId "com.desaysv.svusbpictureapp.overlay3"}
+        chery_8155_int_t19c_overlay4 {applicationId "com.desaysv.svusbpictureapp.overlay4"}
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    chery_8155_int_t22_overlay1Implementation project(path: ':SVMedia:International:SVUsbPictureAppRes1')
+    chery_8155_int_t22_overlay2Implementation project(path: ':SVMedia:International:SVUsbPictureAppRes2')
+    chery_8155_int_t22_overlay3Implementation project(path: ':SVMedia:International:SVUsbPictureAppRes3')
+    chery_8155_int_t22_overlay4Implementation project(path: ':SVMedia:International:SVUsbPictureAppRes4')
+    chery_8155_int_t22_overlay2Implementation project(path: ':SVMedia:International:SVLibToastRes2')
+    chery_8155_int_t22_overlay3Implementation project(path: ':SVMedia:International:SVLibToastRes3')
+    chery_8155_int_t22_overlay4Implementation project(path: ':SVMedia:International:SVLibToastRes4')
+}

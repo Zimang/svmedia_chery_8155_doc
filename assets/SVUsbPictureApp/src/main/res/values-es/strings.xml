@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Imagen</string>
+    <string name="usb_statues_no_connect">Ningún dispositivo USB conectado</string>
+    <string name="usb_all_picture">Todas las imágenes</string>
+    <string name="usb_folder_picture">Carpeta</string>
+    <string name="usb_statues_no_content">Recurso de archivo no encontrado</string>
+    <string name="loading_ok">Leído con éxito</string>
+    <string name="item_count">%1$d ítems</string>
+    <string name="loading">Cargando···</string>
+    <string name="bad_item">Imagen dañada</string>
+    <string name="usb1_name">Disco USB</string>
+    <string name="album">Álbum de fotos</string>
+    <string name="gallery">Galería USB</string>
+    <string name="album_t22">Mi álbum</string>
+    <string name="usb_statues_no_connect_t26">Ningún dispositivo USB conectado…</string>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <!--中间专辑图部分-->
+    <RelativeLayout
+        android:id="@+id/rlRadioAlbum"
+        android:layout_width="660dp"
+        android:layout_height="660dp"
+        android:layout_marginTop="64dp"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/player_bg"
+        android:layoutDirection="ltr">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="40dp"
+            android:src="@mipmap/radio"
+            android:scaleType="center">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/ivSingArm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/radio_sigarm">
+
+        </ImageView>
+
+        <com.desaysv.mediacommonlib.view.CircleImageView
+            android:id="@+id/ivRadioIcon"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_centerInParent="true"
+            android:scaleType="center">
+
+        </com.desaysv.mediacommonlib.view.CircleImageView>
+
+        <ImageView
+            android:id="@+id/ivRadioLike"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/radio_btn_collect"
+            android:scaleType="center">
+        </ImageView>
+
+    </RelativeLayout>
+
+    <!--频点值部分-->
+
+    <TextView
+        android:id="@+id/tvRadioFreq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/radio_text_main_color"
+        android:textSize="60sp"
+        android:layout_marginStart="610dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/rlRadioAlbum"
+        android:text="87.5">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvRadioFreq"
+        android:layout_below="@id/rlRadioAlbum"
+        android:textColor="@color/radio_text_main_color"
+        android:textSize="30sp"
+        android:text="@string/radio_khz"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="90dp">
+
+    </TextView>
+
+    <com.desaysv.moduleradio.view.cursor.RadioCursor
+        android:id="@+id/rcCursor"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:layout_below="@id/rlRadioAlbum"
+        android:layout_marginTop="316dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp">
+
+    </com.desaysv.moduleradio.view.cursor.RadioCursor>
+
+</RelativeLayout>

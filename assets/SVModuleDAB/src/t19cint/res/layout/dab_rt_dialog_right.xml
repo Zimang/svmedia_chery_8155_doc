@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlDABRTDialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@drawable/dab_dialog_bg"
+        android:layout_width="800dp"
+        android:layout_height="540dp"
+        android:layout_centerInParent="true"
+        android:layoutDirection="ltr">
+
+        <ImageView
+            android:id="@+id/ivDABRTDialogClose"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/icon_dialog_close">
+
+        </ImageView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="@string/dab_rt_title"
+            android:textColor="@color/dab_rt_color"
+            android:textSize="34sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvDABRTDialogContent"
+            android:layout_width="match_parent"
+            android:layout_height="344dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="118dp"
+            android:layout_marginEnd="10dp"
+            android:paddingEnd="@dimen/dab_rt_dialog_padding_end"
+            android:paddingStart="@dimen/dab_rt_dialog_padding_start"
+            android:gravity="center"
+            android:scrollbarSize="6dp"
+            android:scrollbarThumbVertical="@color/dab_scrollbar_color"
+            android:scrollbars="vertical"
+            android:textColor="@color/dab_text_color"
+            android:textSize="28sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="118dp"
+            android:layout_marginStart="60dp"
+            android:src="@mipmap/dab_dialog_top_mask">
+
+        </ImageView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="48dp"
+            android:layout_marginStart="60dp"
+            android:src="@mipmap/dab_dialog_foot_mask">
+
+        </ImageView>
+
+    </RelativeLayout>
+</RelativeLayout>

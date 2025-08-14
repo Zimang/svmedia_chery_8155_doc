@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.desaysv.moduleusbmusic">
+
+    <application>
+
+        <service
+            android:name=".service.MusicAidlService"
+            android:exported="true" />
+        <!--媒体会话服务-->
+        <service
+            android:name=".service.MediaPlaybackService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

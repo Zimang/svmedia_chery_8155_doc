@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dab_program_name">Название станции программы</string>
+    <string name="dab_service_name">Название коллекции</string>
+
+    <string name="program_type_0">Нет</string>
+    <string name="program_type_1">Новости</string>
+    <string name="program_type_2">Дела</string>
+    <string name="program_type_3">Информация</string>
+    <string name="program_type_4">Спорт</string>
+    <string name="program_type_5">Образование</string>
+    <string name="program_type_6">Драма</string>
+    <string name="program_type_7">Культура</string>
+    <string name="program_type_8">Наука</string>
+    <string name="program_type_9">Разное</string>
+    <string name="program_type_10">Поп M</string>
+    <string name="program_type_11">Рок M</string>
+    <string name="program_type_12">Простая M</string>
+    <string name="program_type_13">Легкая M</string>
+    <string name="program_type_14">Классика</string>
+    <string name="program_type_15">Другое M</string>
+    <string name="program_type_16">Погода</string>
+    <string name="program_type_17">Финансы</string>
+    <string name="program_type_18">Дети</string>
+    <string name="program_type_19">Социальное</string>
+    <string name="program_type_20">Религия</string>
+    <string name="program_type_21">Вход телефона</string>
+    <string name="program_type_22">Путешествия</string>
+    <string name="program_type_23">Роскошь</string>
+    <string name="program_type_24">Джаз</string>
+    <string name="program_type_25">Страна</string>
+    <string name="program_type_26">Нация M</string>
+    <string name="program_type_27">Ретро</string>
+    <string name="program_type_28">Фолк M</string>
+    <string name="program_type_29">Документы</string>
+    <string name="program_type_30">ТЕСТ</string>
+    <string name="program_type_31">Оповещение!</string>
+
+    <string name="dab_station_list">Список станций (%1$d)</string>
+    <string name="dab_epg">EPG</string>
+    <string name="dab_collect_fully">Список станций заполнен</string>
+    <string name="dab_rt_title">Подробности программы</string>
+    <string name="dab_settings">Настройки</string>
+    <string name="dab_settings_sf">Последующие услуги</string>
+    <string name="dab_settings_sf_hl">Жесткая ссылка на последующие услуги</string>
+    <string name="dab_settings_sf_sl">Мягкая ссылка на последующие услуги</string>
+    <string name="dab_settings_reminder">Настройки напоминания</string>
+    <!--公告设置-->
+    <string name="dab_reminder_alarm">Оповещения</string>
+    <string name="dab_reminder_ta">Сигналы о дорожном движении</string>
+    <string name="dab_reminder_tf">Сигналы о транспорте</string>
+    <string name="dab_reminder_warning">Предупреждения / обслуживание</string>
+    <string name="dab_reminder_news">Сигналы о новостях</string>
+    <string name="dab_reminder_weather">Сигналы о погоде в регионе</string>
+    <string name="dab_reminder_event">Оповещения о событиях</string>
+    <string name="dab_reminder_special">Особые события</string>
+    <string name="dab_reminder_program">Информация о программе</string>
+    <string name="dab_reminder_sport">Отчеты о спорте</string>
+    <string name="dab_reminder_financial">Финансовые отчеты</string>
+
+    <string name="dab_array_list_all">Все станции</string>
+    <string name="dab_array_list_ensemble">Список станций</string>
+    <string name="dab_array_list_type">Список категорий</string>
+    <string name="dab_array_list_collect">Список коллекций</string>
+
+    <string name="dab_no_collect">Нет коллекций</string>
+
+    <string name="dab_ann_alarm">Оповещения</string>
+    <string name="dab_ann_ta">Информация о движении</string>
+    <string name="dab_ann_other">Другое</string>
+
+    <string name="epg_arrival_title">Напоминание о назначении радиопрограмм</string>
+    <string name="epg_arrival_listen">Слушать сейчас</string>
+    <string name="epg_arrival_cancel">Отмена (%dS)</string>
+    <string name="epg_arrival_content">Заказанные вами %1$s начнут играть через 1 минуту. Хотите слушать сейчас?</string>
+    <string name="dab_loading">Загрузка…</string>
+    <string name="dab_playlist_no_list">Нет рабочей станции</string>
+    <string name="dab_no_signal">Нет сигнала</string>
+    <string name="dab_research">Сканирование не удалось, нажмите для повтора</string>
+
+    <string name="dab_ann_title">Тип оповещений</string>
+    <string name="dab_ann_title1">Настройки DAB</string>
+    <string name="dab_epg_format">%s месяц %s день</string>
+    <string name="dab_cancel_collected">Отмененное сохранение</string>
+    <string name="dab_epg_tips">Напоминание добавлено</string>
+    <string name="dab_cancle_epg_tips">Напоминание отменено</string>
+    <string name="dab_no_epg">Нет функций</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ResourceName">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="93dp">
+
+        <com.desaysv.moduleusbmusic.ui.view.ScrollConfigViewPager
+            android:id="@+id/vp_music_switch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tl_music_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="83dp"
+            android:layout_centerHorizontal="true"
+            android:overScrollMode="never"
+            app:tabBackground="@null"
+            app:tabIndicator="@drawable/music_tab_shape"
+            app:tabIndicatorColor="@null"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorHeight="6dp"
+            app:tabMaxWidth="0dp"
+            app:tabMode="auto"
+            app:tabPaddingEnd="39dp"
+            app:tabPaddingStart="39dp"
+            app:tabPaddingTop="16dp"
+            app:tabRippleColor="@null"
+            app:tabSelectedTextColor="@color/usb_music_tab_local_select_text_color"
+            app:tabTextAppearance="@style/MusicTabTextStyle"
+            app:tabTextColor="@color/usb_music_local_default_text_color" />
+
+        <View
+            android:id="@+id/vMusicBottomMask"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/music_bottom_mask" />
+
+    </RelativeLayout>
+</RelativeLayout>

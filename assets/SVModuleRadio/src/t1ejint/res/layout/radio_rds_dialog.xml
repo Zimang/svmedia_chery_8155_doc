@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="688dp"
+    android:layout_height="520dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@drawable/ta_dialog_bg">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_rds_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_rds_close"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ta_dialog_close" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/radio_rds_title"
+            android:textColor="@color/radio_rds_color_checked"
+            android:textSize="40sp"
+            android:layout_marginTop="40dp"/>
+
+    </RelativeLayout>
+
+    <!--RDS的设置开关-->
+
+    <!--总开关-->
+    <RelativeLayout
+        android:id="@+id/rl_rds_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_rds_top"
+        android:layout_marginTop="83dp">
+
+        <TextView
+            android:id="@+id/tvRDS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/radio_rds_total"
+            android:textColor="@color/checked_color"
+            android:textSize="40sp"
+            android:layout_marginStart="155dp"/>
+
+        <com.sy.swbt.SettingSwitchView
+            android:id="@+id/sc_rds_total"
+            android:layout_width="95dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="154dp"
+            app:kswBackColor="@color/switch_selector_color"
+            app:kswThumbHeight="50dp"
+            app:kswThumbWidth="50dp"/>
+    </RelativeLayout>
+
+
+    <!--REC开关-->
+    <RelativeLayout
+        android:id="@+id/rl_rds_rec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_rds_total"
+        android:layout_marginTop="47dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvREC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/radio_rds_rec"
+            android:textColor="@color/checked_color"
+            android:textSize="40sp"
+            android:layout_marginStart="155dp"/>
+
+        <com.sy.swbt.SettingSwitchView
+            android:id="@+id/sc_rds_rec"
+            android:layout_width="95dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="154dp"
+            app:kswBackColor="@color/switch_selector_color"
+            app:kswThumbHeight="50dp"
+            app:kswThumbWidth="50dp"/>
+
+    </RelativeLayout>
+
+    <!--AF开关-->
+    <RelativeLayout
+        android:id="@+id/rl_rds_af"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_rds_total"
+        android:layout_marginTop="47dp">
+
+        <TextView
+            android:id="@+id/tvAF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/radio_rds_af"
+            android:textColor="@color/checked_color"
+            android:textSize="40sp"
+            android:layout_marginStart="155dp" />
+
+        <com.sy.swbt.SettingSwitchView
+            android:id="@+id/sc_rds_af"
+            android:layout_width="95dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="154dp"
+            app:kswBackColor="@color/switch_selector_color"
+            app:kswThumbHeight="50dp"
+            app:kswThumbWidth="50dp"/>
+
+    </RelativeLayout>
+
+    <!--TA开关-->
+    <RelativeLayout
+        android:id="@+id/rl_rds_ta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_rds_af"
+        android:layout_marginTop="47dp">
+
+        <TextView
+            android:id="@+id/tvTA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/radio_rds_ta"
+            android:textColor="@color/checked_color"
+            android:textSize="40sp"
+            android:layout_marginStart="155dp" />
+
+        <com.sy.swbt.SettingSwitchView
+            android:id="@+id/sc_rds_ta"
+            android:layout_width="95dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="154dp"
+            app:kswBackColor="@color/switch_selector_color"
+            app:kswThumbHeight="50dp"
+            app:kswThumbWidth="50dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

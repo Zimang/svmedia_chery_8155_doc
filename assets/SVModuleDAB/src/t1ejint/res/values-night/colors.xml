@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dab_text_color">#FFFFFF</color>
+    <color name="dab_text_color1">#99FFFFFF</color>
+    <color name="dab_text_color2">#66FFFFFF</color>
+    <color name="dab_playani_color">#2B7ACE</color>
+    <color name="dab_unplayani_color">#66FFFFFF</color>
+    <color name="dab_item_color">#ECEFF4</color>
+    <color name="dab_dialog_bg_star">#1D1F22</color>
+    <color name="dab_dialog_bg_end">#1D1F22</color>
+    <color name="epg_top_bg">#2D2F31</color>
+    <color name="dab_scrollbar_color">#4DACB5BD</color>
+    <color name="dab_text_color4">#99ECEFF4</color>
+    <color name="dab_text_color5">#ECEFF4</color>
+
+    <color name="epg_text_color">#99ECEFF4</color>
+    <color name="epg_text_color1">#FF000000</color>
+    <color name="epg_text_color_disable">#99ECEFF4</color>
+    <color name="epg_text_color_playing">#ECEFF4</color>
+</resources>

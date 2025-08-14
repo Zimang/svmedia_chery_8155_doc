@@ -1,0 +1,48 @@
+<resources>
+    <!--默认英语-->
+    <!--语音TTS反馈语播报-->
+    <string name="radio_media_radio_play_opened">The radio is already on.</string>
+    <string name="radio_media_radio_play_closed">Opening the radio for you now.</string>
+    <string name="radio_media_radio_collect_noplaying">The radio is off.</string>
+    <string name="radio_media_radio_collect_playing_unsupport">Sorry, favorites function is not available.</string>
+    <string name="radio_media_radio_collect_playing_collected">This station is already a favorite.</string>
+    <string name="radio_media_radio_collect_fulllist">Favorite list is full. Please clean it and try later.</string>
+    <string name="radio_media_radio_collect_playing_collect">Ok, I\'ll add this station to favorite stations.</string>
+    <string name="radio_media_radio_uncollect_noplaying">The radio is off.</string>
+    <string name="radio_media_radio_uncollect_playing_unsupport">Sorry, favorites function is not available.</string>
+    <string name="radio_media_radio_uncollect_playing_uncollected">This station is already not a favorite radio station.</string>
+    <string name="radio_media_radio_uncollect_playing_uncollect">Ok, I\'ll remove this station from favorite stations.</string>
+    <string name="radio_media_radio_opencollect_unsupport">Sorry, favorites function is not available.</string>
+    <string name="radio_media_radio_opencollect_opened">OK.</string>
+    <string name="radio_media_radio_opencollect_open">Alright, here are your favorite stations.</string>
+    <string name="radio_media_radio_playcollect_unsupport">Sorry, favorites function is not available.</string>
+    <string name="radio_media_radio_playcollect_collectempty">Your favorite radio list is empty. Here\'s a station you might like.</string>
+    <string name="radio_media_radio_playcollect_playing">Playing favorite stations.</string>
+    <string name="radio_media_radio_playcollect_play">OK, I\'ll play favorite stations.</string>
+    <string name="radio_media_radio_playrecent_play">OK, playing recent radio.</string>
+    <string name="radio_media_radio_playrecent_empty">You haven\'t listened to the radio recently. Continue playing the current radio for you.</string>
+    <string name="radio_media_radio_openplaylist_opened">OK.</string>
+    <string name="radio_media_radio_openplaylist_open">Alright, here are all radio stations</string>
+    <string name="radio_media_radio_closeplaylist_closed">OK.</string>
+    <string name="radio_media_radio_closeplaylist_close">Closed list of  radio stations for you.</string>
+    <string name="radio_media_radio_scan_scanning">I\'m already scanning stations.</string>
+    <string name="radio_media_radio_scan_unscanning">Ok, I\'ll start scanning stations.</string>
+    <string name="radio_media_radio_stopscan_scanning">Got it.</string>
+    <string name="radio_media_radio_stopscan_unscanning">I am not currently scanning for stations.</string>
+    <string name="radio_media_radio_playfm_playing">This is FM.</string>
+    <string name="radio_media_radio_playfm_unplaying">Ok, FM radio.</string>
+    <string name="radio_media_radio_playam_playing">This is AM.</string>
+    <string name="radio_media_radio_playam_unplaying">Ok, AM radio.</string>
+    <string name="radio_media_radio_playdab_playing">This is DAB.</string>
+    <string name="radio_media_radio_playdab_unplaying">Ok, DAB radio.</string>
+    <string name="radio_media_radio_fmfreq_unavailable">This channel does not exist. Here is the nearest FM station.</string>
+    <string name="radio_media_radio_fmfreq_overrange">This frequency is out of range.</string>
+    <string name="radio_media_radio_fmfreq_playing">The FM is playing.</string>
+    <string name="radio_media_radio_fmfreq_play">Playing this station for you now.</string>
+    <string name="radio_media_radio_amfreq_unavailable">This channel does not exist. Here is the nearest AM station.</string>
+    <string name="radio_media_radio_amfreq_overrange">This frequency is out of range.</string>
+    <string name="radio_media_radio_amfreq_playing">The AM is playing.</string>
+    <string name="radio_media_radio_amfreq_play">Playing this station for you now.</string>
+    <string name="radio_media_radio_bottom_line">I don\'t know this yet I have to learn it first</string>
+    <string name="radio_media_radio_close_no_radio_playing">No radio station is currently playing.</string>
+</resources>

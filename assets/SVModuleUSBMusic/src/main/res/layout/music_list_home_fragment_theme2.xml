@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ResourceName">
+
+    <com.desaysv.moduleusbmusic.ui.view.ScrollConfigViewPager
+        android:id="@+id/vp_music_switch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/bt_local"
+        android:layout_width="wrap_content"
+        android:layout_height="83dp"
+        android:layout_toStartOf="@+id/bt_usb"
+        android:background="@drawable/music_list_tab_select_bg_selector"
+        android:minWidth="198dp"
+        android:paddingStart="39dp"
+        android:paddingEnd="39dp"
+        android:text="@string/usb_music_tab_local_text"
+        android:textAllCaps="false"
+        android:textColor="@drawable/music_list_tab_select_text_color_selector"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/bt_usb"
+        android:layout_width="wrap_content"
+        android:layout_height="83dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/music_list_tab_select_bg_selector"
+        android:minWidth="198dp"
+        android:paddingStart="39dp"
+        android:paddingEnd="39dp"
+        android:text="@string/usb_music_tab_usb_text"
+        android:textAllCaps="false"
+        android:textColor="@drawable/music_list_tab_select_text_color_selector"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/bt_recently"
+        android:layout_width="wrap_content"
+        android:layout_height="83dp"
+        android:layout_toEndOf="@+id/bt_usb"
+        android:background="@drawable/music_list_tab_select_bg_selector"
+        android:minWidth="198dp"
+        android:paddingStart="39dp"
+        android:paddingEnd="39dp"
+        android:text="@string/usb_music_tab_recent_text"
+        android:textAllCaps="false"
+        android:textColor="@drawable/music_list_tab_select_text_color_selector"
+        android:textSize="30sp" />
+</RelativeLayout>

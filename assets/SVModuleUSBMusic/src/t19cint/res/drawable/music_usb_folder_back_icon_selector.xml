@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector android:autoMirrored="true" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+    <item android:drawable="@mipmap/icon_back_60_p" android:state_pressed="true" />
+    <item android:drawable="@mipmap/icon_back_60_d" android:state_enabled="false" />
+    <item android:drawable="@mipmap/icon_back_60_n" />
+</selector>

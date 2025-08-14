@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">صورة</string>
+    <string name="usb_statues_no_connect">لم يتم توصيل جهاز USB</string>
+    <string name="usb_name">صور USB</string>
+    <string name="usb1_name">ذاكرة U</string>
+    <string name="usb2_name">USB2</string>
+    <string name="usb_all_picture">كل الصور</string>
+    <string name="usb_folder_picture">مجلدات</string>
+    <string name="usb_statues_no_content">لم يتم العثور على مورد الملف</string>
+    <string name="loading_again">Loading again</string>
+    <string name="loading_ok">اقرأ بنجاح</string>
+    <string name="item_count">%1$d عنصرًا</string>
+    <string name="loading">جار التحميل ---</string>
+    <string name="album">إلبوم الصور</string>
+    <string name="gallery">معرض USB</string>
+    <string name="gallery_t22">USB Gallery</string>
+    <string name="album_t22">ألبومي</string>
+    <string name="bad_item">الصورة تالفة</string>
+    <string name="usb_statues_no_connect_t26">لم يتم توصيل جهاز USB …</string>
+
+</resources>

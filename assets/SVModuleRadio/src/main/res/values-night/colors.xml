@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="radio_white">#FFFFFFFF</color>
+    <color name="radio_gray">#FFD2D2D2</color>
+    <color name="radio_blue">#FF4DC8E7</color>
+    <color name="radio_frequency_gray">#FF696A6D</color>
+    <color name="radio_text_main_color">#CCFFFFFF</color>
+    <color name="radio_text_sub_color">#4dFFFFFF</color>
+    <color name="radio_tab_text_select_color">#FFFFFFFF</color>
+    <color name="radio_tab_text_unselect_color">#81FFFFFF</color>
+    <color name="radio_dividing_color">#FF4DC8E7</color>
+    <color name="radio_dividing_indicator_color">#FFFFC8E7</color>
+    <color name="radio_scrollbar_color">#4DFFFFFF</color>
+    <color name="radio_play_name_color">#80FFFFFF</color>
+    <color name="radio_play_freq_color">#DB000000</color>
+    <color name="radio_play_mirror_color">#99000000</color>
+    <color name="radio_play_mirror_color_start">#FFFFFF</color>
+    <color name="radio_play_mirror_color_end">#90FFFFFF</color>
+    <color name="radio_loading_text_color">#80FFFFFF</color>
+    <color name="radio_loading_bg_color">#5CFFFFFF</color>
+    <color name="radio_ta_dialog_bg_star">#000000</color>
+    <color name="radio_ta_dialog_bg_end">#000000</color>
+    <color name="radio_ta_text_color">#FFFFFF</color>
+    <color name="radio_item_bg_color">#1A000000</color>
+    <color name="radio_item_play_selected_color">#80FFFFFF</color>
+    <color name="radio_item_play_selected_color1">#80FFFFFF</color>
+    <color name="radio_item_play_color">#CCFFFFFF</color>
+    <color name="radio_item_play_color1">#CCFFFFFF</color>
+    <color name="radio_multi_type_bg">#0DFFFFFF</color>
+    <color name="radio_text_sub_color1">#4dFFFFFF</color>
+</resources>

@@ -1,0 +1,93 @@
+apply plugin: 'com.android.library'
+apply from: "${rootDir}/common/config/android_tools_config.gradle"
+apply from: "${rootDir}/SVMedia/International/build_type_config.gradle"
+//加载多渠道配置
+apply from: "${rootDir}/SVMedia/International/product_flavors_config.gradle"
+
+android {
+    compileSdkVersion COMPILE_SDK_VERSION
+    buildToolsVersion BUILD_TOOL_VERSION
+    resourcePrefix("radio_")
+
+    defaultConfig {
+        minSdkVersion MIN_SDK_VERSION
+        targetSdkVersion TARGET_SDK_VERSION
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets{
+
+        chery_8155_int_t22{
+            java.srcDirs 'src/t22int/java'
+            res.srcDirs 'src/t22int/res'
+        }
+
+        chery_8155_int_t19c{
+            java.srcDirs 'src/t19cint/java'
+            res.srcDirs 'src/t19cint/res'
+        }
+
+        chery_8155_int_t18fl3{
+            java.srcDirs 'src/t19cint/java'
+            res.srcDirs 'src/t19cint/res'
+        }
+
+        chery_8155_int_t1ej{
+            java.srcDirs 'src/t1ejint/java'
+            res.srcDirs 'src/t1ejint/res'
+        }
+    }
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            File configFile2 = file("${rootDir}/common/Lib/framework.jar")
+            String absolutePath2 = configFile2.absolutePath.replaceAll("\\\\", "\\\\\\\\")
+            String Path2 = '-Xbootclasspath/p:' + absolutePath2
+            options.compilerArgs.add(Path2)
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+//    implementation project(path: ':SVMedia:International:SVLibMediaServiceLogic')
+    implementation 'com.google.android.material:material:1.3.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    compileOnly files("${rootDir}/common/Lib/framework.jar")
+    implementation project(':SVMedia:International:SVLibRadio')
+    //已经在SVLibRadio包含了
+    compileOnly project(':SVMedia:International:SVLibMediaCommon')
+    //已经在SVLibMediaCommon包含了
+    compileOnly 'androidx.recyclerview:recyclerview:1.0.0'
+    //已经在SVLibMediaCommon包含了
+    compileOnly project(':SVMedia:International:SVSDKAudio')
+    //已经在SVLibMediaCommon包含了
+    compileOnly project(':SVMedia:International:SVSDKLocalMedia')
+    //已经在SVSDKLocalMedia包含了
+    api files("${rootDir}/common/Lib/gson-2.3.1.jar")
+    api project(path: ':SVMedia:International:SVModuleDAB')
+    api files("${rootDir}/common/Lib/vdbus.jar")
+    chery_8155_int_t22Api project(path: ':SVMedia:International:SVLibSwitchButton')
+    chery_8155_int_t1ejApi files("${rootDir}/common/Lib/lib_t1ej/SVLibSwitchButton.aar")
+    chery_8155_int_t19cApi project(path: ':SVMedia:International:SVLibSwitchButtonT19C')
+    chery_8155_int_t18fl3Api project(path: ':SVMedia:International:SVLibSwitchButtonT19C')
+    chery_8155_int_t22Api project(path: ':SVMedia:International:SVLibToast')
+    chery_8155_int_t1ejApi project(path: ':SVMedia:International:SVLibToast')
+    chery_8155_int_t19cApi project(path: ':SVMedia:International:SVLibToastT19C')
+    chery_8155_int_t18fl3Api project(path: ':SVMedia:International:SVLibToastT19C')
+
+    api project(':SVMedia:International:SVLibMediaObserver')
+    implementation 'androidx.media:media:1.4.0'
+    compileOnly 'com.github.bumptech.glide:glide:4.9.0'
+    api project(':SVMedia:International:SVModuleRadioTranslateRes')
+    implementation files("${rootDir}/common/Lib/svcommonutils.jar")
+}

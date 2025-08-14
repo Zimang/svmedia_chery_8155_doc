@@ -1,0 +1,11 @@
+<resources>
+    <string name="string_bt_music">موسیقی بلوتوث</string>
+    <string name="string_bt_setting">تنظیمات</string>
+    <string name="string_bt_music_collection_list">فهرست مورد علاقه</string>
+    <string name="string_none_collection_notice">بی موسیقی بلوتوث مورد علاقه</string>
+    <string name="string_bt_music_playing_notice">پخش موسیقی از بلوتوث …</string>
+    <string name="string_pay_notice">پرداخت</string>
+    <string name="string_collect_failed">شکست مجموعه</string>
+    <string name="string_unknown_song">آهنگ ناشناخته</string>
+    <string name="string_unknown_artist">خواننده ناشناخته</string>
+</resources>

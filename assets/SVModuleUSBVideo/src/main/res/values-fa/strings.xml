@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">فیلم</string>
+    <string name="usbvideo_unknown">نامشخص</string>
+    <string name="no_video_show">فایلدر حال پخش تنها محتوای صوتی دارد</string>
+    <string name="no_error_show">فایل پخش فعلی نادرست است </string>
+    <string name="tab_usb">فیلم</string>
+    <string name="tab_usb1">ویدیو USB1</string>
+    <string name="tab_usb2">ویدیو USB2</string>
+    <string name="tab_video_mode">مد ویدئو</string>
+    <string name="tab_folder_mode">مد پوشه</string>
+    <string name="no_equipment_access">هیچ دسترسی دستگاه در دسترس نیست</string>
+    <string name="no_content_access">هیچ محتوایی در دستگاه وجود ندارد</string>
+    <string name="loading">در حال بارگذاری …</string>
+    <string name="double_speed">سرعت</string>
+    <string name="anthology">قیاس</string>
+    <string name="speed_tips">برای ایمنی رانندگی، توصیه می شود فیلم ها را در هنگام رانندگی پخش نکنید!</string>
+    <string name="play_without_prompting">ببدون اعلان بازی کنید</string>
+    <string name="exit_video">خروج از ویدیو</string>
+    <string name="novice_guidance_left">با یک انگشت از سمت چپ به بالا/پایین بکشید</string>
+    <string name="novice_guidance_adjust_brightness">روشنایی را تنظیم کنید</string>
+    <string name="novice_guidance_content">با یک انگشت به چپ/راست بکشید</string>
+    <string name="novice_guidance_adjust_forward_and_backward">سریع به جلو و به عقب</string>
+    <string name="novice_guidance_right">انگشت را از سمت راست به پایین بکشید</string>
+    <string name="novice_guidance_adjust_adjust_sound">صدا را تنظیم کنید</string>
+    <string name="novice_guidance_got_it">متوجه شدم</string>
+    <string name="rv_list_line">من یک خط پایین دارم</string>
+
+    <string name="media_video_pre_time">&#160;&#160;/&#160;&#160;</string>
+    <string name="media_video_play_time">%1$s&#160;&#160;/&#160;&#160;%2$s</string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="usb_music_white">#ffffffff</color>
+    <color name="usb_music_blue">#FF4DC8E7</color>
+    <color name="usb_music_text_gray">#ffd2d2d2</color>
+    <!--顶部选项字体-->
+    <color name="usb_music_tab_local_select_text_color">#CCFFFFFF</color>
+    <!--原生bug，设置80不生效-->
+    <color name="usb_music_local_default_text_color">#80FFFFFF</color>
+    <!--列表条目、歌词字体颜色-->
+    <color name="usb_music_list_name_text_color">#CCFFFFFF</color>
+    <color name="usb_music_list_artist_text_color">#80FFFFFF</color>
+    <color name="usb_music_list_artist_current_text_color">#FFFFFFFF</color>
+    <color name="usb_music_list_lrc_text_color">#80FFFFFF</color>
+    <color name="usb_music_list_lrc_show_text_color">#FFFFFFFF</color>
+    <!--播放页面-->
+    <color name="usb_music_play_song_name_text_color">#FFFFFFFF</color>
+    <color name="usb_music_play_artist_text_color">#80FFFFFF</color>
+    <color name="usb_music_play_time_position_text_color">#FFFFFFFF</color>
+    <color name="usb_music_play_time_duration_text_color">#FFFFFFFF</color>
+    <color name="usb_music_play_list_number_text_color">#B3FFFFFF</color>
+    <color name="usb_music_play_list_item_song_text_color">#CCFFFFFF</color>
+    <color name="usb_music_play_list_item_artist_text_color">#4DFFFFFF</color>
+    <!--USB设备检测页面-->
+    <color name="usb_music_device_check_text_color">#80FFFFFF</color>
+    <!--本地音乐无音乐显示-->
+    <color name="usb_music_local_list_empty_text_color">#80FFFFFF</color>
+    <!--文件夹和文件切换选项背景-->
+    <color name="usb_music_switch_file_mode_select_text_color">#1F2221</color>
+    <color name="usb_music_switch_file_mode_text_s_color">#FFC59377</color>
+    <color name="usb_music_switch_file_mode_text_n_color">#80FFFFFF</color>
+    <!--文件夹列表或者文件列表底部标识分割线-->
+    <color name="usb_music_select_bottom_spit_line_color">#1AFFFFFF</color>
+    <color name="usb_music_select_bottom_bg_start_color">#b4bfcb</color>
+    <color name="usb_music_select_bottom_bg_center_color">#FFD8D8D8</color>
+    <color name="usb_music_select_bottom_bg_end_color">#b4bfcb</color>
+    <color name="usb_music_select_bottom_number_zero_color">#4DFFFFFF</color>
+    <color name="usb_music_select_bottom_number_no_zero_color">#FFC59377</color>
+    <color name="usb_music_select_bottom_all_color">#80FFFFFF</color>
+    <color name="usb_music_select_bottom_cancel_color">#80FFFFFF</color>
+    <color name="usb_music_tab_list_lrc_bg_color">#FFFFFFFF</color>
+    <!--音乐播放跳动动画-->
+    <color name="usb_music_playing_wave_view_color">#C5AB99</color>
+    <!--删除弹窗中间背景颜色-->
+    <color name="usb_music_delete_dialog_bg_color">#26262C</color>
+    <color name="usb_music_delete_dialog_button_cancel_bg_color">#1A4A4949</color>
+    <color name="usb_music_delete_dialog_button_cancel_start_bg_color">#35353c</color>
+    <color name="usb_music_delete_dialog_button_cancel_center_bg_color">#38393e</color>
+    <color name="usb_music_delete_dialog_button_cancel_end_bg_color">#3f4044</color>
+    <color name="usb_music_delete_dialog_button_confirm_start_bg_color">#544c4b</color>
+    <color name="usb_music_delete_dialog_button_confirm_center_bg_color">#655b5c</color>
+    <color name="usb_music_delete_dialog_button_confirm_end_bg_color">#766c6d</color>
+    <color name="usb_music_delete_dialog_text_color">#FCFFFFFF</color>
+    <color name="usb_music_delete_dialog_button_confirm_text_color">#DBFFFFFF</color>
+    <color name="usb_music_delete_dialog_button_cancel_text_color">#81FFFFFF</color>
+</resources>

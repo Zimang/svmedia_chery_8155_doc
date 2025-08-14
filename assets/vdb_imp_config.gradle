@@ -1,0 +1,15 @@
+apply from: "${rootDir}/common/config/app_dependences_vdbus_configs.gradle"
+apply from: "${rootDir}/common/config/app_dependences_vdbus_extra_configs.gradle"
+/*
+android {
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+dependencies {
+    //debug版本导入sdk校验
+    implementation(name: "${rootDir}/SVMedia/vdbdebuglibs/vdbus.aar", ext: 'aar')
+    implementation(name: "${rootDir}/SVMedia/vdbdebuglibs/vdbusEx.aar", ext: 'aar')
+}*/

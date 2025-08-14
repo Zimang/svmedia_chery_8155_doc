@@ -1,0 +1,5 @@
+<resources>
+    <string name="cancel_export">Cancel export</string>
+    <string name="exporting">Exporting %1$d/%2$d</string>
+    <string name="deleting">Deleting···</string>
+</resources>

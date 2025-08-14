@@ -1,0 +1,12 @@
+<resources>
+    <string name="string_bt_music">蓝牙音乐</string>
+    <string name="string_bt_setting">蓝牙设置</string>
+    <string name="string_bt_music_collection_list">收藏列表</string>
+    <string name="string_none_collection_notice">暂无收藏的蓝牙音乐</string>
+    <string name="string_bt_music_playing_notice">蓝牙音乐播放中...</string>
+    <string name="string_pay_notice">付费</string>
+    <string name="string_collect_failed">收藏失败</string>
+    <string name="string_unknown_song">未知歌曲</string>
+    <string name="string_unknown_artist">未知歌手</string>
+    <string name="string_no_source">暂无播放</string>
+</resources>

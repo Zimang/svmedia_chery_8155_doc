@@ -1,0 +1,42 @@
+apply plugin: 'com.android.library'
+apply from: "${rootDir}/common/config/android_tools_config.gradle"
+apply from: "${rootDir}/SVMedia/International/build_type_config.gradle"
+//加载多渠道配置
+apply from: "${rootDir}/SVMedia/International/product_flavors_config.gradle"
+
+android {
+    compileSdkVersion COMPILE_SDK_VERSION
+    buildToolsVersion BUILD_TOOL_VERSION
+
+    resourcePrefix("usb_picture_")
+
+    defaultConfig {
+        minSdkVersion MIN_SDK_VERSION
+        targetSdkVersion TARGET_SDK_VERSION
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+}
+
+dependencies {
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.annotation:annotation:1.2.0'
+    implementation 'org.jetbrains:annotations-java5:15.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    compileOnly files("${rootDir}/common/Lib/framework.jar")
+    implementation project(':SVMedia:International:SVLibUSBMedia')
+    //已经在SVLibUSBMedia包含了
+    compileOnly project(':SVMedia:International:SVLibUSBBase')
+    //已经在SVLibUSBBase中包含了
+    compileOnly project(':SVMedia:International:SVLibUSBStatus')
+    //已经在SVLibUSBBase中包含了
+    compileOnly project(':SVMedia:International:SVLibMediaCommon')
+    //已经在SVLibMediaCommon中包含了
+    compileOnly 'com.github.bumptech.glide:glide:4.9.0'
+    //已经在SVLibMediaCommon中包含了
+    compileOnly 'androidx.recyclerview:recyclerview:1.0.0'
+}

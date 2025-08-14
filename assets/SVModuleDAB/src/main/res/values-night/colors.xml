@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dab_text_color">#CCFFFFFF</color>
+    <color name="dab_text_color1">#80FFFFFF</color>
+    <color name="dab_text_color2">#B3FFFFFF</color>
+    <color name="dab_text_color3">#81FFFFFF</color>
+    <color name="dab_text_color4">#DBD8D8D8</color>
+    <color name="dab_text_color5">#DBFFFFFF</color>
+    <color name="dab_text_color6">#81FFFFFF</color>
+    <color name="dab_text_color7">#FFFFFFFF</color>
+    <color name="dab_shape_color">#24FFFFFF</color>
+    <color name="dab_scrollbar_color">#4DFFFFFF</color>
+    <color name="dab_playani_color">#C5AB99</color>
+    <color name="dab_rt_color">#FFFFFFFF</color>
+    <color name="dab_rt_color1">#99FFFFFF</color>
+    <color name="dab_rt_color2">#FF000000</color>
+    <color name="dab_dialog_bg_star">#000000</color>
+    <color name="dab_dialog_bg_end">#000000</color>
+    <color name="dab_dialog_bg_star1">#3FFFFFFF</color>
+    <color name="dab_dialog_bg_end1">#00FFFFFF</color>
+    <color name="epg_text_color">#DAFFFFFF</color>
+    <color name="epg_text_color1">#9AFFFFFF</color>
+    <color name="epg_text_color_disable">#80FFFFFF</color>
+    <color name="epg_text_color_playing">#FFC59377</color>
+    <color name="dab_item_color">#FFFFFFFF</color>
+    <color name="dab_loading_bg_color">#5CFFFFFF</color>
+    <color name="dab_loading_text_color">#80FFFFFF</color>
+    <color name="dab_nosignal_bg_color">#000000</color>
+    <color name="dab_nosignal_text_color">#FFFFFFFF</color>
+    <color name="dab_item_play_color">#CCFFFFFF</color>
+    <color name="dab_disable_color">#3FFFFFFF</color>
+    <color name="dab_settings_bg_star">#171717</color>
+    <color name="dab_settings_bg_center">#66000000</color>
+    <color name="dab_settings_bg_end">#171717</color>
+    <color name="dab_settings_bg_stroke">#171717</color>
+</resources>

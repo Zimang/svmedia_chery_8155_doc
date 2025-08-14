@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="loading_bg_color">#7FB0C8EA </color>
+    <color name="usb_name_color">#CCFFFFFF</color>
+    <color name="t22_color_type_selected">#CCFFFFFF</color>
+    <color name="t22_color_type_unselected">#CCB0C8EA</color>
+    <color name="folder_name_color">#CCFFFFFF</color>
+    <color name="folder_item_num_color">#B0C8EA</color>
+    <color name="path_color">#7F9199A3</color>
+    <color name="t22_color_tips">#50FFFFFF</color>
+    <color name="usb_no_link">#CCB0C8EA</color>
+    <color name="loading_text_color" tools:ignore="ResourceName">#FFFFFF</color>
+
+    <color name="btn_play_tips">#9A9FAB</color>
+    <color name="btn_exit_video_bg">#BDAFA5</color>
+    <color name="txt_video_to_play">#C2C5CB</color>
+    <color name="txt_video_to_close">#C2C5CB</color>
+</resources>

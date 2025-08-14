@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dab_item_margins">80dp</dimen>
+    <dimen name="dab_item_margint">14dp</dimen>
+    <dimen name="dab_item_h">130dp</dimen>
+    <dimen name="dab_item_margins1">60dp</dimen>
+    <dimen name="dab_item_radius">20dp</dimen>
+
+    <item name="dab_ivsingarm_roate_0" format="float" type="dimen">0</item>
+    <item name="dab_ivsingarm_roate_1" format="float" type="dimen">-26</item>
+    <dimen name="dab_ann_bg_maxw">570dp</dimen>
+    <dimen name="dab_ann_bg_w">722dp</dimen>
+    <dimen name="dab_ann_bg_h">510dp</dimen>
+
+    <dimen name="dab_ann_bg_mask_top">118dp</dimen>
+    <dimen name="dab_ann_bg_mask_bottom">48dp</dimen>
+
+    <dimen name="dab_rt_dialog_padding_end">60dp</dimen>
+    <dimen name="dab_rt_dialog_padding_start">0dp</dimen>
+
+    <dimen name="dab_list_padding_start">0dp</dimen>
+    <dimen name="dab_list_padding_end">72dp</dimen>
+    <dimen name="dab_list_padding_start1">0dp</dimen>
+    <dimen name="dab_list_padding_end1">24dp</dimen>
+    <dimen name="dab_mainlist_padding_start">0dp</dimen>
+    <dimen name="dab_mainlist_padding_end">24dp</dimen>
+
+    <dimen name="dab_indicator_w">28dp</dimen>
+    <dimen name="dab_indicator_h">6dp</dimen>
+</resources>

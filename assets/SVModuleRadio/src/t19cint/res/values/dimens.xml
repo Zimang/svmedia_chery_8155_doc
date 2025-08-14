@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="radio_tab_pading">2dp</dimen>
+    <dimen name="radio_item_w">140dp</dimen>
+    <dimen name="radio_item_margins">30dp</dimen>
+    <dimen name="radio_itemtext_size">30dp</dimen>
+    <dimen name="radio_item_radius">24dp</dimen>
+    <dimen name="radio_item_margins1">38dp</dimen>
+    <dimen name="radio_item_like_w">60dp</dimen>
+    <dimen name="radio_item_h">140dp</dimen>
+    <dimen name="radio_list_pading_end">24dp</dimen>
+    <dimen name="radio_list_pading_start">0dp</dimen>
+</resources>

@@ -1,0 +1,47 @@
+<resources>
+    <!--语音TTS反馈语播报-->
+    <string name="radio_media_radio_play_opened">收音机已打开</string>
+    <string name="radio_media_radio_play_closed">现在为你打开收音机</string>
+    <string name="radio_media_radio_collect_noplaying">电台已关闭</string>
+    <string name="radio_media_radio_collect_playing_unsupport">对不起，不支持收藏功能</string>
+    <string name="radio_media_radio_collect_playing_collected">当前播放的电台已经收藏</string>
+    <string name="radio_media_radio_collect_fulllist">收藏列表已满，请清理后再试</string>
+    <string name="radio_media_radio_collect_playing_collect">好的，将此电台加入收藏</string>
+    <string name="radio_media_radio_uncollect_noplaying">电台已关闭</string>
+    <string name="radio_media_radio_uncollect_playing_unsupport">对不起，不支持收藏功能</string>
+    <string name="radio_media_radio_uncollect_playing_uncollected">当前播放的电台未收藏</string>
+    <string name="radio_media_radio_uncollect_playing_uncollect">好的，将此电台移出收藏</string>
+    <string name="radio_media_radio_opencollect_unsupport">对不起，不支持收藏功能</string>
+    <string name="radio_media_radio_opencollect_opened">好的</string>
+    <string name="radio_media_radio_opencollect_open">好的，为你打开收藏列表</string>
+    <string name="radio_media_radio_playcollect_unsupport">对不起，不支持收藏功能</string>
+    <string name="radio_media_radio_playcollect_collectempty">你的收藏电台列表为空，为你播放你可能喜欢的电台</string>
+    <string name="radio_media_radio_playcollect_playing">正在播放收藏的电台</string>
+    <string name="radio_media_radio_playcollect_play">好的，为你播放收藏的电台</string>
+    <string name="radio_media_radio_playrecent_play">好的，播放最近播放的电台</string>
+    <string name="radio_media_radio_playrecent_empty">您最近没有播放过电台，继续播放当前电台</string>
+    <string name="radio_media_radio_openplaylist_opened">好的</string>
+    <string name="radio_media_radio_openplaylist_open">好的，打开电台播放列表</string>
+    <string name="radio_media_radio_closeplaylist_closed">好的</string>
+    <string name="radio_media_radio_closeplaylist_close">好的，关闭电台播放列表</string>
+    <string name="radio_media_radio_scan_scanning">我已经在扫描电台了</string>
+    <string name="radio_media_radio_scan_unscanning">好的，现在开始扫描电台</string>
+    <string name="radio_media_radio_stopscan_scanning">好的</string>
+    <string name="radio_media_radio_stopscan_unscanning">当前未在扫描电台</string>
+    <string name="radio_media_radio_playfm_playing">当前即是FM</string>
+    <string name="radio_media_radio_playam_playing">当前即是AM</string>
+    <string name="radio_media_radio_playfm_unplaying">好的，播放FM</string>
+    <string name="radio_media_radio_playam_unplaying">好的，播放AM</string>
+    <string name="radio_media_radio_playdab_playing">当前即是DAB</string>
+    <string name="radio_media_radio_playdab_unplaying">好的，播放DAB</string>
+    <string name="radio_media_radio_fmfreq_unavailable">这个频道不存在，为你推荐最相近的FM电台</string>
+    <string name="radio_media_radio_fmfreq_overrange">这个频率超出范围了</string>
+    <string name="radio_media_radio_fmfreq_playing">当前FM正在播放中</string>
+    <string name="radio_media_radio_fmfreq_play">现在为您播放此电台</string>
+    <string name="radio_media_radio_amfreq_unavailable">这个频道不存在，为你推荐最相近的AM电台</string>
+    <string name="radio_media_radio_amfreq_overrange">这个频率超出范围了</string>
+    <string name="radio_media_radio_amfreq_playing">当前AM正在播放中</string>
+    <string name="radio_media_radio_amfreq_play">现在为您播放此电台</string>
+    <string name="radio_media_radio_bottom_line">这个我还不会，我得先学习一下</string>
+    <string name="radio_media_radio_close_no_radio_playing">没有电台源在播放中</string>
+</resources>

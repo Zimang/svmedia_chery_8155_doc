@@ -1,0 +1,12 @@
+<resources>
+    <string name="dialog_title">发现连接设备USB</string>
+    <string name="dialog_title1">发现连接设备USB1</string>
+    <string name="dialog_title2">发现连接设备USB2</string>
+    <string name="dialog_tips">请选择播放连接设备中的内容</string>
+    <string name="dialog_type_music">音乐</string>
+    <string name="dialog_type_picture">图片</string>
+    <string name="dialog_type_video">视频</string>
+    <string name="toast_no_video">暂无视频</string>
+    <string name="toast_no_picture">暂无图片</string>
+    <string name="toast_no_music">暂无音乐</string>
+</resources>

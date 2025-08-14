@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlDABItem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layoutDirection="ltr">
+
+
+    <RelativeLayout
+        android:layout_width="728dp"
+        android:layout_height="140dp">
+        <com.desaysv.mediacommonlib.view.RadiusImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="@dimen/dab_item_h"
+            android:layout_height="@dimen/dab_item_h"
+            android:src="@mipmap/icon_logo"
+            app:radius="@dimen/dab_item_radius">
+        </com.desaysv.mediacommonlib.view.RadiusImageView>
+
+    <TextView
+        android:id="@+id/tvProgramStationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ivLogo"
+        android:layout_marginStart="30dp"
+        android:layout_centerVertical="true"
+        android:textSize="30sp"
+        android:textColor="@color/dab_text_color"
+        android:text="@string/dab_program_name"
+        android:gravity="center">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/ivCollect"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/dab_img_collect"
+        >
+    </ImageView>
+        <ImageView
+            android:id="@+id/ivItemPlayBg"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="26dp"
+            android:src="@drawable/item_play_bg">
+
+        </ImageView>
+        <com.desaysv.mediacommonlib.view.AudioWaveView
+            android:id="@+id/avDABListAni"
+            android:layout_width="33dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="55dp"
+            app:pointer_color="@color/dab_playani_color"
+            app:pointer_num="5"
+            app:pointer_padding="0dp"
+            app:pointer_sing_law_rate="0.2"
+            app:pointer_top_fillet="0"
+            app:pointer_width="3.5dp"
+            app:pointer_type="center"
+            android:visibility="visible">
+
+        </com.desaysv.mediacommonlib.view.AudioWaveView>
+
+    </RelativeLayout>
+</RelativeLayout>

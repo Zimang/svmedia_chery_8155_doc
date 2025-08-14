@@ -1,0 +1,12 @@
+<resources>
+    <string name="string_bt_music">Música Bluetooth</string>
+    <string name="string_bt_setting">Configuración</string>
+    <string name="string_bt_music_collection_list">Lista de favoritos</string>
+    <string name="string_none_collection_notice">Sin música Bluetooth favorita</string>
+    <string name="string_bt_music_playing_notice">Música Bluetooth reproduciéndose…</string>
+    <string name="string_pay_notice">Pagar</string>
+    <string name="string_collect_failed">Fallo de recogida</string>
+    <string name="string_unknown_song">Canción desconocida</string>
+    <string name="string_unknown_artist">Cantante desconocido</string>
+    <string name="string_no_source">Sin reproducción</string>
+</resources>

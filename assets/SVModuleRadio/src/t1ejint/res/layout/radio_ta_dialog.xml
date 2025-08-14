@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@drawable/ta_dialog_bg"
+        android:layout_width="984dp"
+        android:layout_height="520dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/ivRDSTADialogClose"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/ta_dialog_close">
+
+        </ImageView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:text="@string/radio_ta_title"
+            android:textColor="@color/radio_ta_text_color"
+            android:textSize="40sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvRDSTADialogContent"
+            android:layout_width="796dp"
+            android:layout_height="212dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="214dp"
+            android:gravity="center"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbarSize="6dp"
+            android:scrollbarThumbVertical="@color/radio_scrollbar_color"
+            android:scrollbars="vertical"
+            android:textColor="@color/radio_rt_color"
+            android:textSize="40sp">
+
+        </TextView>
+
+    </RelativeLayout>
+</RelativeLayout>

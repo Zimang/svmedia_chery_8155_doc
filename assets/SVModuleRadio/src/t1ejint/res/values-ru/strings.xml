@@ -1,0 +1,5 @@
+<resources>
+    <string name="radio_no_collect">пусто</string>
+    <string name="radio_playlist_title2">Список радиостанций (%1$d)</string>
+    <string name="radio_collect_list">Избранное</string>
+</resources>

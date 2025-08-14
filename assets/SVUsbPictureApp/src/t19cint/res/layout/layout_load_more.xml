@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_loadMore"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+
+    android:layout_width="300dp"
+    android:layout_height="160dp"
+    android:layout_centerInParent="true">
+
+
+    <ImageView
+        android:id="@+id/iv_loadMore"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/icon_loading_60"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="75dp">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="83dp"
+        android:gravity="center"
+        android:text="@string/loading"
+        android:textSize="30sp"
+        android:textColor="@color/name_load_more">
+
+    </TextView>
+</RelativeLayout>
+
+</RelativeLayout>

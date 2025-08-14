@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="radio">
+        <item>@string/radio_fm</item>
+        <item>@string/radio_am</item>
+    </string-array>
+
+    <string-array name="radio_dab">
+        <item>@string/radio_dab</item>
+        <item>@string/radio_fm</item>
+        <item>@string/radio_am</item>
+    </string-array>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialog_title_size">34sp</dimen>
+    <dimen name="dialog_icon_w">60dp</dimen>
+    <dimen name="dialog_icon_h">60dp</dimen>
+    <dimen name="dialog_icon_w1">50dp</dimen>
+    <dimen name="dialog_icon_h1">50dp</dimen>
+    <dimen name="dialog_icon_w2">50dp</dimen>
+    <dimen name="dialog_icon_h2">50dp</dimen>
+    <dimen name="dialog_icon_marginend">43dp</dimen>
+    <dimen name="dialog_icon_margin">10dp</dimen>
+    <dimen name="dialog_text_margin">110dp</dimen>
+</resources>

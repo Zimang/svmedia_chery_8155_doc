@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.desaysv.modulebtmusic">
+
+    <application>
+        <service
+            android:name="com.desaysv.modulebtmusic.service.BTMusicService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="action.desaysv.modulebtmusic.opensource" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

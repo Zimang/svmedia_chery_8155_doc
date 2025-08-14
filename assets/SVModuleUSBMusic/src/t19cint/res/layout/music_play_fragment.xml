@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ResourceName">
+
+    <ImageView
+        android:id="@+id/iv_play_start_bg"
+        android:layout_width="1140dp"
+        android:layout_height="720dp"
+        android:src="@mipmap/img_play_start_bg" />
+
+    <!--退出界面按钮-->
+    <ImageButton
+        android:id="@+id/ib_click_back"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="96dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/music_usb_play_exit_icon_selector" />
+
+    <!--专辑阴影-->
+    <ImageView
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="152dp"
+        android:src="@mipmap/img_cover_shadow"
+        android:visibility="gone" />
+
+    <!--左边专辑图-->
+    <FrameLayout
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="222dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="256dp"
+            android:layout_height="256dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="128dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:id="@+id/iv_album_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@mipmap/img_cover_player_music" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@mipmap/img_cover_lighting" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_play_sing_arm"
+        android:layout_width="140dp"
+        android:layout_height="442dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="28dp"
+        android:src="@mipmap/img_player_sing_arm" />
+
+    <FrameLayout
+        android:id="@+id/fl_song_name"
+        android:layout_width="420dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="650dp"
+        android:layout_marginTop="192dp">
+
+        <com.desaysv.mediacommonlib.ui.MarqueeTextView
+            android:id="@+id/tv_song_name"
+            android:layout_width="420dp"
+            android:layout_height="58dp"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="@color/usb_music_play_song_name_text_color"
+            android:textSize="42sp" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_song_name_mask"
+        android:layout_width="309dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="762dp"
+        android:layout_marginTop="192dp"
+        android:src="@drawable/music_song_name_mask" />
+
+    <FrameLayout
+        android:id="@+id/fl_artist_name"
+        android:layout_width="420dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/fl_song_name"
+        android:layout_alignStart="@+id/fl_song_name"
+        android:layout_marginTop="4dp">
+
+        <com.desaysv.mediacommonlib.ui.MarqueeTextView
+            android:id="@+id/tv_artist_name"
+            android:layout_width="420dp"
+            android:layout_height="38dp"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="@color/usb_music_play_artist_text_color"
+            android:textSize="28sp" />
+    </FrameLayout>
+
+    <!--进度条区域-->
+    <RelativeLayout
+        android:layout_width="570dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="635dp"
+        android:layout_marginTop="456dp">
+
+        <TextView
+            android:id="@+id/tv_song_time_position"
+            android:layout_width="100dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="15dp"
+            android:gravity="center_vertical|start"
+            android:importantForAccessibility="noHideDescendants"
+            android:textColor="@color/usb_music_play_time_position_text_color"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tv_song_time_duration"
+            android:layout_width="100dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:gravity="center_vertical|end"
+            android:importantForAccessibility="noHideDescendants"
+            android:textColor="@color/usb_music_play_time_duration_text_color"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <SeekBar
+            android:id="@+id/sb_time"
+            android:layout_width="570dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="@null"
+            android:maxHeight="12dp"
+            android:minHeight="12dp"
+            android:padding="0dp"
+            android:progressDrawable="@drawable/music_play_time_seekbar_progress_selector"
+            android:splitTrack="false"
+            android:thumb="@drawable/icon_player_progress_btn"
+            android:thumbOffset="18dp" />
+    </RelativeLayout>
+    <!--播放按钮-->
+    <ImageButton
+        android:id="@+id/ib_click_pre"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/fl_artist_name"
+        android:layout_marginStart="650dp"
+        android:layout_marginTop="56dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/music_usb_play_previous_icon_selector" />
+
+    <ImageButton
+        android:id="@+id/ib_play_control"
+        android:layout_width="126dp"
+        android:layout_height="126dp"
+        android:layout_below="@+id/fl_artist_name"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="23dp"
+        android:layout_toEndOf="@+id/ib_click_pre"
+        android:background="@android:color/transparent"
+        android:src="@drawable/music_usb_play_pause_icon_selector" />
+
+    <ImageButton
+        android:id="@+id/ib_click_next"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/ib_click_pre"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/ib_play_control"
+        android:background="@android:color/transparent"
+        android:src="@drawable/music_usb_play_next_icon_selector" />
+
+    <ImageButton
+        android:id="@+id/ib_click_cycle"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/ib_click_next"
+        android:layout_marginStart="54dp"
+        android:layout_toEndOf="@+id/ib_click_next"
+        android:background="@android:color/transparent"
+        android:src="@drawable/music_usb_play_cycle_icon_selector" />
+
+    <ImageButton
+        android:id="@+id/ib_click_download"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/ib_click_cycle"
+        android:layout_marginStart="54dp"
+        android:layout_toEndOf="@+id/ib_click_cycle"
+        android:background="@android:color/transparent"
+        android:src="@drawable/music_play_download_select_icon_selector" />
+
+    <!--播放列表-->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_music_switch_list_lrc"
+        android:layout_width="660dp"
+        android:layout_height="480dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="100dp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tl_list_lrc_switch"
+        android:layout_width="66dp"
+        android:layout_height="4dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="302dp"
+        android:layout_marginBottom="142dp"
+        android:background="@drawable/music_tab_list_lrc_bg_shape"
+        android:overScrollMode="never"
+        android:visibility="gone"
+        app:tabIndicator="@drawable/music_tab_list_lrc_indicator_shape"
+        app:tabIndicatorColor="@null"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="4dp"
+        app:tabMode="fixed"
+        app:tabRippleColor="@null" />
+
+    <ImageButton
+        android:id="@+id/ib_switch_left"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="342dp"
+        android:layout_marginBottom="110dp"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/img_slide_point_p" />
+
+    <ImageButton
+        android:id="@+id/ib_switch_right"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignTop="@+id/ib_switch_left"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="302dp"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/img_slide_point_n" />
+</RelativeLayout>

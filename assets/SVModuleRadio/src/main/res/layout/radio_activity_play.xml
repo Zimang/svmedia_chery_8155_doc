@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr">
+        <!--播放界面左上角返回按钮-->
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="14dp"
+            android:scaleType="center"
+            android:src="@drawable/radio_hide_play" />
+
+    </RelativeLayout>
+
+
+    <!--播放界面左侧布局-->
+    <RelativeLayout
+        android:id="@+id/rlRadioPlayLeft"
+        android:layout_width="1184dp"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tvRadioPlayName"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="66dp"
+            android:textColor="@color/radio_play_name_color"
+            android:textSize="24sp" />
+
+
+        <!--上方显示/操作区域-->
+        <ImageView
+            android:id="@+id/ivSeekBackward"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="202dp"
+            android:layout_marginTop="121dp"
+            android:scaleType="center"
+            android:src="@mipmap/radio_btn_previous_n" />
+
+
+        <TextView
+            android:id="@+id/tvRadioPlayFreq"
+            android:layout_width="wrap_content"
+            android:layout_height="162dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="81dp"
+            android:gravity="center"
+            android:maxWidth="370dp"
+            android:textColor="@color/radio_text_main_color"
+            android:textSize="120sp"
+            tools:text="100.00" />
+
+        <!--频点值的倒影-->
+        <TextView
+            android:id="@+id/tvRadioPlayFreqMirror"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="212dp"
+            android:alpha="0.86"
+            android:background="@android:color/transparent"
+            android:gravity="center|bottom"
+            android:maxWidth="370dp"
+            android:rotationX="180"
+            android:textColor="@color/radio_play_mirror_color"
+            android:textSize="120sp"
+            tools:text="100.00" />
+
+        <!--频点值的倒影蒙层-->
+        <!--        <ImageView
+            android:layout_width="370dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="212dp"
+            android:background="@drawable/radio_play_mirror_fg"
+            android:gravity="center" />-->
+
+        <TextView
+            android:id="@+id/tvRadioPlayUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="187dp"
+            android:layout_toEndOf="@id/tvRadioPlayFreq"
+            android:text="@string/radio_mhz"
+            android:textColor="@color/radio_play_name_color"
+            android:textSize="24sp" />
+
+
+        <!--RDS标志-->
+        <TextView
+            android:id="@+id/tvRadioPlayTP"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginStart="81dp"
+            android:layout_marginTop="187dp"
+            android:layout_toEndOf="@id/tvRadioPlayFreq"
+            android:text="@string/radio_rds_tp"
+            android:textColor="@color/radio_play_name_color"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvRadioPlayST"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="157dp"
+            android:layout_toEndOf="@id/tvRadioPlayFreq"
+            android:text="@string/radio_rds_st"
+            android:textColor="@color/radio_play_name_color"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvRadioPlayTA"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="510dp"
+            android:layout_marginTop="34dp"
+            android:text="@string/radio_rds_ta"
+            android:textColor="@color/radio_play_name_color"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvRadioPlayTF"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="560dp"
+            android:layout_marginTop="34dp"
+            android:text="@string/radio_rds_tf"
+            android:textColor="@color/radio_play_name_color"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvRadioPlayType"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="610dp"
+            android:layout_marginTop="34dp"
+            android:text="@string/radio_rds_type_0"
+            android:textColor="@color/radio_play_name_color"
+            android:textSize="24sp" />
+
+
+        <ImageView
+            android:id="@+id/ivSeekForward"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="866dp"
+            android:layout_marginTop="121dp"
+            android:scaleType="center"
+            android:src="@mipmap/radio_btn_next_n" />
+
+
+        <ImageView
+            android:id="@+id/ivRadioPlayBg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="179dp"
+            android:src="@mipmap/img_radio_player_bg" />
+
+        <!--刻度尺-->
+        <com.desaysv.moduleradio.view.cursor.RadioCursor
+            android:id="@+id/rcCursor"
+            android:layout_width="@dimen/radio_cursor_width"
+            android:layout_height="32.75dp"
+            android:layout_marginStart="@dimen/radio_cursor_margin_start"
+            android:layout_marginTop="323.25dp">
+
+        </com.desaysv.moduleradio.view.cursor.RadioCursor>
+
+        <!--主题二的刻度尺-->
+        <com.desaysv.moduleradio.view.cursor.RadioCursor2
+            android:id="@+id/rcCursor2"
+            android:layout_width="@dimen/radio_cursor_width"
+            android:layout_height="65dp"
+            android:layout_marginStart="@dimen/radio_cursor_margin_start"
+            android:layout_marginTop="295dp"
+            android:visibility="gone">
+
+        </com.desaysv.moduleradio.view.cursor.RadioCursor2>
+        <!--中间的标志线 宽度和刻度线一致，居中-->
+        <RelativeLayout
+            android:id="@+id/rlFreqPoint"
+            android:layout_width="@dimen/radio_cursor_width"
+            android:layout_marginTop="@dimen/radio_cursor_margin_top"
+            android:layout_marginStart="@dimen/radio_cursor_margin_start"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="81dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/img_radio_pointer_n" />
+
+        </RelativeLayout>
+
+        <!--下方操作区域-->
+        <ImageView
+            android:id="@+id/ivRadioPlayRDS"
+            android:layout_width="100dp"
+            android:layout_height="142dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="64dp"
+            android:layout_toStartOf="@id/ivRadioPlayCollect"
+            android:src="@drawable/radio_btn_rds" />
+
+        <ImageView
+            android:id="@+id/ivRadioPlayCollect"
+            android:layout_width="100dp"
+            android:layout_height="142dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="64dp"
+            android:layout_toStartOf="@id/ivRadioPlayPause"
+            android:src="@drawable/radio_btn_collect" />
+
+
+        <ImageView
+            android:id="@+id/ivRadioPlayPause"
+            android:layout_width="100dp"
+            android:layout_height="142dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/radio_btn_play" />
+
+        <ImageView
+            android:id="@+id/ivRadioPlayScan"
+            android:layout_width="100dp"
+            android:layout_height="142dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="64dp"
+            android:layout_toEndOf="@id/ivRadioPlayPause"
+            android:src="@drawable/radio_btn_search" />
+        <ImageView
+            android:id="@+id/ivRadioPlayRT"
+            android:layout_width="100dp"
+            android:layout_height="142dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="64dp"
+            android:layout_toEndOf="@id/ivRadioPlayScan"
+            android:src="@drawable/radio_btn_moreinfo_select" />
+
+    </RelativeLayout>
+
+
+    <!--右侧电台列表区域-->
+    <TextView
+        android:id="@+id/tvRadioPlayListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@id/rlRadioPlayLeft"
+        android:text="@string/radio_type_list"
+        android:textColor="@color/radio_text_main_color"
+        android:textSize="30sp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRadioPlayList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvRadioPlayListTitle"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_toEndOf="@id/rlRadioPlayLeft"
+        android:scrollbarThumbVertical="@color/radio_scrollbar_color"
+        android:scrollbars="vertical"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvEmptyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvRadioPlayListTitle"
+        android:layout_toEndOf="@id/rlRadioPlayLeft"
+        android:gravity="center"
+        android:text="@string/radio_playlist_no_list"
+        android:textSize="34sp"
+        android:textColor="@color/radio_play_name_color"
+        android:visibility="gone"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rlEmptyView"
+        android:layout_width="match_parent"
+        android:layout_height="424dp"
+        android:layout_below="@id/tvRadioPlayListTitle"
+        android:layout_toEndOf="@id/rlRadioPlayLeft"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/ivDABEmpty"
+            android:layout_width="360dp"
+            android:layout_height="306dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="56dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/img_default_resource" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="60dp"
+            android:gravity="center"
+            android:text="@string/dab_playlist_no_list"
+            android:textSize="28sp"
+            android:textColor="@color/dab_text_color3" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rvRadioPlaySearching"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvRadioPlayListTitle"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_toEndOf="@id/rlRadioPlayLeft"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivRadioLoading"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="122dp"
+            android:src="@mipmap/icon_loading" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="122dp"
+            android:gravity="center"
+            android:text="@string/radio_loading"
+            android:textColor="@color/radio_loading_text_color"
+            android:textSize="26sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

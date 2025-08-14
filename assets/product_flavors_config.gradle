@@ -1,0 +1,40 @@
+android {
+    defaultConfig {
+        flavorDimensions "default" //多渠道编译定制产品
+    }
+
+    publishNonDefault true //Lib工程工程必须添加此句
+
+    productFlavors {
+        chery_8155_int_t22 {
+            versionName = getCustomizeVersionName("CHERY_8155_INT_T22")
+        }
+
+        chery_8155_int_t19c {
+            versionName = getCustomizeVersionName("CHERY_8155_INT_T19C")
+        }
+
+        //目前暂定和T19C国际项目使用同一份UEUI，但后续可能会因为需求和界面等差异独立出来，所以先预留这个渠道。
+        chery_8155_int_t18fl3 {
+            versionName = getCustomizeVersionName("CHERY_8155_INT_T18FL3")
+        }
+
+        chery_8155_int_t1ej {
+            versionName = getCustomizeVersionName("CHERY_8155_INT_T1EJ")
+        }
+    }
+}
+
+configurations {
+    chery_8155_int_t22Implementation
+    chery_8155_int_t19cImplementation
+    chery_8155_int_t18fl3Implementation
+    chery_8155_int_t1ejImplementation
+}
+
+//生成版本号
+static def getCustomizeVersionName(String projectName) {
+    String today = new Date().format("YYYYMMdd_HHmm")
+    return projectName + " V_" + today
+}
+

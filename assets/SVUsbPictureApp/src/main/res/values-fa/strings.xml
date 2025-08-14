@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">تصویر</string>
+    <string name="usb_name">گالری USB</string>
+    <string name="usb_statues_no_connect">دستگاه USB متصل نیست…</string>
+    <string name="usb1_name">USB1</string>
+    <string name="usb_all_picture">همه تصاویر</string>
+    <string name="usb_folder_picture">پوشه</string>
+    <string name="usb_statues_no_content">USB متصل است، بدون محتوا</string>
+    <string name="loading_ok">بارگذاری موفقیت آمیز</string>
+    <string name="item_count">%1$dموارد</string>
+    <string name="loading">در حال بارگذاری …</string>
+    <string name="album">آلبوم</string>
+    <string name="gallery">گالری USB</string>
+    <string name="album_t22">آلبوم من</string>
+    <string name="bad_item">عکس خراب است</string>
+    <string name="usb_statues_no_connect_t26">دستگاه USB متصل نیست…</string>
+</resources>

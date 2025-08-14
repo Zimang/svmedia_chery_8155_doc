@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dab_item_margins">38dp</dimen>
+    <dimen name="dab_item_margint">20dp</dimen>
+    <dimen name="dab_item_h">140dp</dimen>
+    <dimen name="dab_item_margins1">30dp</dimen>
+    <dimen name="dab_item_radius">24dp</dimen>
+</resources>

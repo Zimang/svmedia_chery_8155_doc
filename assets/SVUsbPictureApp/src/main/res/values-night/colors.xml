@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="usb_picture_white">#ffffffff</color>
+    <color name="usb_picture_tab_select_color">#2EF4F8</color>
+    <color name="usb_picture_tab_default_color">#92A3C7</color>
+    <color name="usb_picture_tab_select_disconnect_color">#B32EF4F8</color>
+    <color name="usb_picture_total_time_color">#A9A9AB</color>
+    <color name="usb_picture_default_color">#996633</color>
+    <color name="usb_picture_blue_color">#2EF4F8</color>
+    <color name="usb_picture_seekBar_first_progress">#99ffffff</color>
+    <color name="usb_picture_seekBar_second_progress">#2EF4F8</color>
+    <color name="usb_picture_black_alp_70">#4D000000</color>
+    <color name="usb_picture_white_alp_50">#80FFFFFF</color>
+    <color name="usb_picture_black_start">#00000000</color>
+    <color name="usb_picture_black_end">#0E0F16</color>
+    <color name="colorPrimary" tools:ignore="ResourceName">#008577</color>
+    <color name="colorPrimaryDark" tools:ignore="ResourceName">#00574B</color>
+    <color name="colorAccent" tools:ignore="ResourceName">#D81B60</color>
+    <color name="return_text_color" tools:ignore="ResourceName">#91a2c8</color>
+    <color name="loading_text_color" tools:ignore="ResourceName">#FFFFFF</color>
+
+    <color name="usb_no_link">#81FFFFFF</color>
+    <color name="loading_bg_color">#15FFFFFF</color>
+    <color name="folder_name_color">#FFFFFF</color>
+    <color name="folder_item_num_color">#FFFFFF</color>
+    <color name="root_type_color_0">#FF000000</color>
+    <color name="root_type_color_1">#99FFFFFF</color>
+    <color name="name_color">#99FFFFFF</color>
+
+    <color name="tab_color_selected">#FFFFFF</color>
+    <color name="tab_color_unselected">#99FFFFFF</color>
+    <color name="usb_name_color">#FFFFFFFF</color>
+    <color name="path_color">#DBFFFFFF</color>
+    <color name="translucent">#e0000000</color>
+    <color name="btn_play_tips">#C2C5CB</color>
+    <color name="btn_exit_video_bg">#BDAFA5</color>
+    <color name="txt_video_to_play">#4E5052</color>
+    <color name="txt_video_to_close">#000000</color>
+</resources>

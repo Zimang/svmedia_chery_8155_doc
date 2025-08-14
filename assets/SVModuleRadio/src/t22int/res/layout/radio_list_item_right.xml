@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="728dp"
+    android:layout_height="@dimen/radio_item_h"
+    android:layout_marginStart="@dimen/radio_item_margins1"
+    android:layout_marginTop="20dp"
+    android:layoutDirection="ltr">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rlItemIcon"
+            android:layout_width="@dimen/radio_item_w"
+            android:layout_height="@dimen/radio_item_w">
+            <!--        android:src="@drawable/radio_item_icon_select"-->
+            <com.desaysv.mediacommonlib.view.RadiusImageView
+                android:id="@+id/ivItemIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_logo"
+                android:layout_centerInParent="true"
+                app:radius="@dimen/radio_item_radius"/>
+
+            <ImageView
+                android:id="@+id/ivItemPlayBg"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/item_play_bg">
+
+            </ImageView>
+            <com.desaysv.mediacommonlib.view.AudioWaveView
+                android:id="@+id/ivItemPlay"
+                android:layout_width="33dp"
+                android:layout_height="24dp"
+                android:layout_centerInParent="true"
+                app:pointer_color="@color/radio_item_play_color1"
+                app:pointer_type="center"
+                app:pointer_num="5"
+                app:pointer_padding="0dp"
+                app:pointer_sing_law_rate="0.2"
+                app:pointer_top_fillet="0"
+                app:pointer_width="3.5dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/radio_item_w"
+            android:layout_marginStart="@dimen/radio_item_margins"
+            android:layout_toEndOf="@id/rlItemIcon"
+            android:layout_toStartOf="@id/tvMultiType"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvFreq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/radio_text_main_color"
+                android:textSize="@dimen/radio_itemtext_size"
+                tools:text="FM 100" />
+
+            <TextView
+                android:id="@+id/tvRadioName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvFreq"
+                android:textColor="@color/radio_text_sub_color"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tvMultiType"
+            android:layout_width="100dp"
+            android:layout_height="42dp"
+            android:background="@drawable/radio_multitype_bg"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="156dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/dab_text_color"
+            android:textSize="26sp"
+            android:visibility="gone">
+
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>

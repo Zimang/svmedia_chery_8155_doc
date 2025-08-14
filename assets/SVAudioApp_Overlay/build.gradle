@@ -1,0 +1,70 @@
+plugins {
+    id 'com.android.application'
+}
+apply from: "${rootDir}/SVMedia/International/build_type_config.gradle"
+apply from: "${rootDir}/common/config/android_tools_config.gradle"
+android {
+    compileSdkVersion COMPILE_SDK_VERSION
+
+    defaultConfig {
+        minSdkVersion MIN_SDK_VERSION
+        targetSdkVersion TARGET_SDK_VERSION
+        versionCode 1
+        versionName "1.0"
+        flavorDimensions "default"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("${rootDir}/common/SignedKey/platform.keystore")
+            storePassword "sv2655888"
+            keyAlias "desaysv"
+            keyPassword "sv2655888"
+        }
+
+        debug {
+            storeFile file("${rootDir}/common/SignedKey/platform.keystore")
+            storePassword "sv2655888"
+            keyAlias "desaysv"
+            keyPassword "sv2655888"
+        }
+    }
+
+    productFlavors {
+        chery_8155_int_t22_overlay1 {applicationId "com.desaysv.svaudioapp.overlay1"}
+        chery_8155_int_t22_overlay2 {applicationId "com.desaysv.svaudioapp.overlay2"}
+        chery_8155_int_t22_overlay3 {applicationId "com.desaysv.svaudioapp.overlay3"}
+        chery_8155_int_t19c_overlay1 {applicationId "com.desaysv.svaudioapp.overlay1"}
+        chery_8155_int_t19c_overlay2 {applicationId "com.desaysv.svaudioapp.overlay2"}
+        chery_8155_int_t19c_overlay3 {applicationId "com.desaysv.svaudioapp.overlay3"}
+    }
+}
+
+dependencies {
+
+    chery_8155_int_t22_overlay1Implementation project(path: ':SVMedia:International:SVAudioAppRes1')
+    chery_8155_int_t22_overlay2Implementation project(path: ':SVMedia:International:SVAudioAppRes2')
+    chery_8155_int_t22_overlay3Implementation project(path: ':SVMedia:International:SVAudioAppRes3')
+
+    chery_8155_int_t22_overlay1Implementation project(path: ':SVMedia:International:SVModuleRadioRes1')
+    chery_8155_int_t22_overlay2Implementation project(path: ':SVMedia:International:SVModuleRadioRes2')
+    chery_8155_int_t22_overlay3Implementation project(path: ':SVMedia:International:SVModuleRadioRes3')
+
+    chery_8155_int_t22_overlay1Implementation project(path: ':SVMedia:International:SVModuleDABRes1')
+    chery_8155_int_t22_overlay2Implementation project(path: ':SVMedia:International:SVModuleDABRes2')
+    chery_8155_int_t22_overlay3Implementation project(path: ':SVMedia:International:SVModuleDABRes3')
+
+    chery_8155_int_t22_overlay1Implementation project(path: ':SVMedia:International:SVModuleUSBMusicRes1')
+    chery_8155_int_t22_overlay2Implementation project(path: ':SVMedia:International:SVModuleUSBMusicRes2')
+    chery_8155_int_t22_overlay3Implementation project(path: ':SVMedia:International:SVModuleUSBMusicRes3')
+
+    chery_8155_int_t22_overlay1Implementation project(path: ':SVMedia:International:SVModuleBtMusicRes1')
+    chery_8155_int_t22_overlay2Implementation project(path: ':SVMedia:International:SVModuleBtMusicRes2')
+    chery_8155_int_t22_overlay3Implementation project(path: ':SVMedia:International:SVModuleBtMusicRes3')
+
+    chery_8155_int_t22_overlay2Implementation project(path: ':SVMedia:International:SVLibToastRes2')
+    chery_8155_int_t22_overlay3Implementation project(path: ':SVMedia:International:SVLibToastRes3')
+    chery_8155_int_t22_overlay2Implementation project(path: ':SVMedia:International:SVLibSwitchButtonRes2')
+    chery_8155_int_t22_overlay3Implementation project(path: ':SVMedia:International:SVLibSwitchButtonRes3')
+}

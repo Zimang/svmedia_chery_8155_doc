@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">صوت</string>
+    <!--下拉列表-->
+    <string name="pop_radio">رادیو</string>
+    <string name="pop_btmusic">موسیقی بلوتوث</string>
+    <string name="pop_localmusic">موسیقی محلی</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@mipmap/pop_740x500">
+
+    <ImageView
+        android:id="@+id/iv_exporting"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/loading"
+        android:layout_marginTop="175dp">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_exporting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_exporting"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/operation_color"
+        android:text="exporting 1/10"
+        android:textSize="30sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="240dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_exporting"
+        android:layout_marginTop="119dp"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:text="@string/cancel_export"
+        android:textColor="@color/operation_color"
+        android:background="@drawable/cancel_export"
+        >
+
+    </TextView>
+
+</RelativeLayout>

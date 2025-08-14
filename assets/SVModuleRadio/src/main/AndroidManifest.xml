@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.desaysv.moduleradio">
+
+
+    <application>
+
+        <service
+            android:name=".service.RadioAidlService"
+            android:exported="true" />
+        <service
+            android:name=".service.RadioPopupService"
+            android:enabled="true"
+            android:exported="true">
+
+        </service>
+
+        <service
+            android:name="com.desaysv.moduleradio.mediasession.RadioMediaSessionBrowserService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="androidx.media.MediaBrowserServiceCompat" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

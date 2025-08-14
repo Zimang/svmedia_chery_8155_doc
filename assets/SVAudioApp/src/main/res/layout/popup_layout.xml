@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/radio_pop_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pop_bg"
+    tools:context=".ui.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlPopRadio"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/pop_item_bg">
+
+        <ImageView
+            android:id="@+id/ivPopRadio"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:src="@mipmap/icon_radio"
+            android:layout_centerVertical="true">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tvPopRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/radio_popitem_margin"
+            android:layout_marginEnd="20dp"
+            android:layout_toEndOf="@id/ivPopRadio"
+            android:gravity="start|center_vertical"
+            android:text="@string/pop_radio"
+            android:textColor="@color/pop_item_text_color"
+            android:textSize="24sp">
+
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlPopBTMusic"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/pop_item_bg"
+        android:layout_below="@id/rlPopRadio">
+
+        <ImageView
+            android:id="@+id/ivPopBTMusic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/icon_bt"
+            android:layout_marginStart="50dp"
+            android:layout_centerVertical="true">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tvPopBTMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/radio_popitem_margin"
+            android:layout_marginEnd="20dp"
+            android:layout_toEndOf="@id/ivPopBTMusic"
+            android:gravity="start|center_vertical"
+            android:text="@string/pop_btmusic"
+            android:textColor="@color/pop_item_text_color"
+            android:textSize="24sp">
+
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlPopLocalMusic"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/pop_item_bg"
+        android:layout_below="@id/rlPopBTMusic">
+
+        <ImageView
+            android:id="@+id/ivPopLocalMusic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/icon_music"
+            android:layout_marginStart="50dp"
+            android:layout_centerVertical="true">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tvPopLocalMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_toEndOf="@id/ivPopLocalMusic"
+            android:layout_marginStart="@dimen/radio_popitem_margin"
+            android:text="@string/pop_localmusic"
+            android:textSize="24sp"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/pop_item_text_color">
+
+        </TextView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

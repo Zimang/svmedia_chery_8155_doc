@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="radio_text_main_color">#DBFFFFFF</color>
+    <color name="radio_loading_text_color">#FFFFFF</color>
+    <color name="radio_loading_bg_color">#10FFFFFF</color>
+    <color name="radio_ta_dialog_bg_star">#000000</color>
+    <color name="radio_ta_dialog_bg_end">#262626</color>
+    <color name="radio_text_sub_color1">#C59377</color>
+    <color name="radio_multi_type_bg">#C59377</color>
+    <color name="radio_search_bg">#1D1D1D</color>
+    <color name="radio_item_play_color1">#CCFFFFFF</color>
+    <color name="radio_play_color2">#FFFFFFFF</color>
+</resources>

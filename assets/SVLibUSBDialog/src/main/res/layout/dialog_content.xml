@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_dialog_full_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/content_bg"
+    android:layout_centerInParent="true"
+    android:layoutDirection="locale">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="@dimen/dialog_title_close_margin"
+        android:layout_marginTop="@dimen/dialog_title_close_margin"
+        android:focusable="false"
+        android:src="@drawable/dialog_close">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dialog_title_text_margin"
+        android:textSize="@dimen/dialog_title_size"
+        android:textColor="@color/dialog_title"
+        android:text="@string/dialog_title">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp"
+        android:textColor="@color/dialog_title"
+        android:text="@string/dialog_tips"
+        android:alpha="@dimen/font_alpha_0">
+
+    </TextView>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_type_music"
+        android:layout_width="580dp"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_tips"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/item_bg"
+        android:layoutDirection="locale">
+
+        <ImageView
+            android:id="@+id/iv_icon_music"
+            android:layout_width="@dimen/dialog_icon_w"
+            android:layout_height="@dimen/dialog_icon_h"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dialog_icon_margin"
+            android:src="@drawable/icon_music">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_type_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_type_music"
+            android:textSize="30sp"
+            android:textColor="@color/loading_color"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv_next_music"
+            android:layout_width="@dimen/dialog_icon_w1"
+            android:layout_height="@dimen/dialog_icon_h1"
+            android:src="@drawable/usbpop_next"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="43dp"
+            android:layout_centerVertical="true">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_type_picture"
+        android:layout_width="580dp"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rl_type_music"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/item_bg"
+        android:layoutDirection="locale">
+
+        <ImageView
+            android:id="@+id/iv_icon_picture"
+            android:src="@drawable/icon_picture"
+            android:layout_width="@dimen/dialog_icon_w"
+            android:layout_height="@dimen/dialog_icon_h"
+            android:layout_marginStart="@dimen/dialog_icon_margin"
+            android:layout_centerVertical="true">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_type_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_type_picture"
+            android:textSize="30sp"
+            android:textColor="@color/loading_color"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv_next_picture"
+            android:layout_width="@dimen/dialog_icon_w1"
+            android:layout_height="@dimen/dialog_icon_h1"
+            android:src="@drawable/usbpop_next"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="43dp"
+            android:layout_centerVertical="true">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_type_video"
+        android:layout_width="580dp"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rl_type_picture"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="41dp"
+        android:background="@drawable/item_bg"
+        android:layoutDirection="locale">
+
+        <ImageView
+            android:id="@+id/iv_icon_video"
+            android:src="@drawable/icon_video"
+            android:layout_width="@dimen/dialog_icon_w"
+            android:layout_height="@dimen/dialog_icon_h"
+            android:layout_marginStart="@dimen/dialog_icon_margin"
+            android:layout_centerVertical="true">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_type_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_type_video"
+            android:textSize="30sp"
+            android:textColor="@color/loading_color"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv_next_video"
+            android:layout_width="@dimen/dialog_icon_w1"
+            android:layout_height="@dimen/dialog_icon_h1"
+            android:src="@drawable/usbpop_next"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="43dp"
+            android:layout_centerVertical="true">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+</RelativeLayout>

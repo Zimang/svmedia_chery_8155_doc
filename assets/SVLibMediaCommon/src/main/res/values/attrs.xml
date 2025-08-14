@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AudioWaveView">
+        <attr name="pointer_padding" format="dimension" />
+        <attr name="pointer_num" format="integer" /><!--多少条-->
+        <attr name="pointer_top_fillet" format="integer" /><!--圆角度-->
+        <attr name="pointer_color" format="color" /><!--颜色-->
+        <attr name="pointer_width" format="dimension" /><!--每条宽度-->
+        <attr name="pointer_sing_law_rate" format="float" /><!--0~1的数-->
+        <attr name="pointer_type"><!--中间显示、底部显示-->
+            <flag name="bottom" value="1" />
+            <flag name="center" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RadiusImageView">
+        <attr name="radius" format="dimension" />
+    </declare-styleable>
+</resources>

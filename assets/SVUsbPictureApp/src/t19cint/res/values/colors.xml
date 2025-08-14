@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="tab_color_selected">#FF000000</color>
+    <color name="tab_color_unselected">#7F000000</color>
+    <color name="folder_name_color">#000000</color>
+    <color name="usb_no_link">#4D000000</color>
+    <color name="mask_start">#FFAAB7C2</color>
+    <color name="mask_end">#00A7B4BF</color>
+    <color name="name_fullscreen0">#000000</color>
+    <color name="name_fullscreen1">#FFFFFF</color>
+
+    <color name="fullscreen_bg">#51000000</color>
+    <color name="name_load_more">#000000</color>
+    <color name="btn_exit_video_bg">#3CA7EB</color>
+    <color name="txt_video_to_close">#FFFFFF</color>
+</resources>

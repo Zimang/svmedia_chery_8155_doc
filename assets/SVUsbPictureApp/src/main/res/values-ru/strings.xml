@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Фото</string>
+    <string name="usb_statues_no_connect">Ни одно USB-устройство не подключено…</string>
+    <string name="usb_name">Фото-галерея USB</string>
+    <string name="usb1_name">USB-диск</string>
+    <string name="usb_all_picture">Все картинки</string>
+    <string name="usb_folder_picture">Папка</string>
+    <string name="usb_statues_no_content">Файловый ресурс не найден</string>
+    <string name="loading_ok">Прочитано успешно</string>
+    <string name="item_count">%1$d объектов</string>
+    <string name="loading">Загрузка···</string>
+    <string name="album">Альбом</string>
+    <string name="gallery">ФотоГалерея USB</string>
+    <string name="album_t22">Мой альбом</string>
+    <string name="bad_item">Картинка повреждена</string>
+    <string name="usb_statues_no_connect_t26">Ни одно USB-устройство не подключено…</string>
+</resources>

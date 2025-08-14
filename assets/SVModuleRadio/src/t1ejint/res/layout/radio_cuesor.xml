@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.desaysv.moduleradio.view.cursor.HorizontalCursorView
+        android:id="@+id/fmCursorView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/radio_play_color2"
+        android:textSize="30sp"
+        app:itemWidth="24dp"
+        app:lineColor="@color/radio_frequency_gray"
+        app:lineHeight="50dp"
+        app:linePlusColor="@color/radio_frequency_gray"
+        app:linePlusGap="22dp"
+        app:lineWidth="2dp"
+        app:divisions="5"/>
+
+    <com.desaysv.moduleradio.view.cursor.HorizontalCursorView
+        android:id="@+id/amCursorView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/radio_play_color2"
+        android:textSize="30sp"
+        android:visibility="gone"
+        app:itemWidth="24dp"
+        app:lineColor="@color/radio_frequency_gray"
+        app:lineHeight="50dp"
+        app:linePlusColor="@color/radio_frequency_gray"
+        app:linePlusGap="22dp"
+        app:lineWidth="2dp"
+        app:divisions="5"/>
+
+    <ImageView
+        android:layout_width="3dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="62dp"
+        android:background="@color/radio_cursor_color" />
+
+</RelativeLayout>

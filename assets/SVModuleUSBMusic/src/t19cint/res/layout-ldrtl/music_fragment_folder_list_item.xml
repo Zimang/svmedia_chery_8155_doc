@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="944dp"
+    android:layout_height="140dp"
+    android:layout_marginTop="20dp"
+    tools:ignore="ResourceName">
+    <!--用于处理条目点击事件-->
+    <ImageButton
+        android:id="@+id/ib_click"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" />
+
+    <ImageView
+        android:id="@+id/iv_item_select"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="79dp"
+        android:src="@drawable/music_local_item_select_icon_selector"
+        android:visibility="invisible" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_album"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/iv_item_select"
+        android:background="@android:color/transparent"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp">
+
+        <ImageView
+            android:id="@+id/iv_folder_icon"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/music_fragment_list_folder_icon_n" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_folder_name"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@+id/cv_album"
+        android:gravity="center_vertical"
+        android:textColor="@color/usb_music_list_name_text_color"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/tv_folder_item_size"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@+id/tv_folder_name"
+        android:layout_alignStart="@+id/tv_folder_name"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/usb_music_list_artist_text_color"
+        android:textSize="24sp" />
+</RelativeLayout>

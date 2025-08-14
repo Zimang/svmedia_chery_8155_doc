@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dialog_title">Encontrar el dispositivo USB conectado</string>
+    <string name="dialog_tips">Seleccione para reproducir desde el dispositivo conectado</string>
+    <string name="dialog_type_music">Música</string>
+    <string name="dialog_type_picture">Imagen</string>
+    <string name="dialog_type_video">Vídeo</string>
+    <string name="toast_no_video">Sin vídeo</string>
+    <string name="toast_no_picture">Sin imagen</string>
+    <string name="toast_no_music">Sin música</string>
+</resources>

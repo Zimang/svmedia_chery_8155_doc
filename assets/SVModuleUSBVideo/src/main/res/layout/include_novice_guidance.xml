@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_novice_guidance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/translucent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:tag="default"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/ll_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="139dp"
+            android:src="@mipmap/usb_video_light_adjust" />
+
+        <com.desaysv.moduleusbvideo.view.MarqueeTextView
+            android:id="@+id/tv_novice_left"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            android:singleLine="true"
+            android:text="@string/novice_guidance_left"
+            android:textColor="@color/usbvideo_white"
+            android:textSize="30sp" />
+
+        <com.desaysv.moduleusbvideo.view.MarqueeTextView
+            android:id="@+id/tv_novice_left_1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            android:singleLine="true"
+            android:text="@string/novice_guidance_adjust_brightness"
+            android:textColor="@color/usbvideo_white"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="139dp"
+            android:src="@mipmap/usb_video_fast_adjust" />
+
+        <com.desaysv.moduleusbvideo.view.MarqueeTextView
+            android:id="@+id/tv_novice_content"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            android:singleLine="true"
+            android:text="@string/novice_guidance_content"
+            android:textColor="@color/usbvideo_white"
+            android:textSize="30sp" />
+
+        <com.desaysv.moduleusbvideo.view.MarqueeTextView
+            android:id="@+id/tv_novice_content_1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            android:singleLine="true"
+            android:text="@string/novice_guidance_adjust_forward_and_backward"
+            android:textColor="@color/usbvideo_white"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_got_it"
+            android:layout_width="288dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:textColor="@color/guide_text_cor"
+            android:background="@drawable/shape_btn_gary_bg"
+            android:text="@string/novice_guidance_got_it"
+            android:textAllCaps="false"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="139dp"
+            android:src="@mipmap/usb_video_light_adjust" />
+
+        <com.desaysv.moduleusbvideo.view.MarqueeTextView
+            android:id="@+id/tv_novice_right"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            android:singleLine="true"
+            android:text="@string/novice_guidance_right"
+            android:textColor="@color/usbvideo_white"
+            android:textSize="30sp" />
+
+        <com.desaysv.moduleusbvideo.view.MarqueeTextView
+            android:id="@+id/tv_novice_right_1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            android:singleLine="true"
+            android:text="@string/novice_guidance_adjust_adjust_sound"
+            android:textColor="@color/usbvideo_white"
+            android:textSize="30sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

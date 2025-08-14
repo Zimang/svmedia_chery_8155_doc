@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/roo_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="640dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@mipmap/usb_video_popup_window_bg"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_marginEnd="19dp"
+            android:fadeScrollbars="true"
+            android:paddingStart="20dp"
+            android:paddingEnd="13dp"
+            android:scrollbarSize="6dp"
+            android:scrollbarThumbVertical="@color/play_list_scrollbar_thumb"
+            android:scrollbars="vertical"
+            tools:listitem="@layout/usb_video_play_list_item" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,75 @@
+plugins {
+    id 'com.android.application'
+}
+//以common为主，避免变更
+apply from: "${rootDir}/SVMedia/International/build_type_config.gradle"
+apply from: "${rootDir}/common/config/android_tools_config.gradle"
+apply from: "${rootDir}/SVMedia/International/product_flavors_config.gradle"
+
+android {
+    compileSdkVersion COMPILE_SDK_VERSION
+    buildToolsVersion BUILD_TOOL_VERSION
+    defaultConfig {
+        applicationId "com.desaysv.svaudioapp"
+        minSdkVersion MIN_SDK_VERSION
+        targetSdkVersion TARGET_SDK_VERSION
+        versionCode 1
+        versionName "1.0"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets{
+
+        chery_8155_int_t22{
+            java.srcDirs 'src/t22int/java'
+            res.srcDirs 'src/t22int/res'
+        }
+
+        chery_8155_int_t19c{
+            java.srcDirs 'src/t19cint/java'
+            res.srcDirs 'src/t19cint/res'
+        }
+
+        chery_8155_int_t18fl3{
+            java.srcDirs 'src/t19cint/java'
+            res.srcDirs 'src/t19cint/res'
+        }
+
+        chery_8155_int_t1ej{
+            java.srcDirs 'src/t1ejint/java'
+            res.srcDirs 'src/t1ejint/res'
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    //app已经是最根的了，无需api
+    //t1ej国际只有Radio，所以不需要引用其它模块
+    chery_8155_int_t22Implementation project(path: ':SVMedia:International:SVModuleUSBMusic')
+    chery_8155_int_t22Implementation project(path: ':SVMedia:International:SVLibUSBStatus')
+    chery_8155_int_t22Implementation project(path: ':SVMedia:International:SVModuleBtMusic')
+
+    chery_8155_int_t19cImplementation project(path: ':SVMedia:International:SVModuleUSBMusic')
+    chery_8155_int_t19cImplementation project(path: ':SVMedia:International:SVLibUSBStatus')
+    chery_8155_int_t19cImplementation project(path: ':SVMedia:International:SVModuleBtMusic')
+
+    chery_8155_int_t18fl3Implementation project(path: ':SVMedia:International:SVModuleUSBMusic')
+    chery_8155_int_t18fl3Implementation project(path: ':SVMedia:International:SVLibUSBStatus')
+    chery_8155_int_t18fl3Implementation project(path: ':SVMedia:International:SVModuleBtMusic')
+
+    //implementation project(path: ':SVMedia:International:SVExtLionPointAARLibs')
+    implementation project(path: ':SVMedia:International:SVModuleRadio')
+    implementation project(path: ':SVMedia:International:SVLibMediaCommon')
+    //SVLibMediaCommon包含了
+    compileOnly project(':SVMedia:International:SVSDKAudio')
+    //SVLibMediaCommon包含了
+    compileOnly project(':SVMedia:International:SVSDKLocalMedia')
+    implementation project(':SVMedia:International:SVLibMediaObserver')
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+}

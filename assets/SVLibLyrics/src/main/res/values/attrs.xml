@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LyricsView">
+        <!--设置歌词颜色-->
+        <attr name="textColor" format="color" />
+        <!--当前播放的歌词颜色-->
+        <attr name="textColorShow" format="color" />
+        <!--当前播放的歌词时间显示颜色-->
+        <attr name="textColorTime" format="color" />
+        <!--设置歌词大小-->
+        <attr name="textSize" format="dimension" />
+        <!--设置播放的歌词大小-->
+        <attr name="textShowSize" format="dimension" />
+        <!--设置播放的时间显示大小-->
+        <attr name="textTimeSize" format="dimension" />
+        <!--设置边距-->
+        <attr name="lrcPadding" format="dimension" />
+        <!--设置最小的Scale-->
+        <attr name="lrcMinScale" format="float" />
+        <!--设置最大的Scale-->
+        <attr name="lrcMaxScale" format="float" />
+        <!--设置默认歌词-->
+        <attr name="defaultLyrics" format="string" />
+        <!--一级padding-->
+        <attr name="level1Padding" format="dimension" />
+        <!--二级padding-->
+        <attr name="level2Padding" format="dimension" />
+    </declare-styleable>
+</resources>

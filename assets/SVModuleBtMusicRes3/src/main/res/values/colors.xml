@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="color_transparent">#00000000</color><!--透明-->
+    <color name="color_white">#FFFFFF</color><!--白色-->
+    <color name="color_red">#E02323</color><!--红色-->
+
+    <color name="color_card_music_title">#FF6574B5</color><!--fragment音乐卡片音乐标题字体颜色-->
+    <color name="color_card_title">#DBFFFFFF</color><!--fragment卡片标题字体颜色-->
+    <color name="color_card_setting">#FF000000</color><!--fragment音乐卡片蓝牙设置字体颜色-->
+    <color name="color_card_device_name">#80FFFFFF</color><!--fragment音乐卡片设备名称字体颜色-->
+    <color name="color_card_none_collection_notice">#80000000</color><!--fragment卡片无收藏列表字体颜色-->
+
+    <color name="color_music_title">#FFFFFF</color><!--activity音乐标题字体颜色-->
+    <color name="color_music_artist_name">#80FFFFFF</color><!--activity音乐歌手名字体颜色-->
+    <color name="color_play_progress_duration">#80FFFFFF</color><!--activity音乐播放进度、时长字体颜色-->
+    <color name="color_music_play_notice">#80FFFFFF</color><!--activity音乐播放状态提示字体颜色-->
+
+    <color name="color_collection_adapter_title">#DB000000</color><!--collection adapter音乐标题字体颜色-->
+    <color name="color_collection_adapter_artist">#80000000
+    </color><!--collection adapter音乐歌手名字体颜色-->
+    <color name="color_collection_adapter_playing">#FFC59377
+    </color><!--collection adapter音乐播放中字体颜色-->
+
+    <color name="color_pay_frame">#FFC59377</color><!--付费边框颜色-->
+    <color name="color_pay_notice">#FFC59377</color><!--付费字体颜色-->
+
+    <color name="color_scrollbar">#4DACB5BD</color><!--滑动条颜色-->
+
+    <color name="color_progress_bar_bg_start">#4C1E253D</color><!--progressbar背景开始颜色-->
+    <color name="color_progress_bar_bg_end">#4D55638F</color><!--progressbar背景结束颜色-->
+
+    <color name="color_progress_bar_start">#0E566491</color><!--progressbar开始颜色-->
+    <color name="color_progress_bar_center">#FF566491</color><!--progressbar中间颜色-->
+    <color name="color_progress_bar_end">#FF566491</color><!--progressbar结束颜色-->
+
+    <color name="color_bt_music_playing_wave_view">#FF6574B5</color><!--音乐播放跳动动画颜色-->
+</resources>

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="984dp"
+    android:layout_height="1136dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@drawable/dab_ann_setting_bg">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_dab_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_dab_close"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/dab_dialog_close" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="@string/dab_ann_title"
+            android:textColor="@color/dab_item_color"
+            android:textSize="40sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_dab_top"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="20dp"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--开关-->
+            <RelativeLayout
+                android:id="@+id/rlAnnAlarm"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+                <TextView
+                    android:id="@+id/tvAnnAlarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/dab_reminder_alarm"
+                    android:textColor="@color/dab_item_color"
+                    android:textSize="36sp" />
+
+                <com.sy.swbt.SettingSwitchView
+                    android:id="@+id/scAnnAlarm"
+                    android:layout_width="95dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="36dp"
+                    app:kswBackColor="@color/dab_switch_selector_color"
+                    app:kswThumbHeight="50dp"
+                    app:kswThumbWidth="50dp"/>
+            </RelativeLayout>
+
+
+            <!--开关-->
+            <RelativeLayout
+                android:id="@+id/rlAnnTa"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/rlAnnAlarm">
+
+                <TextView
+                    android:id="@+id/tvAnnTa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/dab_reminder_ta"
+                    android:textColor="@color/dab_item_color"
+                    android:textSize="36sp" />
+
+                <com.sy.swbt.SettingSwitchView
+                    android:id="@+id/scAnnTa"
+                    android:layout_width="95dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="36dp"
+                    app:kswBackColor="@color/dab_switch_selector_color"
+                    app:kswThumbHeight="50dp"
+                    app:kswThumbWidth="50dp"/>
+            </RelativeLayout>
+            <!--开关-->
+            <RelativeLayout
+                android:id="@+id/rlAnnTf"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/rlAnnTa">
+
+                <TextView
+                    android:id="@+id/tvAnnTf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/dab_reminder_tf"
+                    android:textColor="@color/dab_item_color"
+                    android:textSize="36sp" />
+
+                <com.sy.swbt.SettingSwitchView
+                    android:id="@+id/scAnnTf"
+                    android:layout_width="95dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="36dp"
+                    app:kswBackColor="@color/dab_switch_selector_color"
+                    app:kswThumbHeight="50dp"
+                    app:kswThumbWidth="50dp"/>
+            </RelativeLayout>
+
+            <!--开关-->
+            <RelativeLayout
+                android:id="@+id/rlAnnWaring"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/rlAnnTf">
+
+                <TextView
+                    android:id="@+id/tvAnnWaring"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/dab_reminder_warning"
+                    android:textColor="@color/dab_item_color"
+                    android:textSize="36sp" />
+
+                <com.sy.swbt.SettingSwitchView
+                    android:id="@+id/scAnnWaring"
+                    android:layout_width="95dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="36dp"
+                    app:kswBackColor="@color/dab_switch_selector_color"
+                    app:kswThumbHeight="50dp"
+                    app:kswThumbWidth="50dp"/>
+            </RelativeLayout>
+            <!--开关-->
+            <RelativeLayout
+                android:id="@+id/rlAnnNews"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/rlAnnWaring">
+
+                <TextView
+                    android:id="@+id/tvAnnNews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/dab_reminder_news"
+                    android:textColor="@color/dab_item_color"
+                    android:textSize="36sp" />
+
+                <com.sy.swbt.SettingSwitchView
+                    android:id="@+id/scAnnNews"
+                    android:layout_width="95dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="36dp"
+                    app:kswBackColor="@color/dab_switch_selector_color"
+                    app:kswThumbHeight="50dp"
+                    app:kswThumbWidth="50dp"/>
+            </RelativeLayout>
+            <!--开关-->
+            <RelativeLayout
+                android:id="@+id/rlAnnWeather"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/rlAnnNews">
+
+                <TextView
+                    android:id="@+id/tvAnnWeather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/dab_reminder_weather"
+                    android:textColor="@color/dab_item_color"
+                    android:textSize="36sp" />
+
+                <com.sy.swbt.SettingSwitchView
+                    android:id="@+id/scAnnWeather"
+                    android:layout_width="95dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="36dp"
+                    app:kswBackColor="@color/dab_switch_selector_color"
+                    app:kswThumbHeight="50dp"
+                    app:kswThumbWidth="50dp"/>
+            </RelativeLayout>
+            <!--开关-->
+            <RelativeLayout
+                android:id="@+id/rlAnnEvent"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/rlAnnWeather">
+
+                <TextView
+                    android:id="@+id/tvAnnEvent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/dab_reminder_event"
+                    android:textColor="@color/dab_item_color"
+                    android:textSize="36sp" />
+
+                <com.sy.swbt.SettingSwitchView
+                    android:id="@+id/scAnnEvent"
+                    android:layout_width="95dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="36dp"
+                    app:kswBackColor="@color/dab_switch_selector_color"
+                    app:kswThumbHeight="50dp"
+                    app:kswThumbWidth="50dp"/>
+            </RelativeLayout>
+            <!--开关-->
+            <RelativeLayout
+                android:id="@+id/rlAnnSpecial"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/rlAnnEvent">
+
+                <TextView
+                    android:id="@+id/tvAnnSpecial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/dab_reminder_special"
+                    android:textColor="@color/dab_item_color"
+                    android:textSize="36sp" />
+
+                <com.sy.swbt.SettingSwitchView
+                    android:id="@+id/scAnnSpecial"
+                    android:layout_width="95dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="36dp"
+                    app:kswBackColor="@color/dab_switch_selector_color"
+                    app:kswThumbHeight="50dp"
+                    app:kswThumbWidth="50dp"/>
+            </RelativeLayout>
+            <!--开关-->
+            <RelativeLayout
+                android:id="@+id/rlAnnProgram"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/rlAnnSpecial">
+
+                <TextView
+                    android:id="@+id/tvAnnProgram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/dab_reminder_program"
+                    android:textColor="@color/dab_item_color"
+                    android:textSize="36sp" />
+
+                <com.sy.swbt.SettingSwitchView
+                    android:id="@+id/scAnnProgram"
+                    android:layout_width="95dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="36dp"
+                    app:kswBackColor="@color/dab_switch_selector_color"
+                    app:kswThumbHeight="50dp"
+                    app:kswThumbWidth="50dp"/>
+            </RelativeLayout>
+            <!--开关-->
+            <RelativeLayout
+                android:id="@+id/rlAnnSport"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/rlAnnProgram">
+
+                <TextView
+                    android:id="@+id/tvAnnSport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/dab_reminder_sport"
+                    android:textColor="@color/dab_item_color"
+                    android:textSize="36sp" />
+
+                <com.sy.swbt.SettingSwitchView
+                    android:id="@+id/scAnnSport"
+                    android:layout_width="95dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="36dp"
+                    app:kswBackColor="@color/dab_switch_selector_color"
+                    app:kswThumbHeight="50dp"
+                    app:kswThumbWidth="50dp"/>
+            </RelativeLayout>
+            <!--开关-->
+            <RelativeLayout
+                android:id="@+id/rlAnnFinancial"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/rlAnnSport">
+
+                <TextView
+                    android:id="@+id/tvAnnFinancial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/dab_reminder_financial"
+                    android:textColor="@color/dab_item_color"
+                    android:textSize="36sp" />
+
+                <com.sy.swbt.SettingSwitchView
+                    android:id="@+id/scAnnFinancial"
+                    android:layout_width="95dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="36dp"
+                    app:kswBackColor="@color/dab_switch_selector_color"
+                    app:kswThumbHeight="50dp"
+                    app:kswThumbWidth="50dp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

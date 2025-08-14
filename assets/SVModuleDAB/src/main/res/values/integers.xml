@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="dab_item_star">0</integer>
+    <integer name="dab_mask_alpha">1</integer>
+</resources>

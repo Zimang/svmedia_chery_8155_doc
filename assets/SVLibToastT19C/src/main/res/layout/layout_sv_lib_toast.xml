@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sv_lib_dialog_bg">
+
+    <TextView
+        android:id="@+id/tv_sv_lib_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginVertical="30dp"
+        android:includeFontPadding="false"
+        android:adjustViewBounds="true"
+        android:gravity="center"
+        android:lineSpacingExtra="30dp"
+        android:text="最多支持保存五个设备，请删除已有设备后重新再试"
+        android:textColor="@color/lib_toast_text_color"
+        android:textSize="30sp" />
+</LinearLayout>

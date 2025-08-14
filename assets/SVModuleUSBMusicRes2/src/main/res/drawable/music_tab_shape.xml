@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ResourceName">
+    <item
+        android:width="198dp"
+        android:height="83dp"
+        android:drawable="@mipmap/music_tab_switch_slide_line_p_theme2"
+        android:gravity="center" />
+</layer-list>

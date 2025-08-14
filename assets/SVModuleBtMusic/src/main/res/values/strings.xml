@@ -1,0 +1,10 @@
+<resources>
+
+    <!-- ===================语音反馈语=================== -->
+    <!-- 20250124 此部分文言放在SVModuleBtMusicTranslateRes -->
+<!--    <string name="media_music_sourcemusic_source_unable">Currently unavailable</string>-->
+<!--    <string name="media_music_sourcemusic_source_play">Ok, the song is about to play</string>-->
+<!--    <string name="media_music_collect_playing_nosupport">Favorites are not currently supported</string>-->
+<!--    <string name="media_music_openplaylist_nosupport">Sorry, this media source does not support playlist function</string>-->
+    <!-- ===================语音反馈语=================== -->
+</resources>

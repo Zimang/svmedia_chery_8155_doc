@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="btn_play_tips">#92999f</color>
+    <color name="btn_exit_video_bg">#C0A697</color>
+    <color name="guide_text_cor">#ff000000</color>
+    <color name="loading_bg_color">#10FFFFFF</color>
+</resources>

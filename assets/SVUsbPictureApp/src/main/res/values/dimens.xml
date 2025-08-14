@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--heading size-->
+    <dimen name="usb_picture_heading_size">40px</dimen>
+    <!--subheading-->
+    <dimen name="usb_picture_subheading_size">36px</dimen>
+    <!--body size-->
+    <dimen name="usb_picture_body_size">32px</dimen>
+    <!--unit size-->
+    <dimen name="usb_picture_unit_size">28px</dimen>
+    <!--icon size-->
+    <dimen name="usb_picture_button_size">100px</dimen>
+
+
+    <item name="font_alpha_0" type="dimen" format="float">0.66</item>
+    <item name="font_alpha_1" type="dimen" format="float">0.86</item>
+    <item name="font_alpha_2" type="dimen" format="float">0.66</item>
+    <item name="font_alpha_3" type="dimen" format="float">0.66</item>
+    <item name="font_alpha_4" type="dimen" format="float">0.88</item>
+    <item name="font_alpha_5" type="dimen" format="float">1</item>
+    <item name="mask_alpha" type="dimen" format="float">1</item>
+
+    <dimen name="usb_picture_padding_start">0dp</dimen>
+    <dimen name="usb_picture_padding_end">113dp</dimen>
+    <dimen name="usb_picture_margin_start">135dp</dimen>
+    <dimen name="usb_picture_margin_end">16dp</dimen>
+    <dimen name="usb_picture_margin_bottom">110dp</dimen>
+</resources>

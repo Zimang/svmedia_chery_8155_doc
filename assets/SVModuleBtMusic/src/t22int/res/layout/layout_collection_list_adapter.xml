@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_playing_icon"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:id="@+id/iv_playing_icon"
+            android:layout_width="21dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/music_ic_now_playing_21_20"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_collection_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:fontFamily="Source Han Sans SC"
+        android:maxWidth="347dp"
+        android:maxLines="1"
+        android:textColor="@color/color_collection_adapter_title"
+        android:textSize="32sp"
+        android:layout_toEndOf="@+id/rl_playing_icon"/>
+
+    <TextView
+        android:id="@+id/tv_pay_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/tv_collection_list_title"
+        android:background="@drawable/drawable_pay_bg"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/string_pay_notice"
+        android:textColor="@color/color_pay_notice"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_collection_list_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="490dp"
+        android:ellipsize="end"
+        android:fontFamily="Source Han Sans SC"
+        android:maxWidth="150dp"
+        android:maxLines="1"
+        android:textColor="@color/color_collection_adapter_artist"
+        android:textSize="24sp" />
+
+</RelativeLayout>

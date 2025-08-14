@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="ResourceName">ModuleUSBMusic</string>
+    <string name="usbmusic_unknown">غير معروف</string>
+    <string name="usb_music_music_error_text">خطأ تنسيق ملف الموسيقى الحالي \"\" </string>
+    <string name="usb_music_tab_local_text">الموسيقى المحلية</string>
+    <string name="usb_music_tab_usb_text">موسيقى USB</string>
+    <string name="usb_music_tab_recent_text">تم تشغيله مؤخرًا</string>
+    <string name="usb_music_no_lyrics">لا توجد كلمات متاحة</string>
+    <string name="usb_music_unknown_song_name">مسار غير معروف</string>
+    <string name="usb_music_unknown_album">ألبوم غير معروف</string>
+    <string name="usb_music_usb_check">لم يتم اكتشاف جهاز USB، يرجى التحقق من الجهاز</string>
+    <string name="usb_music_local_list_empty">لم تقم بتنزيل أي موسيقى حتى الآن</string>
+    <string name="usb_music_recent_list_empty">لم تقم بتشغيل أي موسيقى</string>
+    <string name="usb_music_all_music_text">كل الموسيقى</string>
+    <string name="usb_music_folder_text">المجلدات</string>
+    <string name="usb_music_folder_item_size_text">أفضل الأغاني</string>
+    <string name="usb_music_all_select">اختر الكل</string>
+    <string name="usb_music_select_cancel">إلغاء</string>
+    <string name="usb_music_select_download">تنزيل</string>
+    <string name="usb_music_select_delete">حذف</string>
+    <string name="usb_music_delete_dialog_text">هل أنت متأكد أنك تريد حذف هذه الأغنية؟</string>
+    <string name="usb_music_play_list_text">قائمة التشغيل&#160;</string>
+    <string name="usb_music_download_limit_confirm">فهمت</string>
+    <string name="usb_music_download_limit_content">الحجم الإجمالي للموسيقى المحلية محدود بـ 2G ، يرجى حذف الأغاني الأخرى في الموسيقى المحلية أولاً</string>
+</resources>

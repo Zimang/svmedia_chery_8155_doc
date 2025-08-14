@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Picture</string>
+    <string name="usb_statues_no_connect">No Connected USB device</string>
+    <string name="usb_name">USB Gallery</string>
+    <string name="usb1_name">USB1</string>
+    <string name="usb2_name">USB2</string>
+    <string name="usb_all_picture">All Pictures</string>
+    <string name="usb_folder_picture">Folder</string>
+    <string name="usb_statues_no_content">USB connected,No Content!</string>
+    <string name="loading_again">Loading again</string>
+    <string name="loading_ok">Loading success</string>
+    <string name="item_count">%1$dItems</string>
+    <string name="loading">Loading…</string>
+    <string name="album">Album</string>
+    <string name="gallery">USB Gallery</string>
+    <string name="gallery_t22">USB Gallery</string>
+    <string name="album_t22">My Album</string>
+    <string name="bad_item">The picture is corrupted</string>
+    <string name="usb_statues_no_connect_t26">No USB device is detected</string>
+    <string name="description_preview">PreView Mode</string>
+    <string name="description_pause">pause</string>
+    <string name="description_play">play</string>
+    <string name="description_back">back</string>
+    <string name="description_enlarge">zoom</string>
+    <string name="description_narrow">shrink</string>
+    <string name="description_flip">rotate</string>
+    <string name="description_slide">auto play</string>
+    <string name="description_pre">Previous</string>
+    <string name="description_next">Next</string>
+    <string name="t22_count">(%1$d)</string>
+    <string name="album_edit">Edit</string>
+    <string name="album_no_content">No Content</string>
+
+    <string name="select_count">Selected %1$dItems</string>
+    <string name="select_none">Selected None</string>
+    <string name="album_delete">Delete</string>
+    <string name="album_export">Export</string>
+    <string name="export_ok">Export Success</string>
+    <string name="export_space">Has no enough space, please release some</string>
+    <string name="export_io">USB connect interrupt,please try again</string>
+    <string name="description_close">Cancel</string>
+    <string name="description_selectall">Select All</string>
+    <string name="delete_confirm">OK</string>
+    <string name="delete_tips">Are you sure want to delete selected photos?</string>
+    <string name="loading2">Loading···</string>
+
+    <string name="speed_tips">For your driving safety, it is recommended not to play slideshow while driving!</string>
+    <string name="play_without_prompting">Play without prompting</string>
+    <string name="exit_video">Exit the slideshow</string>
+</resources>

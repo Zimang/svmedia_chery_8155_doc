@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="pop_bg">#DEE3E8</color>
+    <color name="pop_bg_start">#FFFFFF</color>
+    <color name="pop_bg_end">#E8ECF1</color>
+
+    <color name="radio_mini_mask_star">#00EEEEEE</color>
+    <color name="radio_mini_mask_end">#FFD8D8D8</color>
+    <color name="pop_item_text0">#ff000000</color>
+    <color name="pop_item_text1">#FF3CA7EB</color>
+</resources>

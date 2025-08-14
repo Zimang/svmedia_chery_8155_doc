@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="usb_picture_padding_start">113dp</dimen>
+    <dimen name="usb_picture_padding_end">0dp</dimen>
+    <dimen name="usb_picture_margin_start">16dp</dimen>
+    <dimen name="usb_picture_margin_end">135dp</dimen>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="bt_music_sourcemusic_source_unable">I don\'t know this yet I have to learn it first</string><!--警告：替换时存在字符【n\】差异，替换前：【这个我还不会，我得先学习一下】--><!--警告：替换时存在字符【\'】差异，替换前：【这个我还不会，我得先学习一下】-->
+    <string name="bt_music_sourcemusic_source_play">I\'ll play the music for you</string><!--警告：替换时存在字符【\'】差异，替换前：【即将为您播放歌曲】-->
+    <string name="bt_music_collect_playing_nosupport">Favorites are not currently supported</string>
+    <string name="bt_music_openplaylist_nosupport">Sorry, I can\'t support the playlist function in this source mode</string><!--警告：替换时存在字符【n\】差异，替换前：【对不起，当前媒体源不支持播放列表功能】--><!--警告：替换时存在字符【\'】差异，替换前：【对不起，当前媒体源不支持播放列表功能】-->
+</resources>

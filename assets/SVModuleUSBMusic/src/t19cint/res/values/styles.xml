@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--音乐界面顶部的文字大小-->
+    <style name="MusicTabTextStyle" tools:ignore="ResourceName">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="FirstTextViewItemStyle" tools:ignore="ResourceName">
+        <item name="android:maxWidth">350dp</item>
+        <item name="android:layout_width">350dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:textColor">@color/usb_music_white</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+    <!--列表页右侧进度条-->
+    <style name="list_scrollbars_vertical_style" tools:ignore="ResourceName">
+        <item name="android:scrollbarSize">6dp</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:scrollbarThumbVertical">@drawable/music_list_scrollbars_thumb_shape
+        </item>
+        <item name="android:scrollbarTrackVertical">@drawable/music_list_scrollbars_track_shape
+        </item>
+    </style>
+    <!--弹窗背景-->
+    <style name="dialog_style" parent="android:style/Theme.Dialog" tools:ignore="ResourceName">
+        <!--设置dialog的背景-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--设置Dialog的windowFrame框为无-->
+        <item name="android:windowFrame">@null</item>
+        <!--设置无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--设置窗口内容不覆盖-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--背景是否模糊显示-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+</resources>

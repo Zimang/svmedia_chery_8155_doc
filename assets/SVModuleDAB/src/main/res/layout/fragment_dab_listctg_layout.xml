@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDABList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="16dp"
+        android:paddingEnd="@dimen/dab_list_padding_end"
+        android:paddingStart="@dimen/dab_list_padding_start"
+        android:scrollbarThumbVertical="@color/dab_scrollbar_color"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="vertical">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <!--进入二级列表的布局-->
+    <RelativeLayout
+        android:id="@+id/rlDABSecondList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivDABSecondListBack"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/dab_playlist_back">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tvDABSecondListName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivDABSecondListBack"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="34sp"
+            android:textColor="@color/dab_text_color4">
+
+        </TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDABSecondList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ivDABSecondListBack"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:scrollbarThumbVertical="@color/dab_scrollbar_color"
+            android:scrollbars="vertical">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

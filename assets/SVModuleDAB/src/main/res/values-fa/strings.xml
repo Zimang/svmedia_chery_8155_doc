@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dab_program_name">نام ایستگاه برنامه</string>
+    <string name="dab_service_name">نام برچسب گروه</string>
+
+    <string name="program_type_0">هیچ</string>
+    <string name="program_type_1">اخبار</string>
+    <string name="program_type_2">امور</string>
+    <string name="program_type_3">اطلاعات</string>
+    <string name="program_type_4">ورزش</string>
+    <string name="program_type_5">آموزش</string>
+    <string name="program_type_6">درام</string>
+    <string name="program_type_7">فرهنگ</string>
+    <string name="program_type_8">علوم</string>
+    <string name="program_type_9">متنوع</string>
+    <string name="program_type_10">پاپ م</string>
+    <string name="program_type_11">سنگ م</string>
+    <string name="program_type_12">آسان م</string>
+    <string name="program_type_13">نور م</string>
+    <string name="program_type_14">کلاسیک</string>
+    <string name="program_type_15">دیگر م</string>
+    <string name="program_type_16">آب و هوا</string>
+    <string name="program_type_17">امور مالی</string>
+    <string name="program_type_18">فرزندان</string>
+    <string name="program_type_19">اجتماعی</string>
+    <string name="program_type_20">دین</string>
+    <string name="program_type_21">تلفن در</string>
+    <string name="program_type_22">مسافرت</string>
+    <string name="program_type_23">فراغت</string>
+    <string name="program_type_24">جاز</string>
+    <string name="program_type_25">کشور</string>
+    <string name="program_type_26">ملت م</string>
+    <string name="program_type_27">قدیمی</string>
+    <string name="program_type_28">مردمی</string>
+    <string name="program_type_29">سند</string>
+    <string name="program_type_30">محک زدن</string>
+    <string name="program_type_31">زنگ هشدار!</string>
+
+    <string name="dab_station_list">لیست ایستگاه (%1$d)</string>
+    <string name="dab_epg">EPG</string>
+    <string name="dab_collect_fully">جمع آوری ایستگاه پر است</string>
+    <string name="dab_rt_title">جزئیات برنامه</string>
+    <string name="dab_settings">تنظیمات</string>
+    <string name="dab_settings_sf">ردیابی خدمات</string>
+    <string name="dab_settings_sf_hl">خدمات بعد از لینک سخت</string>
+    <string name="dab_settings_sf_sl">خدمات بعد از لینک نرم</string>
+    <string name="dab_settings_reminder">تنظیمات یادآوری</string>
+    <!--公告设置-->
+    <string name="dab_reminder_alarm">هشدار</string>
+    <string name="dab_reminder_ta">فلش ترافیک جاده</string>
+    <string name="dab_reminder_tf">فلش حمل و نقل</string>
+    <string name="dab_reminder_warning">هشدار / خدمات</string>
+    <string name="dab_reminder_news">فلش خبری</string>
+    <string name="dab_reminder_weather">منطقه آب و هوا فلاش</string>
+    <string name="dab_reminder_event">اعلام رویداد</string>
+    <string name="dab_reminder_special">رویداد ویژه</string>
+    <string name="dab_reminder_program">اطلاعات برنامه</string>
+    <string name="dab_reminder_sport">گزارش ورزشی</string>
+    <string name="dab_reminder_financial">گزارش مالی</string>
+
+    <string name="dab_array_list_all">همه ایستگاه ها</string>
+    <string name="dab_array_list_ensemble">فهرست ایستگاه</string>
+    <string name="dab_array_list_type">فهرست دسته بندی</string>
+    <string name="dab_array_list_collect">جمع آوری لیست</string>
+
+    <string name="dab_no_collect">جمع آوری نشد</string>
+
+    <string name="dab_ann_alarm">هشدار</string>
+    <string name="dab_ann_ta">اعلام ترافیک</string>
+    <string name="dab_ann_other">دیگر</string>
+
+    <string name="epg_arrival_title">یادآوری انتصاب برنامه رادیویی</string>
+    <string name="epg_arrival_listen">هم اکنون گوش کنید</string>
+    <string name="epg_arrival_cancel">لغو(%dS)</string>
+    <string name="epg_arrival_content">%1$s برنامه‌ریزی‌شده شما تا ۱ دقیقه دیگر پخش می‌شود. آیا می‌خواهید اکنون گوش کنید؟</string>
+    <string name="dab_loading">در حال بارگیری ...</string>
+    <string name="dab_playlist_no_list">هیچ ایستگاه تأثیری ندارد</string>
+    <string name="dab_no_signal">بی سیگنال</string>
+    <string name="dab_research">اسکن شکست خورد، لطفا دوباره کلیک کنید</string>
+
+    <string name="dab_ann_title">نوع اطلاعیه</string>
+    <string name="dab_ann_title1">تنظیمات DAB</string>
+    <string name="dab_cancel_collected">لغو شدن مجموعه</string>
+    <string name="dab_epg_tips">یادآوری اضافه شد</string>
+    <string name="dab_cancle_epg_tips">یادآوری رد شد</string>
+    <string name="dab_no_epg">بدون تابع</string>
+</resources>

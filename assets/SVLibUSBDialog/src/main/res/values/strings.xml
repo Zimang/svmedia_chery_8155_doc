@@ -1,0 +1,13 @@
+<resources>
+    <string name="dialog_title">Find the connected device USB</string>
+    <string name="dialog_title1">Find the connected device USB1</string>
+    <string name="dialog_title2">Find the connected device USB2</string>
+    <string name="dialog_tips">Please select to play from the connected device</string>
+    <string name="dialog_type_music">Music</string>
+    <string name="dialog_type_picture">Picture</string>
+    <string name="dialog_type_video">Video</string>
+    <string name="toast_no_video">No Video</string>
+    <string name="toast_no_picture">No Picture</string>
+    <string name="toast_no_music">No Music</string>
+
+</resources>

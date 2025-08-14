@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_card_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:id="@+id/iv_thumb_album"
+            android:layout_width="400dp"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_default_picture">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_album_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_thumb_album"
+            android:layout_marginTop="20dp"
+            android:gravity="start"
+            android:text="@string/album_t22"
+            android:textColor="@color/usb_picture_white"
+            android:alpha="@dimen/font_alpha_4"
+            android:textSize="28sp"
+            android:contentDescription="@string/album_t22">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_count_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_thumb_album"
+            android:layout_toEndOf="@id/tv_album_name"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:text="@string/t22_count"
+            android:textColor="@color/usb_picture_white_alp_50"
+            android:alpha="@dimen/font_alpha_4"
+            android:textSize="28sp">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_card_usb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/rl_card_album"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:id="@+id/iv_thumb_usb"
+            android:layout_width="400dp"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/icon_default_picture"
+            android:scaleType="fitXY">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_usb_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gallery"
+            android:textSize="28sp"
+            android:textColor="@color/usb_picture_white"
+            android:layout_below="@id/iv_thumb_usb"
+            android:gravity="start"
+            android:alpha="@dimen/font_alpha_4"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/gallery">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_count_usb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_thumb_usb"
+            android:layout_toEndOf="@id/tv_usb_name"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:textSize="28sp"
+            android:alpha="@dimen/font_alpha_4"
+            android:textColor="@color/usb_picture_white_alp_50"
+            android:text="@string/t22_count">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

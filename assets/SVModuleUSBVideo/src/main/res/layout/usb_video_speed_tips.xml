@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/roo_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/translucent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:minWidth="720dp">
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/tvSpeedTips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:src="@mipmap/usb_video_warning"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSpeedContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvSpeedTips"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="37dp"
+                android:gravity="center"
+                android:maxEms="32"
+                android:minHeight="45dp"
+                android:text="@string/speed_tips"
+                android:textColor="@color/usbvideo_white"
+                android:textSize="30sp" />
+
+            <Button
+                android:layout_marginTop="37dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tvSpeedContent"
+                android:id="@+id/btnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:background="@drawable/shape_btn_exit_bg"
+                android:maxLines="1"
+                android:minWidth="280dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:singleLine="true"
+                android:text="@string/exit_video_tips"
+                android:textAllCaps="false"
+                android:textColor="@color/txt_video_to_close"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btnToPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@id/v_line"
+            android:background="@drawable/shape_btn_gary_bg"
+            android:maxLines="1"
+            android:minWidth="280dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:singleLine="true"
+            android:text="@string/play_without_prompting"
+            android:textAllCaps="false"
+            android:textColor="@color/txt_video_to_play"
+            android:textSize="30sp" />
+
+        <View
+            android:id="@+id/v_line"
+            android:layout_width="40dp"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

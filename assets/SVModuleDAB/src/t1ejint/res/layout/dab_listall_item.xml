@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlDABItem"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_marginStart="60dp">
+
+
+    <com.desaysv.mediacommonlib.view.AudioWaveView
+        android:id="@+id/tvDABAni"
+        android:layout_width="33dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_centerVertical="true"
+        app:pointer_color="@color/dab_playani_color"
+        app:pointer_num="4"
+        app:pointer_padding="0dp"
+        app:pointer_sing_law_rate="0.2"
+        app:pointer_top_fillet="0"
+        app:pointer_width="3.5dp"
+        app:pointer_type="center"
+        android:visibility="gone">
+
+    </com.desaysv.mediacommonlib.view.AudioWaveView>
+    <TextView
+        android:id="@+id/tvCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_centerVertical="true"
+        android:textSize="26sp"
+        android:textColor="@color/dab_text_color"
+        android:text="1"
+        android:gravity="center">
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/tvProgramStationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_centerVertical="true"
+        android:textSize="38sp"
+        android:textColor="@color/dab_selector_color"
+        android:text="@string/dab_program_name"
+        android:gravity="center">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/ivCollect"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="70dp"
+        android:src="@drawable/dab_img_collect"
+        >
+    </ImageView>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlDABSecondListItem"
+    android:layout_width="405dp"
+    android:layout_height="180dp"
+    android:background="@mipmap/img_folder_bg">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="28dp"
+        android:src="@mipmap/img_dab_secondlist">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tvListCtgName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/ivLogo"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textColor="@color/dab_text_color7">
+
+    </TextView>
+
+</RelativeLayout>

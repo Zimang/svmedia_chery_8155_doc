@@ -1,0 +1,12 @@
+<resources>
+    <string name="string_bt_music">Музыка по Bluetooth</string>
+    <string name="string_bt_setting">Настройки</string>
+    <string name="string_bt_music_collection_list">Список избранного</string>
+    <string name="string_none_collection_notice">Нет избранной Bluetooth-музыки</string>
+    <string name="string_bt_music_playing_notice">Воспроизводится музыка Bluetooth…</string>
+    <string name="string_pay_notice">Оплата</string>
+    <string name="string_collect_failed">Сбой коллекции</string>
+    <string name="string_unknown_song">Неизвестная композиция</string>
+    <string name="string_unknown_artist">Неизвестный исполнитель</string>
+    <string name="string_no_source">Воспроизведение отсутствует</string>
+</resources>

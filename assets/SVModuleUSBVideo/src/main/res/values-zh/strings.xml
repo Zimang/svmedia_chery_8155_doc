@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">视频</string>
+    <string name="usbvideo_unknown">UNKNOW</string>
+    <string name="no_video_show">当前播放文件仅有音频内容</string>
+    <string name="no_error_show">当前播放文件错误</string>
+
+    <string name="tab_usb">视频</string>
+    <string name="tab_usb1">USB1视频</string>
+    <string name="tab_usb2">USB2视频</string>
+
+    <string name="tab_video_mode">视频模式</string>
+    <string name="tab_folder_mode">文件夹模式</string>
+
+    <string name="no_equipment_access">暂无设备接入</string>
+    <string name="no_content_access">设备暂无内容</string>
+    <string name="loading">加载中…</string>
+
+    <string name="double_speed">倍速</string>
+    <string name="anthology">选集</string>
+
+    <string name="speed_tips">为了您的驾驶安全，建议行车中不要播放视频!</string>
+    <string name="play_without_prompting">播放且不再提示</string>
+    <string name="exit_video">退出视频</string>
+    <string name="exit_video_tips">退出</string>
+
+    <string name="novice_guidance_left">单指左边上/下滑动</string>
+    <string name="novice_guidance_adjust_brightness">调节亮度</string>
+    <string name="novice_guidance_content">单指左/右滑动</string>
+    <string name="novice_guidance_adjust_forward_and_backward">快进后退</string>
+    <string name="novice_guidance_right">单指右边上/下滑动</string>
+    <string name="novice_guidance_adjust_adjust_sound">调节声音</string>
+    <string name="novice_guidance_got_it">知道了</string>
+
+    <string name="rv_list_line">我有底线哦</string>
+
+    <string name="media_video_pre_time" translatable="false">&#160;&#160;/&#160;&#160;</string>
+    <string name="media_video_play_time" translatable="false">%1$s&#160;&#160;/&#160;&#160;%2$s</string>
+</resources>

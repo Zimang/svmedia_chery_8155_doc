@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlPlayListItem"
+    android:layout_width="wrap_content"
+    android:layout_height="130dp"
+    android:layout_marginEnd="20dp">
+
+    <TextView
+        android:id="@+id/tvItemNum"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/radio_play_color1"
+        android:textSize="28sp"
+        android:text="01"/>
+
+    <RelativeLayout
+        android:id="@+id/rlItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvFreq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="FM 100"
+            android:textColor="@color/selector_color"
+            android:gravity="center"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tvRadioName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvFreq"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/radio_play_color1"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+    <com.desaysv.mediacommonlib.view.AudioWaveView
+        android:id="@+id/ivItemPlay"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        app:pointer_color="@color/radio_item_play_selected_color"
+        app:pointer_type="center"
+        app:pointer_num="5"
+        app:pointer_padding="0dp"
+        app:pointer_sing_law_rate="0.2"
+        app:pointer_top_fillet="0"
+        app:pointer_width="3.5dp" />
+
+    <ImageView
+        android:id="@+id/ivItemCollect"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/radio_list_collect"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="60dp"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

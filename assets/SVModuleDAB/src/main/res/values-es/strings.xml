@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dab_program_name">Programar nombre de emisora</string>
+    <string name="dab_service_name">Nombre de etiqueta de conjunto</string>
+
+    <string name="program_type_0">Ninguna/o</string>
+    <string name="program_type_1">Noticias</string>
+    <string name="program_type_2">Asuntos</string>
+    <string name="program_type_3">Información</string>
+    <string name="program_type_4">Deportes</string>
+    <string name="program_type_5">Educar</string>
+    <string name="program_type_6">Drama</string>
+    <string name="program_type_7">Cultura</string>
+    <string name="program_type_8">Ciencia</string>
+    <string name="program_type_9">Varios</string>
+    <string name="program_type_10">Música Pop</string>
+    <string name="program_type_11">Música Rock</string>
+    <string name="program_type_12">Música Easy</string>
+    <string name="program_type_13">Música Ligera</string>
+    <string name="program_type_14">Clásico</string>
+    <string name="program_type_15">Otra Música</string>
+    <string name="program_type_16">El tiempo</string>
+    <string name="program_type_17">Finanzas</string>
+    <string name="program_type_18">Niños</string>
+    <string name="program_type_19">Sociedad</string>
+    <string name="program_type_20">Religión</string>
+    <string name="program_type_21">Teléfono</string>
+    <string name="program_type_22">Viajes</string>
+    <string name="program_type_23">Ocio</string>
+    <string name="program_type_24">Jazz</string>
+    <string name="program_type_25">País</string>
+    <string name="program_type_26">Música Nacional</string>
+    <string name="program_type_27">Viejos</string>
+    <string name="program_type_28">Música Folklórica</string>
+    <string name="program_type_29">Documento</string>
+    <string name="program_type_30">TEST</string>
+    <string name="program_type_31">¡Alarma!</string>
+
+    <string name="dab_station_list">Lista de emisoras(%1$d)</string>
+    <string name="dab_epg">EPG</string>
+    <string name="dab_collect_fully">La estación de recogida está llena</string>
+    <string name="dab_rt_title">Detalles del programa</string>
+    <string name="dab_settings">Configuración</string>
+    <string name="dab_settings_sf">Seguimiento de servicio</string>
+    <string name="dab_settings_sf_hl">Enlace duro de seguimiento de servicio</string>
+    <string name="dab_settings_sf_sl">Enlace blando de seguimiento de servicio</string>
+    <string name="dab_settings_reminder">Configuración de recordatorio</string>
+    <!--公告设置-->
+    <string name="dab_reminder_alarm">Alarma</string>
+    <string name="dab_reminder_ta">Flash de tráfico en carretera</string>
+    <string name="dab_reminder_tf">Flash de transporte</string>
+    <string name="dab_reminder_warning">Aviso/Servicio</string>
+    <string name="dab_reminder_news">Noticias Flash</string>
+    <string name="dab_reminder_weather">Flash del tiempo de la zona</string>
+    <string name="dab_reminder_event">Anuncio de eventos</string>
+    <string name="dab_reminder_special">Evento especial</string>
+    <string name="dab_reminder_program">Información del programa</string>
+    <string name="dab_reminder_sport">Informe deportivo</string>
+    <string name="dab_reminder_financial">Informe financista</string>
+
+    <string name="dab_array_list_all">Todas las emisoras</string>
+    <string name="dab_array_list_ensemble">Lista de estaciones</string>
+    <string name="dab_array_list_type">Lista de categorías</string>
+    <string name="dab_array_list_collect">Lista de recogida</string>
+
+    <string name="dab_no_collect">No recolectar</string>
+
+    <string name="dab_ann_alarm">Alarma</string>
+    <string name="dab_ann_ta">Anuncio de tráfico</string>
+    <string name="dab_ann_other">Otros</string>
+
+    <string name="epg_arrival_title">Recordatorio de citas de programas de radio</string>
+    <string name="epg_arrival_listen">Escuchar ahora</string>
+    <string name="epg_arrival_cancel">Cancelar(%dS)</string>
+    <string name="epg_arrival_content">El %1$s que ha reservado empezará a sonar en 1 minuto. ¿Desea escucharlo ahora?</string>
+    <string name="dab_loading">Cargando...</string>
+    <string name="dab_playlist_no_list">Estación sin efecto</string>
+    <string name="dab_no_signal">No hay señal</string>
+    <string name="dab_research">Falla del escaneo, pulse reintentar</string>
+
+    <string name="dab_ann_title">Tipo de anuncio</string>
+    <string name="dab_ann_title1">Configuración DAB</string>
+    <string name="dab_epg_format">%s Mes %s Día</string>
+    <string name="dab_cancel_collected">Colección cancelada</string>
+    <string name="dab_epg_tips">Recordatorio agregado</string>
+    <string name="dab_cancle_epg_tips">Recordatorio cancelado</string>
+    <string name="dab_no_epg">Sin función</string>
+</resources>

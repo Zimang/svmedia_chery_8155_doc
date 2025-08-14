@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/flContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlPop"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="93dp">
+
+        <ImageView
+            android:id="@+id/ivPop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/icon_radio">
+
+        </ImageView>
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@id/ivPop"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/drop">
+
+        </ImageView>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rvMiniPlayer"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="50dp"
+        android:background="@mipmap/mini_bg"
+        android:visibility="gone">
+
+        <com.desaysv.mediacommonlib.view.CircleImageView
+            android:id="@+id/ivMiniAlbum"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="6dp"
+            android:src="@mipmap/icon_radio" />
+
+        <com.desaysv.modulebtmusic.view.MarqueeTextView
+            android:id="@+id/tvMiniTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="6dp"
+            android:layout_toEndOf="@id/ivMiniAlbum"
+            android:textColor="@color/color_mini_play_title"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/mini_mask_bg">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

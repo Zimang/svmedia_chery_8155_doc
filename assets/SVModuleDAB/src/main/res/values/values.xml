@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialog_bg_height">510dp</dimen>
+    <dimen name="dialog_bg_width">722dp</dimen>
+    <dimen name="dab_epg_margin_end">61dp</dimen>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dab_text_color">#DB000000</color>
+    <color name="dab_text_color1">#80000000</color>
+    <color name="dab_text_color2">#DB000000</color>
+    <color name="dab_text_color3">#81000000</color>
+    <color name="dab_text_color4">#DB000000</color>
+    <color name="dab_text_color5">#DB000000</color>
+    <color name="dab_text_color6">#7F000000</color>
+    <color name="dab_text_color7">#FF404C57</color>
+    <color name="dab_shape_color">#80FFFFFF</color>
+    <color name="dab_scrollbar_color">#4DACB5BD</color>
+    <color name="dab_playani_color">#C5AB99</color>
+    <color name="dab_playani_color1">#C5AB99</color>
+    <color name="dab_rt_color">#FF000000</color>
+    <color name="dab_rt_color1">#99000000</color>
+    <color name="dab_rt_color2">#FF000000</color>
+    <color name="dab_dialog_bg_star">#DEE3E8</color>
+    <color name="dab_dialog_bg_end">#DEE3E8</color>
+    <color name="dab_settings_bg_star">#DEE3E8</color>
+    <color name="dab_settings_bg_center">#DEE3E8</color>
+    <color name="dab_settings_bg_end">#DEE3E8</color>
+    <color name="dab_settings_bg_stroke">#00FFFFFF</color>
+    <color name="dab_dialog_bg_star1">#DEE3E8</color>
+    <color name="dab_dialog_bg_end1">#DEE3E8</color>
+    <color name="epg_text_color">#DB000000</color>
+    <color name="epg_text_color1">#FF000000</color>
+    <color name="epg_text_color_disable">#80000000</color>
+    <color name="epg_text_color_playing">#FFC59377</color>
+    <color name="dab_item_play_color">#C5AB99</color>
+    <color name="dab_item_color">#FF000000</color>
+    <color name="dab_loading_bg_color">#5CFFFFFF</color>
+    <color name="dab_loading_text_color">#DB000000</color>
+    <color name="dab_nosignal_bg_color">#000000</color>
+    <color name="dab_nosignal_text_color">#FFFFFFFF</color>
+    <color name="dab_disable_color">#3F000000</color>
+</resources>

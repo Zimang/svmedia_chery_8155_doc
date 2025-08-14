@@ -1,0 +1,10 @@
+<resources>
+    <string name="dialog_title">USB دستگاه متصل را پیدا کنید</string>
+    <string name="dialog_tips">لطفاً برای پخش از دستگاه متصل انتخاب کنید</string>
+    <string name="dialog_type_music">موسیقی</string>
+    <string name="dialog_type_picture">تصویر</string>
+    <string name="dialog_type_video">ویدیو</string>
+    <string name="toast_no_video">هیچ ویدیویی نیست</string>
+    <string name="toast_no_picture">هیچ تصویری نیست</string>
+    <string name="toast_no_music">هیچ موسیقی نیست</string>
+</resources>

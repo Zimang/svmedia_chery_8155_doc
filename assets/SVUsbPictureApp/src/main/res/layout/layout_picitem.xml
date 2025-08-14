@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/picture_list_item_folder_ll"
+        android:layout_width="320dp"
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+        android:background="@mipmap/img_folder_bg">
+        <ImageView
+            android:id="@+id/picture_list_item_folder_iv"
+            android:layout_width="110px"
+            android:layout_height="110px"
+            android:layout_marginStart="28px"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_folder">
+        </ImageView>
+        <LinearLayout
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="28px"
+            android:orientation="vertical">
+        <com.desaysv.usbpicture.view.MarqueeTextView
+            android:id="@+id/picture_list_item_folder_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24px"
+            android:text="name"
+            android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:gravity="center"
+            android:layout_gravity="start"
+            android:alpha="@dimen/font_alpha_1"
+            android:textColor="@color/folder_name_color">
+        </com.desaysv.usbpicture.view.MarqueeTextView>
+
+        <com.desaysv.usbpicture.view.MarqueeTextView
+            android:id="@+id/picture_list_item_folder_tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24px"
+            android:text="111"
+            android:gravity="center"
+            android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_gravity="start"
+            android:alpha="@dimen/font_alpha_0"
+            android:textColor="@color/folder_name_color">
+        </com.desaysv.usbpicture.view.MarqueeTextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/picture_list_item_file_iv"
+        android:layout_width="320dp"
+        android:layout_height="180dp"
+        android:src="@mipmap/icon_default_picture"
+        android:scaleType="fitXY"
+        >
+    </ImageView>
+
+</RelativeLayout>

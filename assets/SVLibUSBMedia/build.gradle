@@ -1,0 +1,35 @@
+apply plugin: 'com.android.library'
+apply from: "${rootDir}/common/config/android_tools_config.gradle"
+apply from: "${rootDir}/SVMedia/International/build_type_config.gradle"
+android {
+    compileSdkVersion COMPILE_SDK_VERSION
+    buildToolsVersion BUILD_TOOL_VERSION
+
+    defaultConfig {
+        minSdkVersion MIN_SDK_VERSION
+        targetSdkVersion TARGET_SDK_VERSION
+        versionCode 1
+        versionName "1.0"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'org.jetbrains:annotations:13.0'
+    implementation 'androidx.annotation:annotation:1.1.0'
+    compileOnly files("${rootDir}/common/Lib/framework.jar")
+    api files("${rootDir}/common/Lib/vdbus.jar")
+    implementation project(':SVMedia:International:SVLibUSBBase')
+    implementation project(':SVMedia:International:SVLibUSBStatus')
+    implementation project(':SVMedia:International:SVLibLyrics')
+    //已经在SVLibUSBBase包含了，不用API，避免依赖规则混乱
+    compileOnly project(':SVMedia:International:SVLibMediaCommon')
+    //已经在SVLibMediaCommon包含了
+    compileOnly project(':SVMedia:International:SVSDKAudio')
+}

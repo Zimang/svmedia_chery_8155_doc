@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file("${rootDir}/common/Lib/lib_t22_int/LionPointSdk.aar"))

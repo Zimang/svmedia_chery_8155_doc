@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlRDSTADialog"
+    android:layout_width="800dp"
+    android:layout_height="600dp"
+    android:layout_gravity="center"
+    android:background="@mipmap/dialog_bg">
+
+
+        <TextView
+            android:id="@+id/tvConditionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:text="Radio Quality Condition"
+            android:textColor="@color/radio_play_color2"
+            android:textSize="30sp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_below="@id/tvConditionTitle"
+            android:layout_marginTop="20dp"
+            android:text="FM Quality Condition"
+            android:textColor="@color/radio_play_color2"
+            android:textSize="30sp">
+
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/rlFMConditionLevel"
+            android:layout_below="@id/tvConditionTitle"
+            android:layout_marginTop="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvLevelDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Down"
+                    android:textColor="@color/radio_play_color2"
+                    android:textSize="20sp"
+                    android:layout_marginStart="40dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvLevelValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LevelValue"
+                    android:textColor="@color/radio_play_color2"
+                    android:textSize="20sp"
+                    android:layout_centerHorizontal="true">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvLevelUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Up"
+                    android:textColor="@color/radio_play_color2"
+                    android:textSize="20sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="40dp">
+
+                </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlFMConditionNsn"
+            android:layout_below="@id/rlFMConditionLevel"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvNsnDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Down"
+                    android:textColor="@color/radio_play_color2"
+                    android:textSize="20sp"
+                    android:layout_marginStart="40dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvNsnValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NsnValue"
+                    android:textColor="@color/radio_play_color2"
+                    android:textSize="20sp"
+                    android:layout_centerHorizontal="true">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvNsnUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Up"
+                    android:textColor="@color/radio_play_color2"
+                    android:textSize="20sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="40dp">
+
+                </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlFMConditionWam"
+            android:layout_below="@id/rlFMConditionNsn"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvWamDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Down"
+                    android:textColor="@color/radio_play_color2"
+                    android:textSize="20sp"
+                    android:layout_marginStart="40dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvWamValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WamValue"
+                    android:textColor="@color/radio_play_color2"
+                    android:textSize="20sp"
+                    android:layout_centerHorizontal="true">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvWamUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Up"
+                    android:textColor="@color/radio_play_color2"
+                    android:textSize="20sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="40dp">
+
+                </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlFMConditionOffset"
+            android:layout_below="@id/rlFMConditionWam"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvOffsetDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Down"
+                    android:textColor="@color/radio_play_color2"
+                    android:textSize="20sp"
+                    android:layout_marginStart="40dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvOffsetValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OffsetValue"
+                    android:textColor="@color/radio_play_color2"
+                    android:textSize="20sp"
+                    android:layout_centerHorizontal="true">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvOffsetUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Up"
+                    android:textColor="@color/radio_play_color2"
+                    android:textSize="20sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="40dp">
+
+                </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlFMConditionBdw"
+            android:layout_below="@id/rlFMConditionOffset"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvBdwDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Down"
+                    android:textColor="@color/radio_play_color2"
+                    android:textSize="20sp"
+                    android:layout_marginStart="40dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvBdwValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BdwValue"
+                    android:textColor="@color/radio_play_color2"
+                    android:textSize="20sp"
+                    android:layout_centerHorizontal="true">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvBdwUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Up"
+                    android:textColor="@color/radio_play_color2"
+                    android:textSize="20sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="40dp">
+
+                </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlFMConditionMod"
+            android:layout_below="@id/rlFMConditionBdw"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvModDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Down"
+                    android:textColor="@color/radio_play_color2"
+                    android:textSize="20sp"
+                    android:layout_marginStart="40dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvModValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ModValue"
+                    android:textColor="@color/radio_play_color2"
+                    android:textSize="20sp"
+                    android:layout_centerHorizontal="true">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvModUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Up"
+                    android:textColor="@color/radio_play_color2"
+                    android:textSize="20sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="40dp">
+
+                </TextView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvDABCondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_below="@id/rlFMConditionBdw"
+            android:layout_marginTop="20dp"
+            android:text="DAB Quality Condition"
+            android:textColor="@color/radio_play_color2"
+            android:textSize="30sp">
+
+        </TextView>
+        <RelativeLayout
+            android:id="@+id/rlDABCondition"
+            android:layout_below="@id/tvDABCondition"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvDABDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Down"
+                    android:textColor="@color/radio_play_color2"
+                    android:textSize="20sp"
+                    android:layout_marginStart="40dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvDABValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DABValue"
+                    android:textColor="@color/radio_play_color2"
+                    android:textSize="20sp"
+                    android:layout_centerHorizontal="true">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvDABUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Up"
+                    android:textColor="@color/radio_play_color2"
+                    android:textSize="20sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="40dp">
+
+                </TextView>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tvSetCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:autoSizeMaxTextSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Cancel"
+            android:textColor="@color/radio_play_color2"
+            android:textSize="40sp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tvSetConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:autoSizeMaxTextSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Confirm"
+            android:textColor="@color/radio_play_color2"
+            android:textSize="40sp">
+
+        </TextView>
+
+</RelativeLayout>

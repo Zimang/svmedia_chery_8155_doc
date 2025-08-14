@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dab_indicator_w">128dp</dimen>
+    <dimen name="dab_indicator_h">66dp</dimen>
+</resources>

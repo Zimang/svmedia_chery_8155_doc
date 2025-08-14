@@ -1,0 +1,52 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.desaysv.moduleusbvideo">
+
+
+    <application>
+        <service
+            android:name=".mediasession.USBVideoMediaBrowserService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="androidx.media.MediaBrowserServiceCompat" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".ui.VideoMainActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <!-- 让启动app入口Activity申明为由接收隐式的Intent来启动，这样就不会显示图标了 -->
+                <!--                <data android:host=".ui.MainActivity" android:scheme="com.desaysv.video" />-->
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".ui.USB1VideoPlayActivity"
+            android:configChanges="uiMode"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".ui.USB2VideoPlayActivity"
+            android:configChanges="uiMode"
+            android:launchMode="singleTop" />
+
+        <!--USB插拔静态监听 用于激活U盘扫描-->
+        <receiver
+            android:name="com.desaysv.libdevicestatus.receiver.USBDeviceReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,93 @@
+<resources>
+    <string name="dab_collect_fully">收藏已满</string>
+    <string name="dab_no_signal">无信号</string>
+    <string name="dab_epg_format">%s月%s日</string>
+    <string name="dab_no_epg">没有节目</string>
+
+    <string name="dab_program_name">节目名称</string>
+    <string name="dab_service_name">集合名称</string>
+
+    <string name="program_type_0">None</string>
+    <string name="program_type_1">News</string>
+    <string name="program_type_2">Affairs</string>
+    <string name="program_type_3">Info</string>
+    <string name="program_type_4">Sport</string>
+    <string name="program_type_5">Educate</string>
+    <string name="program_type_6">Drama</string>
+    <string name="program_type_7">Culture</string>
+    <string name="program_type_8">Science</string>
+    <string name="program_type_9">Varied</string>
+    <string name="program_type_10">Pop M</string>
+    <string name="program_type_11">Rock M</string>
+    <string name="program_type_12">Easy M</string>
+    <string name="program_type_13">Light M</string>
+    <string name="program_type_14">Classics</string>
+    <string name="program_type_15">Other M</string>
+    <string name="program_type_16">Weather</string>
+    <string name="program_type_17">Finance</string>
+    <string name="program_type_18">Children</string>
+    <string name="program_type_19">Social</string>
+    <string name="program_type_20">Religion</string>
+    <string name="program_type_21">Phone In</string>
+    <string name="program_type_22">Travel</string>
+    <string name="program_type_23">Leisure</string>
+    <string name="program_type_24">Jazz</string>
+    <string name="program_type_25">Country</string>
+    <string name="program_type_26">Nation M</string>
+    <string name="program_type_27">Oldies</string>
+    <string name="program_type_28">Folk M</string>
+    <string name="program_type_29">Document</string>
+    <string name="program_type_30">TEST</string>
+    <string name="program_type_31">Alarm!</string>
+
+    <string name="dab_station_list">电台列表 (%1$d)</string>
+    <string name="dab_epg" translatable="false">EPG</string>
+
+    <string name="dab_rt_title">节目详情</string>
+    <string name="dab_settings">设置</string>
+    <string name="dab_settings_sf">服务跟踪</string>
+    <string name="dab_settings_sf_hl">Service Following Hard Link</string>
+    <string name="dab_settings_sf_sl">Service Following Soft Link</string>
+    <string name="dab_settings_reminder">提醒设置</string>
+    <!--公告设置-->
+    <string name="dab_reminder_alarm">Alarm</string>
+    <string name="dab_reminder_ta">Road Traffic Flash</string>
+    <string name="dab_reminder_tf">Transport Flash</string>
+    <string name="dab_reminder_warning">Warning/Service</string>
+    <string name="dab_reminder_news">News Flash</string>
+    <string name="dab_reminder_weather">Area weather flash</string>
+    <string name="dab_reminder_event">Event Announcement</string>
+    <string name="dab_reminder_special">Special Event</string>
+    <string name="dab_reminder_program">Program information</string>
+    <string name="dab_reminder_sport">Sport report</string>
+    <string name="dab_reminder_financial">Financial report</string>
+
+    <string name="dab_array_list_all">全部电台</string>
+    <string name="dab_array_list_ensemble">电台列表</string>
+    <string name="dab_array_list_type">分类列表</string>
+    <string name="dab_array_list_collect">收藏列表</string>
+
+    <string name="dab_no_collect">暂无收藏</string>
+
+    <string name="dab_ann_alarm">Alarm</string>
+    <string name="dab_ann_ta">Traffic Announcement</string>
+    <string name="dab_ann_other">Other</string>
+
+    <string name="epg_arrival_title">收音机界面预约提醒</string>
+    <string name="epg_arrival_listen">立即收听</string>
+    <string name="epg_arrival_cancel">取消(%1$dS)</string>
+    <string name="epg_arrival_content">您预约的%1$s 1分钟后即将开始播放，是否立即收听？</string>
+    <string name="dab_loading">搜索中…</string>
+    <string name="dab_playlist_no_list">暂无有效电台</string>
+
+
+    <string name="dab_ann_title">公告类型</string>
+    <string name="dab_ann_title1">DAB设置</string>
+    <string name="dab_research">扫描失败，请点击重试</string>
+
+    <string name="dab_cancel_collected">已取消收藏</string>
+    <string name="dab_epg_tips">已添加提醒</string>
+    <string name="dab_cancle_epg_tips">已取消提醒</string>
+    <string name="dab_signal_weak">DAB信号弱</string>
+
+</resources>

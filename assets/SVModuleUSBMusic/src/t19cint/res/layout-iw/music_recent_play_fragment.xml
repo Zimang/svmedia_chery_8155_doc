@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ResourceName">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_music_list"
+        style="@style/list_scrollbars_vertical_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="16dp" />
+
+    <!--列表底部的遮罩背景-->
+    <ImageView
+        android:id="@+id/iv_list_bottom_bg"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/img_list_mask"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_empty_list"
+        android:layout_width="500dp"
+        android:layout_height="360dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/img_default_resource_light" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="@string/usb_music_recent_list_empty"
+            android:textColor="@color/usb_music_local_list_empty_text_color"
+            android:textSize="28sp" />
+    </RelativeLayout>
+</RelativeLayout>

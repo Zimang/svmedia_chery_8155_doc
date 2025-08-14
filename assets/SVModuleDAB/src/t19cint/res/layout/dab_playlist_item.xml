@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlDABPlayItem"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_marginStart="36dp"
+    android:layout_marginEnd="14dp"
+    android:background="@drawable/dab_play_item_bg">
+
+
+    <ImageView
+        android:id="@+id/ivDABPlayListLike"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/icon_dab_like_n">
+
+    </ImageView>
+
+    <com.desaysv.mediacommonlib.view.AudioWaveView
+        android:id="@+id/tvDABPlayListAni"
+        android:layout_width="33dp"
+        android:layout_height="22dp"
+        android:layout_centerVertical="true"
+        app:pointer_color="@color/dab_playani_color"
+        app:pointer_num="5"
+        app:pointer_padding="0dp"
+        app:pointer_sing_law_rate="0.2"
+        app:pointer_top_fillet="0"
+        app:pointer_width="3.5dp"
+        app:pointer_type="center"
+        android:visibility="visible">
+
+    </com.desaysv.mediacommonlib.view.AudioWaveView>
+
+    <TextView
+        android:id="@+id/tvDABPlayListNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/dab_text_color1"
+        android:textSize="28sp"
+        android:text="01">
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/tvDABPlayListName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/dab_selector_color"
+        android:textSize="30sp"
+        android:text="BBC Radio 2">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvDABPlayListEbleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="68dp"
+        android:textColor="@color/dab_text_color1"
+        android:textSize="24sp"
+        android:text="BBC National DAB">
+
+    </TextView>
+
+</RelativeLayout>

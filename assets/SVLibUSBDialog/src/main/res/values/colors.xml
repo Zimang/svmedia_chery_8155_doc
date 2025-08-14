@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="dialog_title">#FF000000</color>
+    <color name="dialog_title_disable">#FF000000</color>
+    <color name="dialog_content_bg_start">#FFDEE3E8</color>
+    <color name="dialog_content_bg_end">#FFDEE3E8</color>
+    <color name="dialog_title2">#FFFFFF</color>
+    <color name="dialog_subtitle2">#A8AAB4</color>
+    <color name="dialog_content_bg_start2">#828393</color>
+    <color name="dialog_content_bg_end2">#737483</color>
+    <color name="dialog_content_bg_end3">#252949</color>
+    <color name="dialog_content_bg_end4">#252949</color>
+</resources>

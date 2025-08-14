@@ -1,0 +1,73 @@
+apply plugin: 'com.android.library'
+apply from: "${rootDir}/common/config/android_tools_config.gradle"
+apply from: "${rootDir}/common/config/app_dependences_vdbus_configs.gradle"
+apply from: "${rootDir}/common/config/app_dependences_vdbus_extra_configs.gradle"
+apply from: "${rootDir}/SVMedia/International/build_type_config.gradle"
+//加载多渠道配置
+apply from: "${rootDir}/SVMedia/International/product_flavors_config.gradle"
+
+android {
+
+    compileSdk COMPILE_SDK_VERSION
+    buildToolsVersion BUILD_TOOL_VERSION
+
+//    resourcePrefix("usb_video_")
+
+    defaultConfig {
+        minSdkVersion MIN_SDK_VERSION
+        targetSdkVersion TARGET_SDK_VERSION
+        versionCode 1
+        versionName "1.0"
+    }
+
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            File configFile = file("${rootDir}/common/Lib/android-car.jar")
+            String absolutePath = configFile.absolutePath.replaceAll("\\\\", "\\\\\\\\")
+            String Path = '-Xbootclasspath/p:' + absolutePath
+            options.compilerArgs.add(Path)
+            File configFile2 = file("${rootDir}/common/Lib/framework.jar")
+            String absolutePath2 = configFile2.absolutePath.replaceAll("\\\\", "\\\\\\\\")
+            String Path2 = '-Xbootclasspath/p:' + absolutePath2
+            options.compilerArgs.add(Path2)
+        }
+    }
+}
+
+dependencies {
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    // 拼音
+    implementation files('libs/pinyin4j-2.5.0.jar')
+    implementation "com.android.support:support-v4:30.0.0"
+
+    compileOnly files("${rootDir}/common/Lib/framework.jar")
+    compileOnly files("${rootDir}/common/Lib/android-car.jar")
+
+    implementation project(':SVMedia:International:SVLibUSBMedia')
+    //媒体数据扫描
+    implementation project(':SVMedia:International:SVLibMediaStore')
+    //已经在SVLibMediaStore包含了
+    compileOnly project(':SVMedia:International:SVLibUSBBase')
+    //已经在SVLibUSBBase中包含了
+    compileOnly project(':SVMedia:International:SVLibUSBStatus')
+    //已经在SVLibUSBBase中包含了
+    compileOnly project(':SVMedia:International:SVLibMediaCommon')
+    //已经在SVLibMediaCommon中包含了
+    compileOnly project(':SVMedia:International:SVSDKAudio')
+    //已经在SVLibMediaCommon中包含了
+    compileOnly 'androidx.recyclerview:recyclerview:1.0.0'
+    //已经在SVLibMediaCommon中包含了
+    compileOnly 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'androidx.annotation:annotation:1.2.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    //已经在SVSDKLocalMedia包含了
+    api files("${rootDir}/common/Lib/gson-2.3.1.jar")
+
+    // 数据埋点
+    implementation 'androidx.core:core-ktx:1.6.0'
+    // 埋点信息
+    apply from: "${rootDir}/common/config/app_dependences_tracking_configs.gradle"
+    api project(':SVMedia:International:SVModuleUSBVideoTranslateRes')
+    implementation files("${rootDir}/common/Lib/svcommonutils.jar")
+}

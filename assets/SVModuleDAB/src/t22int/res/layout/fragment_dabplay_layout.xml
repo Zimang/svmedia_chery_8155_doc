@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layoutDirection="ltr">
+        <!--播放界面左上角返回按钮-->
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="14dp"
+            android:scaleType="center"
+            android:src="@drawable/dab_hide_play" />
+
+    </RelativeLayout>
+
+
+    <!--这个是播放内容界面，这个后面覆盖一层设置的布局-->
+    <RelativeLayout
+        android:id="@+id/rlDABPlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="110dp">
+
+
+    <ImageView
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="52dp"
+        android:layout_width="466dp"
+        android:layout_height="429dp"
+        android:src="@mipmap/dab_img_cover_shadow">
+
+    </ImageView>
+
+        <!--t19c专用，这里只是为了编译-->
+        <ImageView
+            android:id="@+id/ivSingArm"
+            android:layout_width="140dp"
+            android:layout_height="260dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="90dp"
+            android:visibility="gone">
+        </ImageView>
+
+    <!--DAB播放界面的圆框-->
+    <RelativeLayout
+        android:id="@+id/rlDABPlayCover"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="52dp"
+        android:background="@mipmap/img_dabplay_cover">
+
+        <com.desaysv.mediacommonlib.view.CircleImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="310dp"
+            android:layout_height="310dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/img_play_dab">
+
+        </com.desaysv.mediacommonlib.view.CircleImageView>
+
+        <ImageView
+            android:id="@+id/ivDABPause"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/dab_pause">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvProgramStationName"
+        android:layout_width="wrap_content"
+        android:layout_height="78dp"
+        android:layout_toEndOf="@id/rlDABPlayCover"
+        android:layout_marginTop="104dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginEnd="738dp"
+        android:textSize="50sp"
+        android:maxLines="1"
+        android:gravity="center_vertical"
+        android:textColor="@color/dab_text_color"
+        android:text="@string/dab_program_name">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvProgramType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvProgramStationName"
+        android:layout_toEndOf="@id/rlDABPlayCover"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="81dp"
+        android:textSize="32sp"
+        android:gravity="center_vertical"
+        android:textColor="@color/dab_text_color1"
+        android:text="@string/program_type_1">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvEnsembleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/rlDABPlayCover"
+        android:layout_below="@id/tvProgramType"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="81dp"
+        android:textSize="32sp"
+        android:gravity="center_vertical"
+        android:textColor="@color/dab_text_color1"
+        android:text="@string/dab_service_name">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/ivDABPlayerbg"
+        android:layout_width="1154dp"
+        android:layout_height="256dp"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/dab_img_bg_player_n">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/ivDABPre"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tvEnsembleLabel"
+        android:layout_toEndOf="@id/rlDABPlayCover"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="11dp"
+        android:scaleType="center"
+        android:src="@drawable/dab_pre">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/ivDABNext"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tvEnsembleLabel"
+        android:layout_toEndOf="@id/ivDABPre"
+        android:layout_marginTop="11dp"
+        android:scaleType="center"
+        android:src="@drawable/dab_next">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/ivDABList"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tvEnsembleLabel"
+        android:layout_toEndOf="@id/ivDABNext"
+        android:layout_marginTop="11dp"
+        android:scaleType="center"
+        android:src="@drawable/dab_list">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/ivDABLike"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tvEnsembleLabel"
+        android:layout_toEndOf="@id/ivDABList"
+        android:layout_marginTop="11dp"
+        android:scaleType="center"
+        android:src="@drawable/dab_like">
+
+    </ImageView>
+
+
+
+    <ImageView
+        android:id="@+id/ivDABSettings"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/ivDABPre"
+        android:layout_toEndOf="@id/rlDABPlayCover"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="11dp"
+        android:scaleType="center"
+        android:src="@drawable/dab_set">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/ivDABRT"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/ivDABPre"
+        android:layout_toEndOf="@id/ivDABSettings"
+        android:layout_marginTop="11dp"
+        android:scaleType="center"
+        android:src="@drawable/dab_rt">
+
+    </ImageView>
+
+        <ImageView
+            android:id="@+id/ivDABSearch"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/ivDABPre"
+            android:layout_marginTop="11dp"
+            android:layout_toEndOf="@id/ivDABRT"
+            android:scaleType="center"
+            android:src="@drawable/dab_btn_search">
+
+        </ImageView>
+
+
+        <!--右侧布局-->
+    <RelativeLayout
+        android:layout_width="738dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/tvDABListCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="40dp"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:text="@string/dab_station_list"
+            android:textColor="@color/dab_text_color2">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvEPG"
+            android:layout_width="108dp"
+            android:layout_height="42dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dab_epg_margin_end"
+            android:layout_marginTop="40dp"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:text="@string/dab_epg"
+            android:textColor="@color/dab_text_color3"
+            android:background="@drawable/dab_epg">
+
+        </TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rlDABPlayList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="40dp"
+            android:scrollbarThumbVertical="@color/dab_scrollbar_color"
+            android:scrollbars="vertical">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <TextView
+            android:id="@+id/tvEmptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+            android:text="@string/dab_playlist_no_list"
+            android:textSize="34sp"
+            android:textColor="@color/dab_text_color3"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/rvDABPlaySearching"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="40dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ivDABLoading"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="122dp"
+                android:src="@mipmap/icon_loading" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="122dp"
+                android:gravity="center"
+                android:text="@string/dab_loading"
+                android:textColor="@color/dab_text_color3"
+                android:textSize="26sp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    </RelativeLayout>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="110dp"
+        layout="@layout/fragment_dabsettings">
+
+    </include>
+
+    <RelativeLayout
+        android:id="@+id/rlDABNoSignal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/dab_nosignal_bg"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:text="@string/dab_no_signal"
+            android:textColor="@color/dab_nosignal_text_color">
+        </TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

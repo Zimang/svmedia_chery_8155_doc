@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlDABItem"
+    android:layout_width="728dp"
+    android:layout_height="@dimen/dab_item_h"
+    android:layout_marginStart="@dimen/dab_item_margins"
+    android:layout_marginTop="@dimen/dab_item_margint"
+    android:layoutDirection="ltr">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.desaysv.mediacommonlib.view.RadiusImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="@dimen/dab_item_h"
+            android:layout_height="@dimen/dab_item_h"
+            android:src="@mipmap/icon_logo"
+            app:radius="@dimen/dab_item_radius">
+        </com.desaysv.mediacommonlib.view.RadiusImageView>
+
+        <TextView
+            android:id="@+id/tvProgramStationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dab_item_margins1"
+            android:layout_toEndOf="@id/ivLogo"
+            android:gravity="center"
+            android:text="@string/dab_program_name"
+            android:textColor="@color/dab_item_color"
+            android:textSize="30sp">
+
+        </TextView>
+        <ImageView
+            android:id="@+id/ivItemPlayBg"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="26dp"
+            android:src="@drawable/item_play_bg">
+
+        </ImageView>
+        <com.desaysv.mediacommonlib.view.AudioWaveView
+            android:id="@+id/ivItemPlay"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="58dp"
+            app:pointer_color="@color/dab_playani_color"
+            app:pointer_num="5"
+            app:pointer_type="center"
+            app:pointer_padding="0dp"
+            app:pointer_sing_law_rate="0.2"
+            app:pointer_top_fillet="0"
+            app:pointer_width="3.5dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+</RelativeLayout>

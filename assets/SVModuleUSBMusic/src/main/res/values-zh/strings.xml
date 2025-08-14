@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="ResourceName" translatable="false">ModuleUSBMusic</string>
+    <string name="usbmusic_unknown">UNKNOW</string>
+    <string name="usb_music_music_error_text">当前音乐文件 \"\" 格式错误</string>
+    <string name="usb_music_tab_local_text">本机音乐</string>
+    <string name="usb_music_tab_usb_text">USB音乐</string>
+    <string name="usb_music_tab_recent_text">最近播放</string>
+    <string name="usb_music_play_list_number_text">播放列表</string>
+    <string name="usb_music_no_lyrics">暂无歌词</string>
+    <string name="usb_music_unknown_song_name">未知曲目</string>
+    <string name="usb_music_unknown_album">未知专辑</string>
+    <string name="usb_music_unknown_singer">未知歌手</string>
+    <string name="usb_music_usb_check">没有检测到USB设备，请检查设备</string>
+    <string name="usb_music_local_list_empty">你还没有下载过音乐</string>
+    <string name="usb_music_recent_list_empty">你还没有播放过音乐</string>
+    <string name="usb_music_all_music_text">全部音乐</string>
+    <string name="usb_music_folder_text">文件夹</string>
+    <string name="usb_music_folder_item_size_text">首歌曲</string>
+    <string name="usb_music_all_select">全选</string>
+    <string name="usb_music_select_cancel">取消</string>
+    <string name="usb_music_select_download">下载</string>
+    <string name="usb_music_select_delete">删除</string>
+    <string name="usb_music_delete_dialog_text">确认删除该歌曲？</string>'
+    <string name="usb_music_play_list_text">播放列表&#160;</string>
+    <string name="usb_music_download_limit_confirm">我知道了</string>
+    <string name="usb_music_download_limit_content">本地音乐总大小限制2G，请先删除本地音乐其它歌曲</string>
+    <string name="usb_music_without_content">内容为空</string>
+
+</resources>

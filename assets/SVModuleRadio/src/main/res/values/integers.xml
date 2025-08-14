@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="radio_item_star">0</integer>
+    <integer name="radio_list_margin_top">20</integer>
+
+    <integer name="radio_singarm_0">0</integer>
+
+    <integer name="radio_singarm_1">5</integer>
+    <integer name="radio_mask_alpha">1</integer>
+</resources>

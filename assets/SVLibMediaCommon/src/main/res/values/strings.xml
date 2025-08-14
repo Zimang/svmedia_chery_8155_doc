@@ -1,0 +1,4 @@
+<resources>
+    <string name="usb_storage">USB storage</string>
+    <string name="external_storage">External storage</string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="600dp"
+    android:layout_height="124dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginBottom="6dp"
+    tools:ignore="ResourceName">
+
+    <ImageButton
+        android:id="@+id/ib_click"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:src="@drawable/music_play_fragment_list_item_selector" />
+
+    <TextView
+        android:id="@+id/tv_position"
+        android:layout_width="60dp"
+        android:layout_height="38dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/usb_music_play_list_number_text_color"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/tv_song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="24dp"
+        android:gravity="bottom"
+        android:maxWidth="406dp"
+        android:singleLine="true"
+        android:textColor="@drawable/music_play_list_item_song_text_color_selector"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@+id/tv_song_name"
+        android:layout_alignStart="@+id/tv_song_name"
+        android:layout_marginTop="2dp"
+        android:gravity="center_vertical"
+        android:maxWidth="406dp"
+        android:singleLine="true"
+        android:textColor="@color/usb_music_play_list_item_artist_text_color"
+        android:textSize="24sp" />
+
+    <com.desaysv.mediacommonlib.view.AudioWaveView
+        android:id="@+id/av_play_state"
+        android:layout_width="33dp"
+        android:layout_height="22dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="34dp"
+        app:pointer_color="@color/usb_music_playing_wave_view_color"
+        app:pointer_num="5"
+        app:pointer_padding="0dp"
+        app:pointer_sing_law_rate="0.2"
+        app:pointer_top_fillet="1"
+        app:pointer_type="center"
+        app:pointer_width="3.5dp" />
+</RelativeLayout>

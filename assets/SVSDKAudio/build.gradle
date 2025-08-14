@@ -1,0 +1,61 @@
+apply plugin: 'com.android.library'
+apply from: "${rootDir}/common/config/android_tools_config.gradle"
+apply from: "${rootDir}/SVMedia/International/build_type_config.gradle"
+android {
+    compileSdkVersion COMPILE_SDK_VERSION
+    buildToolsVersion BUILD_TOOL_VERSION
+
+
+    defaultConfig {
+        minSdkVersion MIN_SDK_VERSION
+        targetSdkVersion TARGET_SDK_VERSION
+        versionCode 1
+        versionName "1.1"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+
+    sourceSets {
+        main {
+            aidl.srcDirs = ['src/main/aidl']
+            jniLibs.srcDirs = ["libs"]
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            File configFile = file("${rootDir}/common/Lib/android-car.jar")
+            String absolutePath = configFile.absolutePath.replaceAll("\\\\", "\\\\\\\\")
+            String Path = '-Xbootclasspath/p:' + absolutePath
+            options.compilerArgs.add(Path)
+            File configFile2 = file("${rootDir}/common/Lib/framework.jar")
+            String absolutePath2 = configFile2.absolutePath.replaceAll("\\\\", "\\\\\\\\")
+            String Path2 = '-Xbootclasspath/p:' + absolutePath2
+            options.compilerArgs.add(Path2)
+        }
+    }
+}
+
+dependencies {
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    compileOnly files("${rootDir}/common/Lib/framework.jar")
+    compileOnly files("${rootDir}/common/Lib/android-car.jar")
+}
+
+
+//生成jar包
+task makeJar(type: Copy) {
+    delete 'build/outputs/LibAudioFocusSDK.jar'
+    from('build/intermediates/packaged-classes/release/') //jar文件来源
+    into('build/libs/') //生成路径
+    include('classes.jar')
+    rename('classes.jar', 'LibAudioFocusSDK.jar') //命名为network.jar
+}
+
+makeJar.dependsOn(build)

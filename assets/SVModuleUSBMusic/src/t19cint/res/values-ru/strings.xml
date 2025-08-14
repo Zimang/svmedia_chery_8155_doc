@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="ResourceName">ModuleUSBMusic</string>
+    <string name="usbmusic_unknown">НЕИЗВЕСТНО</string>
+    <string name="usb_music_music_error_text">Текущий музыкальный файл \"\" Ошибка формата</string>
+    <string name="usb_music_tab_local_text">Сохраненная музыка</string>
+    <string name="usb_music_tab_usb_text">USB музыка</string>
+    <string name="usb_music_tab_recent_text">Недавние</string>
+    <string name="usb_music_no_lyrics">Нет доступных текстов песен</string>
+    <string name="usb_music_unknown_song_name">Неизвестная композиция</string>
+    <string name="usb_music_unknown_album">Неизвестный альбом</string>
+    <string name="usb_music_usb_check">Устройство USB не подключено</string>
+    <string name="usb_music_local_list_empty">Вы еще не скачивали музыку</string>
+    <string name="usb_music_recent_list_empty">Вы еще не воспроизводили музыку</string>
+    <string name="usb_music_all_music_text">Вся музыка</string>
+    <string name="usb_music_folder_text">Папки</string>
+    <string name="usb_music_folder_item_size_text">Лучшие композиции</string>
+    <string name="usb_music_all_select">Выбрать все</string>
+    <string name="usb_music_select_cancel">Отмена</string>
+    <string name="usb_music_select_download">Загрузка</string>
+    <string name="usb_music_select_delete">Удалить</string>
+    <string name="usb_music_delete_dialog_text">Подтвердить удаление этой композиции?</string>
+    <string name="usb_music_play_list_text">Список воспроизведения&#160;</string>
+    <string name="usb_music_download_limit_confirm">я вижу</string>
+    <string name="usb_music_download_limit_content">Общий размер местной музыки ограничен 2G, сначала удалите другие песни из местной музыки</string>
+</resources>

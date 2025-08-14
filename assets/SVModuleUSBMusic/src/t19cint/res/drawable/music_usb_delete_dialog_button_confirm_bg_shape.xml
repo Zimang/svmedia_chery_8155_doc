@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ResourceName">
+    <corners
+        android:bottomLeftRadius="35dp"
+        android:bottomRightRadius="35dp"
+        android:topLeftRadius="35dp"
+        android:topRightRadius="35dp" />
+    <gradient
+        android:centerColor="@color/usb_music_delete_dialog_button_confirm_center_bg_color"
+        android:endColor="@color/usb_music_delete_dialog_button_confirm_end_bg_color"
+        android:startColor="@color/usb_music_delete_dialog_button_confirm_start_bg_color" />
+</shape>

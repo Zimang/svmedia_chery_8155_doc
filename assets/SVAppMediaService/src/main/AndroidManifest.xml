@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.desaysv.mediaservice"
+    android:sharedUserId="android.uid.system">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name="com.desaysv.mediaservice.application.SVMediaServiceApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <service
+            android:name="com.desaysv.mediaservice.service.AIDLAudioFocusService"
+            android:enabled="true"
+            android:exported="true" />
+
+
+        <service
+            android:name="com.desaysv.mediaservice.service.BootResumeSourceService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.desaysv.action.resumeSource" />
+                <action android:name="com.desaysv.action.defaultSource" />
+            </intent-filter>
+            <meta-data
+                android:name="key_car_audio_type"
+                android:value="radio;bt_music;usb0;usb1;usb0_video;usb1_video" />
+        </service>
+
+        <service
+            android:name="com.desaysv.mediaservice.service.ModeChangeSourceService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.desaysv.action.changeSource" />
+            </intent-filter>
+            <meta-data
+                android:name="key_car_audio_type"
+                android:value="bt_music;usb0;usb1;fm;am;" />
+        </service>
+
+
+    </application>
+
+</manifest>

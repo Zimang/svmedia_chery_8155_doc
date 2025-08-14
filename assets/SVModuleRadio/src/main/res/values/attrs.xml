@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <declare-styleable name="CursorView" tools:ignore="ResourceName">
+        <!--刻度的朝向-->
+        <attr name="android:orientation"/>
+        <!--大刻度的频点值文本大小-->
+        <attr name="android:textSize" format="dimension"/>
+        <!--大刻度的频点值文本颜色-->
+        <attr name="android:textColor" format="color"/>
+        <!--刻度的宽度-->
+        <attr name="itemWidth" format="dimension"/>
+        <!--刻度线段的绘制宽度-->
+        <attr name="lineWidth" format="dimension"/>
+        <!--小刻度线段的绘制高度-->
+        <attr name="lineHeight" format="dimension"/>
+        <!--大刻度与小刻度线段的绘制高度差值-->
+        <attr name="linePlusGap" format="dimension"/>
+        <!--小刻度的颜色-->
+        <attr name="lineColor" format="color"/>
+        <!--大刻度的颜色-->
+        <attr name="linePlusColor" format="color"/>
+        <!--一个大刻度切分几格-->
+        <attr name="divisions" format="integer"/>
+    </declare-styleable>
+
+</resources>

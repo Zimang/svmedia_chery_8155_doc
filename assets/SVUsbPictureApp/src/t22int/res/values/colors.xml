@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="t22_color_type_selected">#FF000000</color>
+    <color name="t22_color_type_unselected">#99000000</color>
+    <color name="t22_color_folder">#404C57</color>
+    <color name="t22_color_title">#000000</color>
+    <color name="t22_color_tips">#81FFFFFF</color>
+    <color name="tab_color_selected">#FF000000</color>
+    <color name="tab_color_unselected">#7F000000</color>
+    <color name="mask_start">#FFAAB7C2</color>
+    <color name="mask_end">#00A7B4BF</color>
+    <color name="name_fullscreen0">#000000</color>
+    <color name="name_fullscreen1">#FFFFFF</color>
+
+    <color name="fullscreen_bg">#51000000</color>
+    <color name="t22_thumb_color">#FFACB5BD</color>
+    <color name="usb_name_color">#000000</color>
+</resources>

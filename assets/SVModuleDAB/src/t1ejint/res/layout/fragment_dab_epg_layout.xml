@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/epg_bg">
+
+    <RelativeLayout
+        android:id="@+id/rlEPGTop"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/epg_top_bg">
+
+
+        <ImageView
+            android:id="@+id/ivDABEPGBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="70dp"
+            android:src="@mipmap/dab_playlist_back">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tvDABEPGName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="24dp"
+            android:layout_toEndOf="@id/ivDABEPGBack"
+            android:text="@string/dab_epg"
+            android:textColor="@color/dab_text_color4"
+            android:textSize="40sp">
+
+        </TextView>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvEPGDate"
+        android:layout_width="424dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlEPGTop">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvEPGDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlEPGTop"
+        android:layout_toEndOf="@id/rvEPGDate"
+        android:scrollbarThumbVertical="@color/dab_scrollbar_color"
+        android:scrollbars="vertical">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tvEmptyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:textSize="28sp"
+        android:textColor="@color/dab_text_color1"
+        android:text="@string/dab_no_epg"
+        android:gravity="center"
+        android:visibility="gone">
+    </TextView>
+</RelativeLayout>

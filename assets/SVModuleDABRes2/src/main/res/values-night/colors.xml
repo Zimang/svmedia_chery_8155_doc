@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dab_playani_color">#C5AB99</color>
+    <color name="dab_dialog_bg_star">#25262C</color>
+    <color name="dab_dialog_bg_end">#1B1C23</color>
+    <color name="dab_settings_bg_center">#3A3B46</color>
+    <color name="dab_settings_bg_star">#3A3B46</color>
+    <color name="dab_settings_bg_end">#3A3B46</color>
+    <color name="dab_settings_bg_stroke">#3A3B46</color>
+    <color name="dab_nosignal_bg_color">#27252b</color>
+    <color name="dab_loading_bg_color">#000000</color>
+    <color name="dab_item_play_color">#C5AB98</color>
+    <color name="epg_text_color_playing">#FFC59378</color>
+</resources>

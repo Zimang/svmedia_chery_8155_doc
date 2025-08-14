@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Видео</string>
+    <string name="usbvideo_unknown">НЕИЗВЕСТНО</string>
+    <string name="no_video_show">Текущий воспроизводимый файл имеет только звуковое содержимое</string>
+    <string name="no_error_show">Текущий файл воспроизведения неверен</string>
+    <string name="tab_usb">Видео</string>
+    <string name="tab_usb1">USB1 видео</string>
+    <string name="tab_usb2">USB2 видео</string>
+    <string name="tab_video_mode">Режим видео</string>
+    <string name="tab_folder_mode">Режим папок</string>
+    <string name="no_equipment_access">Доступ к устройству не предоставляется</string>
+    <string name="no_content_access">На устройстве отсутствует содержимое</string>
+    <string name="loading">Загрузка…</string>
+    <string name="double_speed">Скорость</string>
+    <string name="anthology">сбор вместе</string>
+    <string name="speed_tips">В целях безопасности вождения рекомендуется не воспроизводить видео во время движения!</string>
+    <string name="play_without_prompting">Воспроизведение без подсказок</string>
+    <string name="exit_video">Выход из видео</string>
+    <string name="novice_guidance_left">Проведите одним пальцем влево вверх/вниз</string>
+    <string name="novice_guidance_adjust_brightness">Настройка яркости</string>
+    <string name="novice_guidance_content">Проведите одним пальцем влево и вправо</string>
+    <string name="novice_guidance_adjust_forward_and_backward">Перемотка вперед и назад</string>
+    <string name="novice_guidance_right">Проведите одним пальцем вправо вверх/вниз</string>
+    <string name="novice_guidance_adjust_adjust_sound">Настройка звука</string>
+    <string name="novice_guidance_got_it">Понятно</string>
+    <string name="rv_list_line">Есть нижняя линия</string>
+
+    <string name="media_video_pre_time">&#160;&#160;/&#160;&#160;</string>
+    <string name="media_video_play_time">%1$s&#160;&#160;/&#160;&#160;%2$s</string>
+</resources>

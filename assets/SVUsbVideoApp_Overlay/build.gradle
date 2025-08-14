@@ -1,0 +1,47 @@
+plugins {
+    id 'com.android.application'
+}
+apply from: "${rootDir}/common/config/android_tools_config.gradle"
+apply from: "${rootDir}/SVMedia/International/build_type_config.gradle"
+//加载多渠道配置
+apply from: "${rootDir}/SVMedia/International/product_video_overlay_flavors_config.gradle"
+
+android {
+    compileSdkVersion COMPILE_SDK_VERSION
+    buildToolsVersion BUILD_TOOL_VERSION
+
+    defaultConfig {
+        minSdkVersion MIN_SDK_VERSION
+        targetSdkVersion TARGET_SDK_VERSION
+        versionCode 1
+        versionName "1.0"
+    }
+
+    productFlavors {
+        chery_8155_int_t22_overlay1 { applicationId "com.desaysv.svusbvideoapp.overlay1" }
+        chery_8155_int_t22_overlay2 { applicationId "com.desaysv.svusbvideoapp.overlay2" }
+        chery_8155_int_t22_overlay3 { applicationId "com.desaysv.svusbvideoapp.overlay3" }
+
+        chery_8155_int_t19c_overlay1 { applicationId "com.desaysv.svusbvideoapp.overlay1" }
+        chery_8155_int_t19c_overlay2 { applicationId "com.desaysv.svusbvideoapp.overlay2" }
+        chery_8155_int_t19c_overlay3 { applicationId "com.desaysv.svusbvideoapp.overlay3" }
+
+        chery_8155_int_t18fl3_overlay1 { applicationId "com.desaysv.svusbvideoapp.overlay1" }
+        chery_8155_int_t18fl3_overlay2 { applicationId "com.desaysv.svusbvideoapp.overlay2" }
+        chery_8155_int_t18fl3_overlay3 { applicationId "com.desaysv.svusbvideoapp.overlay3" }
+    }
+}
+
+dependencies {
+    chery_8155_int_t22_overlay1Implementation project(path: ':SVMedia:International:SVUsbVideoAppRes1')
+    chery_8155_int_t22_overlay2Implementation project(path: ':SVMedia:International:SVUsbVideoAppRes2')
+    chery_8155_int_t22_overlay3Implementation project(path: ':SVMedia:International:SVUsbVideoAppRes3')
+
+    chery_8155_int_t19c_overlay1Implementation project(path: ':SVMedia:International:SVUsbVideoAppRes1')
+    chery_8155_int_t19c_overlay2Implementation project(path: ':SVMedia:International:SVUsbVideoAppRes2')
+    chery_8155_int_t19c_overlay3Implementation project(path: ':SVMedia:International:SVUsbVideoAppRes3')
+
+    chery_8155_int_t18fl3_overlay1Implementation project(path: ':SVMedia:International:SVUsbVideoAppRes1')
+    chery_8155_int_t18fl3_overlay2Implementation project(path: ':SVMedia:International:SVUsbVideoAppRes2')
+    chery_8155_int_t18fl3_overlay3Implementation project(path: ':SVMedia:International:SVUsbVideoAppRes3')
+}

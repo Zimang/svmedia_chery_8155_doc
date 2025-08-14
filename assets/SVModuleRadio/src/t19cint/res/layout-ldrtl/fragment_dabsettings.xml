@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlDABSettings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:id="@+id/rlDABSettingsTop"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:id="@+id/ivDABSettingsBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="60dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_dab_settings_back_auto">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="120dp"
+            android:layout_centerVertical="true"
+            android:text="@string/dab_settings"
+            android:textColor="@color/dab_rt_color"
+            android:textSize="30sp">
+
+        </TextView>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/slDABSettings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlDABSettingsTop"
+        android:scrollbarThumbVertical="@color/dab_scrollbar_color"
+        android:scrollbars="vertical"
+        android:layout_marginEnd="16dp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--SF的布局-->
+    <TextView
+        android:id="@+id/tvDABSF"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="480dp"
+        android:layout_marginTop="14dp"
+        android:textSize="28sp"
+        android:textColor="@color/dab_text_color3"
+        android:text="@string/dab_settings_sf">
+
+    </TextView>
+    <RelativeLayout
+        android:id="@+id/rlDABSFBg"
+        android:layout_width="960dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/tvDABSF"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="480dp"
+        android:background="@drawable/dab_ann_setting_bg">
+
+        <RelativeLayout
+            android:id="@+id/rlDABSF"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="40dp"
+                android:layout_alignParentEnd="true"
+                android:textSize="34sp"
+                android:textColor="@color/dab_text_color5"
+                android:text="@string/dab_settings_sf">
+
+            </TextView>
+
+            <com.sy.swbt.SettingSwitchView
+                android:id="@+id/shDABSF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="40dp"
+                android:scaleX="-1"
+                >
+            </com.sy.swbt.SettingSwitchView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlDABSFSL"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/rlDABSF"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:textSize="34sp"
+                android:textColor="@color/dab_text_color5"
+                android:text="@string/dab_settings_sf_sl">
+
+            </TextView>
+
+            <com.sy.swbt.SettingSwitchView
+                android:id="@+id/shDABSFSL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleX="-1"
+                android:layout_marginStart="40dp">
+            </com.sy.swbt.SettingSwitchView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--公告设置的布局-->
+    <TextView
+        android:id="@+id/tvDABReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/rlDABSFBg"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="480dp"
+        android:textSize="28sp"
+        android:textColor="@color/dab_text_color3"
+        android:text="@string/dab_settings_reminder">
+
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/rlDABReminderBg"
+        android:layout_width="960dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDABReminder"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="480dp"
+        android:background="@drawable/dab_ann_setting_bg">
+
+        <RelativeLayout
+            android:id="@+id/rlDABAlarm"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:textSize="34sp"
+                android:textColor="@color/dab_text_color5"
+                android:text="@string/dab_reminder_alarm">
+
+            </TextView>
+
+            <com.sy.swbt.SettingSwitchView
+                android:id="@+id/shDABAlarm"
+                android:scaleX="-1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="40dp"
+                >
+            </com.sy.swbt.SettingSwitchView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlDABRTF"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/rlDABAlarm">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:textSize="34sp"
+                android:textColor="@color/dab_text_color5"
+                android:text="@string/dab_reminder_ta">
+
+            </TextView>
+
+            <com.sy.swbt.SettingSwitchView
+                android:id="@+id/shDABRTF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="-1"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="40dp">
+            </com.sy.swbt.SettingSwitchView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlDABTF"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/rlDABRTF">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:textSize="34sp"
+                android:textColor="@color/dab_text_color5"
+                android:text="@string/dab_reminder_tf">
+
+            </TextView>
+
+            <com.sy.swbt.SettingSwitchView
+                android:id="@+id/shDABTF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleX="-1"
+                android:layout_marginStart="40dp">
+            </com.sy.swbt.SettingSwitchView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlDABWarning"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/rlDABTF">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:textSize="34sp"
+                android:textColor="@color/dab_text_color5"
+                android:text="@string/dab_reminder_warning">
+
+            </TextView>
+
+            <com.sy.swbt.SettingSwitchView
+                android:id="@+id/shDABWarning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleX="-1"
+                android:layout_marginStart="40dp">
+            </com.sy.swbt.SettingSwitchView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlDABNews"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/rlDABWarning">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:textSize="34sp"
+                android:textColor="@color/dab_text_color5"
+                android:text="@string/dab_reminder_news">
+
+            </TextView>
+
+            <com.sy.swbt.SettingSwitchView
+                android:id="@+id/shDABNews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleX="-1"
+                android:layout_marginStart="40dp">
+            </com.sy.swbt.SettingSwitchView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlDABWeather"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/rlDABNews">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:textSize="34sp"
+                android:textColor="@color/dab_text_color5"
+                android:text="@string/dab_reminder_weather">
+
+            </TextView>
+
+            <com.sy.swbt.SettingSwitchView
+                android:id="@+id/shDABWeather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleX="-1"
+                android:layout_marginStart="40dp">
+            </com.sy.swbt.SettingSwitchView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlDABEvent"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/rlDABWeather">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:textSize="34sp"
+                android:textColor="@color/dab_text_color5"
+                android:text="@string/dab_reminder_event">
+
+            </TextView>
+
+            <com.sy.swbt.SettingSwitchView
+                android:id="@+id/shDABEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="-1"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="40dp">
+            </com.sy.swbt.SettingSwitchView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlDABSpecial"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/rlDABEvent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:textSize="34sp"
+                android:textColor="@color/dab_text_color5"
+                android:text="@string/dab_reminder_special">
+
+            </TextView>
+
+            <com.sy.swbt.SettingSwitchView
+                android:id="@+id/shDABSpecial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleX="-1"
+                android:layout_marginStart="40dp">
+            </com.sy.swbt.SettingSwitchView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlDABProgram"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/rlDABSpecial">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:textSize="34sp"
+                android:textColor="@color/dab_text_color5"
+                android:text="@string/dab_reminder_program">
+
+            </TextView>
+
+            <com.sy.swbt.SettingSwitchView
+                android:id="@+id/shDABProgram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleX="-1"
+                android:layout_marginStart="40dp">
+            </com.sy.swbt.SettingSwitchView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlDABSport"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/rlDABProgram">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:textSize="34sp"
+                android:textColor="@color/dab_text_color5"
+                android:text="@string/dab_reminder_sport">
+
+            </TextView>
+
+            <com.sy.swbt.SettingSwitchView
+                android:id="@+id/shDABSport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleX="-1"
+                android:layout_marginStart="40dp">
+            </com.sy.swbt.SettingSwitchView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlDABFinance"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/rlDABSport">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:textSize="34sp"
+                android:textColor="@color/dab_text_color5"
+                android:text="@string/dab_reminder_financial">
+
+            </TextView>
+
+            <com.sy.swbt.SettingSwitchView
+                android:id="@+id/shDABFinance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleX="-1"
+                android:layout_marginStart="40dp">
+            </com.sy.swbt.SettingSwitchView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
+
+</ScrollView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlDABSettingsTop"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/dab_settings_mask_top">
+    </ImageView>
+
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:src="@mipmap/dab_settings_mask_foot">-->
+<!--    </ImageView>-->
+</RelativeLayout>

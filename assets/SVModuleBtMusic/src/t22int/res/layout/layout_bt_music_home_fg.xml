@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_bt_music_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_music_state_card"
+            android:layout_width="720dp"
+            android:layout_height="420dp"
+            android:background="@mipmap/img_bg_card_720_380_n">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="40dp">
+
+                <TextView
+                    android:id="@+id/tv_card1_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:fontFamily="Source Han Sans SC"
+                    android:maxWidth="300dp"
+                    android:maxLines="1"
+                    android:text="@string/string_bt_music"
+                    android:textColor="@color/color_card_title"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/tv_bt_music_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="45dp"
+                    android:ellipsize="end"
+                    android:fontFamily="Source Han Sans SC"
+                    android:gravity="end"
+                    android:maxWidth="300dp"
+                    android:maxLines="1"
+                    android:textColor="@color/color_card_music_title"
+                    android:textSize="26sp"
+                    android:visibility="gone" />
+
+                <com.desaysv.mediacommonlib.view.AudioWaveView
+                    android:id="@+id/av_music_play_state_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    app:pointer_color="@color/color_bt_music_playing_wave_view"
+                    app:pointer_num="4"
+                    app:pointer_padding="0dp"
+                    app:pointer_sing_law_rate="0.2"
+                    app:pointer_top_fillet="0"
+                    app:pointer_type="bottom"
+                    app:pointer_width="3.5dp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_bt_music_icon_bg"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="108dp"
+                android:src="@drawable/drawable_round_icon_bg" />
+
+            <ImageView
+                android:id="@+id/iv_bt_music_icon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="108dp"
+                android:src="@mipmap/icon_music_bluetooth_n" />
+
+            <RelativeLayout
+                android:id="@+id/rl_bt_music_btn"
+                android:layout_width="288dp"
+                android:layout_height="72dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="298dp"
+                android:background="@drawable/drawable_bt_setting_button_bg">
+
+                <TextView
+                    android:id="@+id/tv_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:ellipsize="end"
+                    android:fontFamily="Source Han Sans SC"
+                    android:maxWidth="240dp"
+                    android:maxLines="1"
+                    android:text="@string/string_bt_setting"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_card_setting"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_music_collection_card"
+            android:layout_width="720dp"
+            android:layout_height="420dp"
+            android:layout_marginStart="80dp"
+            android:background="@mipmap/img_bg_card_720_380_n"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_card2_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="Source Han Sans SC"
+                    android:maxWidth="400dp"
+                    android:maxLines="1"
+                    android:text="@string/string_bt_music_collection_list"
+                    android:textColor="@color/color_card_title"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/iv_collection_play_icon"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="25dp"
+                    android:background="@drawable/drawable_btn_collection_card_play_bg"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_collection_list"
+                android:layout_width="660dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginBottom="30dp"
+                android:fadeScrollbars="true"
+                android:scrollbarStyle="outsideInset"
+                android:scrollbarThumbVertical="@drawable/drawable_scrollbar"
+                android:scrollbars="vertical"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_collection_list_mask"
+                android:layout_width="640dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="330dp"
+                android:background="@mipmap/img_mask_songlist_bluetooth"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_music_collection_icon_bg"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="108dp"
+                android:src="@drawable/drawable_round_icon_bg" />
+
+            <ImageView
+                android:id="@+id/iv_music_collection_icon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="108dp"
+                android:src="@mipmap/icon_music_replay_d" />
+
+            <TextView
+                android:id="@+id/tv_no_collection_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="315dp"
+                android:layout_marginEnd="40dp"
+                android:fontFamily="Source Han Sans SC"
+                android:gravity="center"
+                android:text="@string/string_none_collection_notice"
+                android:textColor="@color/color_card_none_collection_notice"
+                android:textSize="28sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

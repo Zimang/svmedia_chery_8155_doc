@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true">
+
+    <!--刻度尺短的那根线-->
+    <com.desaysv.moduleradio.view.DividingItemView
+        android:id="@+id/ivDividingShort"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:tag="short" />
+    <!--刻度尺长的那根线-->
+    <com.desaysv.moduleradio.view.DividingItemView
+        android:id="@+id/ivDividingLong"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:tag="long" />
+    <!--虚假的刻度尺，用来占位-->
+    <com.desaysv.moduleradio.view.DividingItemView
+        android:id="@+id/ivDividingVirtual"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:tag="virtual" />
+
+</RelativeLayout>

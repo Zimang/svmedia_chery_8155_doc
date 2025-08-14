@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ResourceName">
+
+    <ImageButton
+        android:id="@+id/ib_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" />
+
+    <ImageButton
+        android:layout_width="722dp"
+        android:layout_height="370dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/music_usb_delete_dialog_bg_shape" />
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="602dp"
+        android:layout_height="226dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="195dp"
+        android:gravity="center"
+        android:text="@string/usb_music_delete_dialog_text"
+        android:textColor="@color/usb_music_delete_dialog_text_color"
+        android:textSize="34sp" />
+
+    <Button
+        android:id="@+id/bt_confirm"
+        android:layout_width="288dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/tv_delete"
+        android:layout_marginStart="642dp"
+        android:background="@drawable/music_usb_delete_dialog_button_confirm_bg_shape"
+        android:gravity="center"
+        android:text="@string/usb_music_select_delete"
+        android:textColor="@color/usb_music_delete_dialog_button_confirm_text_color"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/bt_cancel"
+        android:layout_width="288dp"
+        android:layout_height="72dp"
+        android:layout_alignTop="@+id/bt_confirm"
+        android:layout_marginStart="60dp"
+        android:layout_toEndOf="@+id/bt_confirm"
+        android:background="@drawable/music_usb_delete_dialog_button_cancel_bg_shape"
+        android:gravity="center"
+        android:text="@string/usb_music_select_cancel"
+        android:textColor="@color/usb_music_delete_dialog_button_cancel_text_color"
+        android:textSize="30sp" />
+</RelativeLayout>

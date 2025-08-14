@@ -1,0 +1,10 @@
+<resources>
+    <string name="dialog_title">تم العثور على جهاز متصل بـ USB</string>
+    <string name="dialog_tips">الرجاء تحديد لتشغيل المحتوى من الجهاز المتصل</string>
+    <string name="dialog_type_music">موسيقى</string>
+    <string name="dialog_type_picture">صورة</string>
+    <string name="dialog_type_video">فيديو</string>
+    <string name="toast_no_video">لا يوجد فيديو </string>
+    <string name="toast_no_picture">لا توجد صورة</string>
+    <string name="toast_no_music">لا توجد موسيقى </string>
+</resources>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    因为PHEV主题没有这个cover_lighting效果，所以此处设置为透明-->
+<color xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#00FFFFFF" />

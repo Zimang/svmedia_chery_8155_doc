@@ -1,0 +1,85 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--VR tts id-->
+    <!--好的，为你打开音乐。-->
+    <string name="media_music_openmusicapp_open" translatable="false" tools:ignore="ResourceName">Ok I\'ll turn on music for you.</string>
+    <!--音乐已在前台-->
+    <string name="media_music_openmusicapp_opened" translatable="false" tools:ignore="ResourceName">The music has been turned on.</string>
+    <!--即将为您播放歌曲-->
+    <string name="media_music_openmusic_source_play" translatable="false" tools:ignore="ResourceName">I\'ll play the music for you.</string>
+    <!--当前媒体源无歌曲-->
+    <string name="media_music_openmusic_source_empty" translatable="false" tools:ignore="ResourceName">Sorry, I don\'t see any music I can play.</string>
+    <!--当前没有在播放媒体源歌曲，媒体源歌曲可播放-->
+    <string name="media_music_localmusic_source_play" translatable="false" tools:ignore="ResourceName">Ok I\'ll play it for you right away</string>
+    <!--当前媒体源不可用或无媒体源-->
+    <string name="media_music_sourcemusic_source_unable" translatable="false" tools:ignore="ResourceName">Currently unavailable</string>
+    <!--当前没有在播放媒体源歌曲，媒体源歌曲可播放-->
+    <string name="media_music_sourcemusic_source_play" translatable="false" tools:ignore="ResourceName">Ok, the song is about to play</string>
+    <!--当前没有在播放歌曲-->
+    <string name="media_music_collect_noplaying" translatable="false" tools:ignore="ResourceName">No media is playing.</string>
+    <!--有在播放的歌曲，但当前媒体源不支持收藏功能-->
+    <string name="media_music_collect_playing_nosupport" translatable="false" tools:ignore="ResourceName">Favorites are not currently supported</string>
+    <!--当前播放的歌曲已经收藏-->
+    <string name="media_music_collect_playing_collected" translatable="false" tools:ignore="ResourceName">This is already on your favorites.</string>
+    <!--收藏列表已满，请清理后再试-->
+    <string name="media_music_collect_overrange" translatable="false" tools:ignore="ResourceName">Favorite list is full. Please clean it and try later.</string>
+    <!--当前播放的歌曲未收藏，且可以收藏-->
+    <string name="media_music_collect_playing_collect" translatable="false" tools:ignore="ResourceName">Alright, adding this to favorites.</string>
+    <!--当前媒体源不支持收藏功能-->
+    <string name="media_music_uncollect_source_nosupport" translatable="false" tools:ignore="ResourceName">This media source does not support favorites.</string>
+    <!--当前没有在播放歌曲-->
+    <string name="media_music_uncollect_playing_noplaying" translatable="false" tools:ignore="ResourceName">There is no music playing right now.</string>
+    <!--当前播放歌曲没有收藏-->
+    <string name="media_music_uncollect_playing_uncollected" translatable="false" tools:ignore="ResourceName">It\'s not on your favorites.</string>
+    <!--当前播放歌曲已经收藏-->
+    <string name="media_music_uncollect_playing_collected" translatable="false" tools:ignore="ResourceName">Sure, I\'ll remove it from favorites.</string>
+    <!--没有收藏歌曲，且没有可播放歌曲-->
+    <string name="media_music_placollect_empty" translatable="false" tools:ignore="ResourceName">I don\'t see any music I can play.</string>
+    <!--没有收藏歌曲，但有其他可播放歌曲-->
+    <string name="media_music_placollect_collectempty" translatable="false" tools:ignore="ResourceName">You haven\'t added any favourites yet. Here\'s something I recommend.</string>
+    <!--有离线的收藏歌曲-->
+    <string name="media_music_placollect_play" translatable="false" tools:ignore="ResourceName">Sure, here are your offline favourites.</string>
+    <!--没有上一首-->
+    <string name="media_music_previous_firstone" translatable="false" tools:ignore="ResourceName">First one now.</string>
+    <!--没有下一首-->
+    <string name="media_music_next_lastone" translatable="false" tools:ignore="ResourceName">Last one now.</string>
+    <!--无音乐可播放-->
+    <string name="media_music_continueplaying_empty" translatable="false" tools:ignore="ResourceName">Sorry, I don\'t see any music I can play.</string>
+    <!--当前媒体源支持单曲循环且当前不是该模式-->
+    <string name="media_music_playmode_single" translatable="false" tools:ignore="ResourceName">Ok, switch to single loop.</string>
+    <!--当前已经是单曲循环-->
+    <string name="media_music_playmode_single_already" translatable="false" tools:ignore="ResourceName">This is already the single loop.</string>
+    <!--当前媒体源支持随机播放且当前不是该模式-->
+    <string name="media_music_playmode_random" translatable="false" tools:ignore="ResourceName">Ok, switch to random play.</string>
+    <!--当前已经是随机播放-->
+    <string name="media_music_playmode_random_already" translatable="false" tools:ignore="ResourceName">This is already the random play mode.</string>
+    <!--当前媒体源支持循环播放且当前不是该模式-->
+    <string name="media_music_playmode_list" translatable="false" tools:ignore="ResourceName">Ok, switch to list cycle.</string>
+    <!--当前已经是循环播放-->
+    <string name="media_music_playmode_list_already" translatable="false" tools:ignore="ResourceName">This is already the list cycle play mode</string>
+    <!--当前正在播放歌曲-->
+    <string name="media_music_replay_playing" translatable="false" tools:ignore="ResourceName">OK, replaying the music for you now.</string>
+    <!--当前没有播放音乐-->
+    <string name="media_music_replay_noplaying" translatable="false" tools:ignore="ResourceName">There is no music playing right now.</string>
+    <!--没有可用媒体源-->
+    <string name="media_music_openplaylist_nosource" translatable="false" tools:ignore="ResourceName">I don\'t have a media source to connect to.</string>
+    <!--当前媒体源不支持此功能-->
+    <string name="media_music_openplaylist_nosupport" translatable="false" tools:ignore="ResourceName">Sorry, I can\'t support the playlist function in this source mode.</string>
+    <!--当前媒体源支持此功能，已打开播放列表-->
+    <string name="media_music_openplaylist_opened" translatable="false" tools:ignore="ResourceName">The playlist has already turned on.</string>
+    <!--当前媒体源支持此功能，未打开播放列表-->
+    <string name="media_music_openplaylist_open" translatable="false" tools:ignore="ResourceName">Okay, here\'s the playlist.</string>
+    <!--没有可用媒体源-->
+    <string name="media_music_closeplaylist_nosource" translatable="false" tools:ignore="ResourceName">I don\'t have a media source to connect to.</string>
+    <!--当前媒体源支持此功能，已关闭播放列表-->
+    <string name="media_music_closeplaylist_closed" translatable="false" tools:ignore="ResourceName">The playlist has already turned off.</string>
+    <!--当前媒体源支持此功能，未关闭播放列表-->
+    <string name="media_music_closeplaylist_close" translatable="false" tools:ignore="ResourceName">Closed the playlist for you.</string>
+    <!--离线媒体源里没有这个歌手的歌_有其他歌曲可以播放-->
+    <string name="media_music_playsinger_playother" translatable="false" tools:ignore="ResourceName">I couldn\'t find this player. I\'ll play you something else instead.</string>
+    <!--离线媒体源里没有这首歌_没有其他音乐可以播放-->
+    <string name="media_music_playsinger_empty" translatable="false" tools:ignore="ResourceName">I don\'t see any music I can play.</string>
+    <!--离线媒体源里没有这首歌_有其他歌曲可以播放-->
+    <string name="media_music_playsong_playother" translatable="false" tools:ignore="ResourceName">I couldn\'t find that song. I\'ll play you something else instead.</string>
+    <!--离线媒体源里没有这首歌_没有其他音乐可以播放-->
+    <string name="media_music_playsong_empty" translatable="false" tools:ignore="ResourceName">I don\'t see any music I can play.</string>
+</resources>

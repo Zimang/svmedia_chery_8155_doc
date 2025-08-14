@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/drawable_btn_back_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="locale">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="284dp">
+
+            <ImageView
+                android:id="@+id/iv_progress_bar_bg"
+                android:layout_width="1154dp"
+                android:layout_height="256dp"
+                android:src="@mipmap/img_bg_player_n" />
+
+            <FrameLayout
+                android:id="@+id/fl_progress_and_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layoutDirection="ltr">
+
+                <TextView
+                    android:id="@+id/tv_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="163dp"
+                    android:text="00:00"
+                    android:textColor="@color/color_play_progress_duration"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="831dp"
+                    android:layout_marginTop="163dp"
+                    android:text="00:00"
+                    android:textColor="@color/color_play_progress_duration"
+                    android:textSize="20sp" />
+            </FrameLayout>
+
+            <com.desaysv.modulebtmusic.view.MyProgressBar
+                android:id="@+id/progress_bar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="832dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="197dp"
+                android:max="1000"
+                android:progress="0"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="466dp"
+            android:layout_height="429dp"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="52dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/img_shadow" />
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/drawable_cover_lighting" />
+
+            <com.desaysv.mediacommonlib.view.CircleImageView
+                android:id="@+id/iv_album_cover_art"
+                android:layout_width="315dp"
+                android:layout_height="315dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:src="@mipmap/img_cover_player_bluetooth" />
+
+            <ImageView
+                android:id="@+id/iv_play_or_pause"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/drawable_btn_play_bg" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="586dp"
+            android:layout_marginTop="112dp"
+            android:orientation="vertical">
+
+            <com.desaysv.modulebtmusic.view.MarqueeTextView
+                android:id="@+id/tv_music_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="Source Han Sans SC"
+                android:maxWidth="500dp"
+                android:maxLines="1"
+                android:text="@string/string_unknown_song"
+                android:textColor="@color/color_music_title"
+                android:textSize="40sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_artist_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/bt_icon"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_music_cp_6" />
+
+                <com.desaysv.modulebtmusic.view.MarqueeTextView
+                    android:id="@+id/tv_music_artist_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/bt_icon"
+                    android:fontFamily="Source Han Sans SC"
+                    android:maxWidth="450dp"
+                    android:maxLines="1"
+                    android:text="@string/string_unknown_artist"
+                    android:textColor="@color/color_music_artist_name"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="561dp"
+            android:layout_marginTop="262dp"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_previous"
+                android:layout_width="100dp"
+                android:layout_height="142dp"
+                android:background="@drawable/drawable_btn_previous_bg" />
+
+            <ImageView
+                android:id="@+id/iv_next"
+                android:layout_width="100dp"
+                android:layout_height="142dp"
+                android:background="@drawable/drawable_btn_next_bg" />
+
+            <ImageView
+                android:id="@+id/iv_like"
+                android:layout_width="100dp"
+                android:layout_height="142dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="640dp"
+            android:layout_height="390dp"
+            android:layout_marginStart="1220dp"
+            android:layout_marginTop="100dp">
+
+            <TextView
+                android:id="@+id/tv_music_play_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/string_bt_music_playing_notice"
+                android:textColor="@color/color_music_play_notice"
+                android:textSize="28sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

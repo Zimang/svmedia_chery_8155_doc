@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/pop_740x500">
+
+
+    <TextView
+        android:layout_width="680dp"
+        android:layout_height="310dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:text="@string/delete_tips"
+        android:textColor="@color/name_color"
+        android:textSize="32sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_delete_confirm"
+        android:layout_width="240dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="394dp"
+        android:background="@mipmap/btn_blue"
+        android:text="@string/delete_confirm"
+        android:textColor="@color/name_color"
+        android:textSize="30sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_delete_cancel"
+        android:layout_width="240dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:layout_marginStart="390dp"
+        android:layout_marginTop="394dp"
+        android:background="@mipmap/btn_white"
+        android:text="@string/description_close"
+        android:textColor="@color/name_color"
+        android:textSize="30sp">
+
+    </TextView>
+    </RelativeLayout>
+</RelativeLayout>

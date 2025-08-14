@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="pop_item_bg0">#00ffffff</color>
+    <color name="pop_item_bg1">#ff88ffff</color>
+    <color name="pop_item_text0">#ff000000</color>
+    <color name="pop_item_text1">#ff000000</color>
+    <color name="pop_bg">#DEE3E8</color>
+    <color name="color_mini_play_title">#A8000000</color>
+    <color name="color_mini_bg">#ECF0F4</color>
+</resources>

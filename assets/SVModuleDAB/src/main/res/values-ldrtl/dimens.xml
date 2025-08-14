@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="dab_ivsingarm_roate_0" format="float" type="dimen">0</item>
+    <item name="dab_ivsingarm_roate_1" format="float" type="dimen">28</item>
+    <dimen name="dab_rt_dialog_padding_end">60dp</dimen>
+    <dimen name="dab_rt_dialog_padding_start">0dp</dimen>
+    <dimen name="dab_list_padding_start">72dp</dimen>
+    <dimen name="dab_list_padding_end">0dp</dimen>
+    <dimen name="dab_list_padding_start1">24dp</dimen>
+    <dimen name="dab_list_padding_end1">1dp</dimen>
+</resources>

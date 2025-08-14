@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="264dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="166dp"
+        android:layout_marginStart="1031dp"
+        android:background="@mipmap/radio_more_bg">
+
+      <ImageView
+          android:id="@+id/ivRadioScan"
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginStart="40dp"
+          android:src="@mipmap/icon_player_scan_n">
+
+      </ImageView>
+
+        <ImageView
+            android:id="@+id/ivRadioInfo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="164dp"
+            android:src="@drawable/radio_btn_rt">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="736dp"
+    android:layout_height="503dp"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="70dp"
+    android:orientation="vertical"
+    tools:ignore="ResourceName">
+
+    <TextView
+        android:id="@+id/tv_play_list_number"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/usb_music_play_list_number_text_color"
+        android:textSize="30sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_play_list"
+        style="@style/list_scrollbars_vertical_style"
+        android:layout_width="660dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp" />
+</LinearLayout>

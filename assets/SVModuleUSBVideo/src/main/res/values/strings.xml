@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Video</string>
+    <string name="usbvideo_unknown">UNKNOW</string>
+    <string name="no_video_show">The currently playing file has only audio content</string>
+    <string name="no_error_show">The current playback file is incorrect</string>
+
+    <string name="tab_usb">Video</string>
+    <string name="tab_usb1">USB1 video</string>
+    <string name="tab_usb2">USB2 video</string>
+
+    <string name="tab_video_mode">Video mode</string>
+    <string name="tab_folder_mode">Folder mode</string>
+
+    <string name="no_equipment_access">No device access is available</string>
+    <string name="no_content_access">There is no content on the device</string>
+    <string name="loading">Loading...</string>
+
+    <string name="double_speed">Speed</string>
+    <string name="anthology">analecta</string>
+
+    <string name="speed_tips">For your driving safety, it is recommended not to play videos while driving!</string>
+    <string name="play_without_prompting">Play without prompting</string>
+    <string name="exit_video">Exit the video</string>
+    <string name="exit_video_tips">Exit</string>
+
+    <string name="novice_guidance_left">Swipe up and down with one finger left</string>
+    <string name="novice_guidance_adjust_brightness">Adjust the brightness</string>
+    <string name="novice_guidance_content">Swipe left and right with one finger</string>
+    <string name="novice_guidance_adjust_forward_and_backward">Fast forward and backward</string>
+    <string name="novice_guidance_right">Swipe up and down with one finger on the right</string>
+    <string name="novice_guidance_adjust_adjust_sound">Adjust the sound</string>
+    <string name="novice_guidance_got_it">Got it</string>
+
+    <string name="rv_list_line">I have a bottom line</string>
+
+    <string name="media_usbvideo_openusbvideo_playing">Playing USB video.</string>
+    <string name="media_usbvideo_openusbvideo_play">Ok, opening USB video for you.</string>
+    <string name="media_usbvideo_openusbvideo_empty">Sorry, I don\'t see any video I can play.</string>
+    <string name="media_usbvideo_continueplaying_empty">Sorry, I don\'t see any video I can play.</string>
+    <string name="media_usbvideo_previous_firstone">First one now.</string>
+    <string name="media_usbvideo_next_lastone">Last one now.</string>
+    <string name="media_video_replay_playing">OK, replaying the video for you now.</string>
+    <string name="media_video_replay_noplaying">There is no video playing right now.</string>
+
+    <string name="media_video_pre_time">&#160;&#160;/&#160;&#160;</string>
+    <string name="media_video_play_time">%1$s&#160;&#160;/&#160;&#160;%2$s</string>
+    <string name="general_uncollect_playing_nosupport">This media source does not support favorites.</string>
+    <string name="general_opencollect_nosupport">There is no favorite list I can open.</string>
+    <string name="general_openplaylist_open">Okay, here\'s the playlist.</string>
+    <string name="general_openplaylist_nosupport">Sorry, this media source does not support  playlist function.</string>
+    <string name="general_closeplaylist_close">Closed the playlist for you.</string>
+    <string name="general_closeplaylist_nosupport">Sorry, this media source does not support  playlist function.</string>
+</resources>

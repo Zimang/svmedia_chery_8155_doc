@@ -1,0 +1,12 @@
+<resources>
+    <string name="string_bt_music">Bluetooth Music</string>
+    <string name="string_bt_setting">Settings</string>
+    <string name="string_bt_music_collection_list">Favorite list</string>
+    <string name="string_none_collection_notice">No favorite Bluetooth music</string>
+    <string name="string_bt_music_playing_notice">Bluetooth music playing…</string>
+    <string name="string_pay_notice">Pay</string>
+    <string name="string_collect_failed">Collection failure</string>
+    <string name="string_unknown_song">Unknown Song</string>
+    <string name="string_unknown_artist">Unknown Singer</string>
+    <string name="string_no_source">No Playback</string>
+</resources>

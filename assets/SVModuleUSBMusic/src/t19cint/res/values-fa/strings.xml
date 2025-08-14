@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="ResourceName">ModuleUSBMusic</string>
+    <string name="usbmusic_unknown">نمیدونم</string>
+    <string name="usb_music_music_error_text">فایل موسیقی فعلی \ "\" خطای فرمت</string>
+    <string name="usb_music_tab_local_text">موسیقی داخلی</string>
+    <string name="usb_music_tab_usb_text">موسیقی USB</string>
+    <string name="usb_music_tab_recent_text">آخرین پخش شده ها</string>
+    <string name="usb_music_no_lyrics">هیچ متن شعری موجود نیست</string>
+    <string name="usb_music_unknown_song_name">مسیر ناشناخته</string>
+    <string name="usb_music_unknown_album">نام کاربری</string>
+    <string name="usb_music_usb_check">هیچ دستگاه USB شناسایی نشد، لطفا دستگاه را چک کنید</string>
+    <string name="usb_music_local_list_empty">شما هنوز هیچ موسیقی را دانلود نکرده اید</string>
+    <string name="usb_music_recent_list_empty">شما هیچ موسیقی را بازی نکرده اید</string>
+    <string name="usb_music_all_music_text">همه موسیقی ها</string>
+    <string name="usb_music_folder_text">پوشه ها</string>
+    <string name="usb_music_folder_item_size_text">آهنگ های بالا</string>
+    <string name="usb_music_all_select">انتخاب همه</string>
+    <string name="usb_music_select_cancel">لغو</string>
+    <string name="usb_music_select_download">دانلود</string>
+    <string name="usb_music_select_delete">حذف</string>
+    <string name="usb_music_delete_dialog_text">آیا مطمئن هستید که می خواهید این آهنگ را حذف کنید؟</string>
+    <string name="usb_music_play_list_text">لیست پخش&#160;</string>
+    <string name="usb_music_download_limit_confirm">می بینم</string>
+    <string name="usb_music_download_limit_content">حجم کل موسیقی محلی محدود به 2G است، لطفاً ابتدا آهنگ های دیگر را در موسیقی محلی حذف کنید</string>
+</resources>

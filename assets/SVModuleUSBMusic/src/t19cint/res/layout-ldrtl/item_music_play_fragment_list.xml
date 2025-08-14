@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="660dp"
+    android:layout_height="480dp"
+    android:layoutDirection="ltr"
+    android:layout_alignParentEnd="true"
+    android:orientation="vertical"
+    tools:ignore="ResourceName">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginStart="65dp">
+
+        <TextView
+            android:id="@+id/tv_play_list_number_text"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="@string/usb_music_play_list_text"
+            android:textColor="@color/usb_music_play_list_text_color"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_play_list_number"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_toEndOf="@+id/tv_play_list_number_text"
+            android:textColor="@color/usb_music_play_list_number_text_color"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_play_list"
+        style="@style/list_scrollbars_vertical_style"
+        android:layout_width="660dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="40dp" />
+</LinearLayout>

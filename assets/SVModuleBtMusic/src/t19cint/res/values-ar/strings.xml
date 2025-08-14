@@ -1,0 +1,12 @@
+<resources>
+    <string name="string_bt_music">موسيقى البلوتوث</string>
+    <string name="string_bt_setting">الإعدادات </string>
+    <string name="string_bt_music_collection_list">قائمة المفضلة</string>
+    <string name="string_none_collection_notice">لا توجد موسيقى بلوتوث مفضلة</string>
+    <string name="string_bt_music_playing_notice">تشغيل الموسيقى عبر البلوتوث …</string>
+    <string name="string_pay_notice">الدفع </string>
+    <string name="string_collect_failed">فشل التجميع </string>
+    <string name="string_unknown_song">أغنية غير معروفة</string>
+    <string name="string_unknown_artist">مغني غير معروف</string>
+    <string name="string_no_source">لا يوجد بث</string>
+</resources>

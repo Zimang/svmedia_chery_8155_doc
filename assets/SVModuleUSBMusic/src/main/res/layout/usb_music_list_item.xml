@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    tools:ignore="ResourceName">
+
+    <TextView
+        android:id="@+id/tvMusicName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="49dp"
+        android:text="鼓楼"
+        android:singleLine="true"
+        android:textColor="@color/usb_music_text_gray"
+        android:textSize="30sp" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_album_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="120dp"
+        android:paddingEnd="113dp"
+        android:scrollbarSize="6dp"
+        android:layout_marginTop="15dp"
+        android:scrollbars="vertical">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/rl_no_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/img_content_empty">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/album_no_content"
+            android:layout_marginTop="330dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/usb_no_link"
+            android:textSize="28sp">
+
+        </TextView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_album_loading"
+        android:layout_width="494dp"
+        android:layout_height="122dp"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/toast_494"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_album_loading"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="152dp"
+            android:src="@mipmap/icon_loading_60">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/iv_album_loading"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/name_color"
+            android:text="@string/loading">
+
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>

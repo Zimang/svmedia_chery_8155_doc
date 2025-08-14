@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tab_text_color">#000000</color>
+    <color name="select_mode_color">#C59377</color>
+    <color name="text_color_gray">#50000000</color>
+
+    <color name="sb_bg">#33FFFFFF</color>
+    <color name="sb_progress_start">#FFFFCBA8</color>
+    <color name="sb_progress_end">#FFFFCBA8</color>
+
+    <color name="slide_bg_start">#FF000000</color>
+    <color name="slide_bg_end">#FF000000</color>
+
+    <color name="usbvideo_white">#ffffffff</color>
+    <color name="usbvideo_common_gray">#ffffffff</color>
+
+    <color name="translucent">#e0000000</color>
+
+    <color name="btn_play_tips">#FFFFFF</color>
+    <color name="btn_exit_video_bg">#BDAFA5</color>
+    <color name="txt_video_to_play">#4E5052</color>
+    <color name="txt_video_to_close">#000000</color>
+
+    <color name="view_gray">#80000000</color>
+    <color name="view_text">#000000</color>
+
+    <color name="scrollbar_thumb">#4DACB5BD</color>
+
+    <color name="play_list_item_text">#000000</color>
+    <color name="guide_text_cor">#ff000000</color>
+    <color name="loading_bg_color">#5CFFFFFF</color>
+    <color name="video_list_bg_color">#FFFFFF</color>
+</resources>

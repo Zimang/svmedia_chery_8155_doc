@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_photoView_root">
+
+    <com.desaysv.usbpicture.photo.photoview.PhotoView
+        android:id="@+id/pv_photo_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:layout_centerInParent="true"
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="@dimen/mask_alpha">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/img_up_shadow"></ImageView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/img_down_shadow"></ImageView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_pic_name"
+        android:textSize="34sp"
+        android:textColor="#FFFFFFFF"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_marginTop="30dp"
+        android:text="">
+
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/tvFileError"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/file_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/icon_state_error" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/file_error"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:text="error"
+            android:textColor="@color/usb_picture_tab_default_color"
+            android:textSize="32px" />
+    </RelativeLayout>
+
+</RelativeLayout>

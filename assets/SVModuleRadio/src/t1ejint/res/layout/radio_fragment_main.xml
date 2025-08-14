@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlAll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tbRadioMain"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:overScrollMode="never"
+        app:tabBackground="@null"
+        app:tabIndicator="@drawable/radio_tab_shape"
+        app:tabIndicatorColor="@null"
+        app:tabIndicatorFullWidth="false"
+        app:tabMinWidth="260dp"
+        app:tabRippleColor="@null"
+        app:tabSelectedTextColor="@color/radio_tab_text_select_color"
+        app:tabTextAppearance="@style/RadioTabTextStyle"
+        app:tabTextColor="@color/radio_tab_text_unselect_color" />
+
+    <com.desaysv.moduleradio.view.NoSmoothViewPager
+        android:id="@+id/vpRadioMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tbRadioMain"
+        android:layout_marginTop="5dp" />
+
+
+    <!--底部操作栏部分-->
+    <RelativeLayout
+        android:id="@+id/rlRadioControl"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp">
+
+        <ImageView
+            android:id="@+id/ivRadioRDS"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="120dp"
+            android:src="@drawable/radio_btn_rds">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/ivRadioMore"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="120dp"
+            android:src="@drawable/radio_btn_rt"
+            android:visibility="gone">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/ivRadioScan"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="280dp"
+            android:src="@drawable/radio_btn_scan">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/ivRadioPre"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/radio_btn_pre"
+            android:layout_toEndOf="@id/ivRadioScan">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/ivRadioPlay"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="100dp"
+            android:src="@drawable/radio_btn_play"
+            android:layout_toEndOf="@id/ivRadioPre">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/ivRadioNext"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="100dp"
+            android:src="@drawable/radio_btn_next"
+            android:layout_toEndOf="@id/ivRadioPlay">
+
+        </ImageView>
+
+        <!--下面这几个是需要动态替换的-->
+        <ImageView
+            android:id="@+id/ivRadioRt"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/radio_btn_rt"
+            android:layout_toEndOf="@id/ivRadioNext"
+            android:visibility="gone">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/ivRadioList"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="160dp"
+            android:src="@drawable/radio_btn_list"
+            android:layout_toEndOf="@id/ivRadioNext">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+    <!--播放列表-->
+    <RelativeLayout
+        android:id="@+id/rlPlayList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rlRadioControl"
+        android:background="@drawable/radio_play_list_bg"
+        android:visibility="gone">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tbRadioList"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:overScrollMode="never"
+            app:tabBackground="@null"
+            app:tabIndicator="@drawable/radio_tab_shape"
+            app:tabIndicatorColor="@null"
+            app:tabIndicatorFullWidth="false"
+            app:tabMinWidth="260dp"
+            app:tabMaxWidth="560dp"
+            app:tabRippleColor="@null"
+            app:tabSelectedTextColor="@color/radio_tab_text_select_color"
+            app:tabTextAppearance="@style/RadioTabTextStyle"
+            app:tabTextColor="@color/radio_tab_text_unselect_color" />
+
+        <com.desaysv.moduleradio.view.NoSmoothViewPager
+            android:id="@+id/vpRadioList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tbRadioList"
+            android:layout_marginTop="5dp" />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/flEPG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+</RelativeLayout>

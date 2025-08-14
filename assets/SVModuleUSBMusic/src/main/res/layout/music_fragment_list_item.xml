@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="840dp"
+    android:layout_height="130dp"
+    android:layout_marginTop="16dp"
+    tools:ignore="ResourceName">
+    <!--用于处理条目点击事件-->
+    <ImageButton
+        android:id="@+id/ib_click"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" />
+
+    <ImageView
+        android:id="@+id/iv_item_select"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="46dp"
+        android:src="@drawable/music_local_item_select_icon_selector"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_album"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="60dp"
+        android:layout_toEndOf="@+id/iv_item_select"
+        android:background="@mipmap/music_fragment_list_album_n"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@+id/iv_album"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/usb_music_list_name_text_color"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/tv_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@+id/tv_song_name"
+        android:layout_alignStart="@+id/tv_song_name"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/usb_music_list_artist_text_color"
+        android:textSize="24sp" />
+</RelativeLayout>

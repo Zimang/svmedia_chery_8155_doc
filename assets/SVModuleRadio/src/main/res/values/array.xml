@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="radio">
+        <item>@string/radio_fm</item>
+        <item>@string/radio_am</item>
+        <item>@string/radio_collect</item>
+    </string-array>
+
+    <string-array name="radio_dab">
+        <item>@string/radio_dab</item>
+        <item>@string/radio_fm</item>
+        <item>@string/radio_am</item>
+        <item>@string/radio_collect</item>
+    </string-array>
+    <string-array name="radio_no_am">
+        <item>@string/radio_multi</item>
+        <item>@string/radio_collect</item>
+    </string-array>
+
+    <string-array name="radio_multi_am">
+        <item>@string/radio_multi</item>
+        <item>@string/radio_am</item>
+        <item>@string/radio_collect</item>
+    </string-array>
+
+</resources>

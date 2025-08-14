@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <FrameLayout
+        android:id="@+id/fl_item_top"
+        android:layout_width="300dp"
+        android:layout_height="160dp"
+        android:background="@drawable/shape_video_list_bg"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/iv_thumbnail"
+            android:layout_width="300dp"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/usb_video_folder" />
+
+        <ImageView
+            android:id="@+id/ivPlaying"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="10dp"
+            android:src="@mipmap/usb_video_playing"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_video_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fl_item_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="start|center"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:singleLine="true"
+        android:textColor="@color/tab_text_color"
+        android:textSize="28sp"
+        tools:text="121321" />
+
+</RelativeLayout>

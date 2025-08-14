@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlEPGDetailItem"
+    android:layout_width="match_parent"
+    android:layout_height="160dp">
+
+    <com.desaysv.mediacommonlib.view.AudioWaveView
+
+        android:id="@+id/awPlaying"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_centerVertical="true"
+        app:pointer_color="@color/dab_playani_color"
+        app:pointer_num="4"
+        app:pointer_padding="0dp"
+        app:pointer_sing_law_rate="0.2"
+        app:pointer_top_fillet="0"
+        app:pointer_width="3.5dp"
+        app:pointer_type="bottom"
+        android:visibility="gone">
+
+    </com.desaysv.mediacommonlib.view.AudioWaveView>
+
+    <TextView
+        android:id="@+id/tvEPGTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="@color/epg_color"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="102dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvEPGDetailName"
+        android:layout_width="589dp"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="@color/epg_color"
+        android:layout_toEndOf="@id/tvEPGTime"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="42dp">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/ivEPGMark"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="56dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/epg_mark">
+    </ImageView>
+
+</RelativeLayout>

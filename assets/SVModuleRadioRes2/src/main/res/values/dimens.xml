@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="radio_cursor_margin_top">280dp</dimen>
+    <dimen name="radio_cursor_width">658dp</dimen>
+    <dimen name="radio_cursor_margin_start">265dp</dimen>
+    <dimen name="radio_indicator_w">128dp</dimen>
+    <dimen name="radio_indicator_h">66dp</dimen>
+</resources>

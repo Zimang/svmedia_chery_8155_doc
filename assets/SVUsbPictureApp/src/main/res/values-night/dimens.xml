@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="font_alpha_0" type="dimen" format="float">0.5</item>
+    <item name="font_alpha_1" type="dimen" format="float">0.86</item>
+    <item name="font_alpha_2" type="dimen" format="float">0.66</item>
+    <item name="font_alpha_3" type="dimen" format="float">0.66</item>
+    <item name="font_alpha_5" type="dimen" format="float">0</item>
+    <item name="mask_alpha" type="dimen" format="float">0</item>
+</resources>

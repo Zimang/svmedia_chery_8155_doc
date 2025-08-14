@@ -1,0 +1,53 @@
+apply plugin: 'com.android.library'
+apply from: "${rootDir}/common/config/android_tools_config.gradle"
+apply from: "${rootDir}/SVMedia/International/build_type_config.gradle"
+android {
+    compileSdkVersion COMPILE_SDK_VERSION
+    buildToolsVersion BUILD_TOOL_VERSION
+
+    defaultConfig {
+        minSdkVersion MIN_SDK_VERSION
+        targetSdkVersion TARGET_SDK_VERSION
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            File configFile2 = file("${rootDir}/common/Lib/framework.jar")
+            String absolutePath2 = configFile2.absolutePath.replaceAll("\\\\", "\\\\\\\\")
+            String Path2 = '-Xbootclasspath/p:' + absolutePath2
+            options.compilerArgs.add(Path2)
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    //Nullable
+    implementation 'androidx.annotation:annotation:1.2.0'
+    implementation 'org.jetbrains:annotations:13.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    compileOnly files("${rootDir}/common/Lib/framework.jar")
+    api project(':SVMedia:International:SVLibMediaCommon')
+    //已经在SVLibMediaCommon中包含，不用api，避免依赖混乱
+    compileOnly project(':SVMedia:International:SVSDKAudio')
+    api files("${rootDir}/common/Lib/gson-2.3.1.jar")
+    //已经在SVLibMediaCommon中包含了
+    compileOnly 'com.github.bumptech.glide:glide:4.9.0'
+    api files("${rootDir}/common/Lib/vdbus_extra.jar")
+    api files("${rootDir}/common/Lib/vdbus.jar")
+}

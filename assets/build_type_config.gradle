@@ -1,0 +1,36 @@
+android {
+    apply from: "${rootDir}/common/config/app_module_signing_configs.gradle"
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+//同步更新 让编译器，最后执行Android JDK
+gradle.projectsEvaluated {
+    //chery-8155-app.SVMedia.DVPTestMediaApp.SVSDKAudio.main.iml
+    def imlFile = file("${rootDir}/.idea/modules/${project.path.replace(":", "/")}/${rootProject.name}${project.path.replace(":", ".")}.main.iml")
+    println '--Change iml to ' + imlFile
+    try {
+        def parsedXml = (new XmlParser()).parse(imlFile)
+        def jdkNode = parsedXml.component[1].orderEntry.find { it.'@type' == 'jdk' }
+        parsedXml.component[1].remove(jdkNode)
+        def sdkString = "Android API " + android.compileSdkVersion.substring("android-".length()) + " Platform"
+        new Node(parsedXml.component[1], 'orderEntry', ['type': 'jdk', 'jdkName': sdkString, 'jdkType': 'Android SDK'])
+        groovy.xml.XmlUtil.serialize(parsedXml, new FileOutputStream(imlFile))
+        println '------------------  ' + sdkString + '  ------------------'
+    } catch (Exception e) {
+        //nop,imlnotfound
+        println '---- error ---- ' + e
+    }
+}

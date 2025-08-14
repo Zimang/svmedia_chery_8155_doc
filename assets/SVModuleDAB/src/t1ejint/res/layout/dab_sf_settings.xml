@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="984dp"
+    android:layout_height="416dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@drawable/dab_ann_setting_bg">
+    <RelativeLayout
+        android:id="@+id/rl_dab_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_dab_close"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/dab_dialog_close" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="@string/dab_ann_title1"
+            android:textColor="@color/dab_item_color"
+            android:textSize="40sp" />
+
+    </RelativeLayout>
+
+    <!--开关-->
+    <RelativeLayout
+        android:id="@+id/rlAnnSF"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/rl_dab_top"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="36dp">
+        <TextView
+            android:id="@+id/tvAnnSf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/dab_settings_sf"
+            android:textColor="@color/dab_item_color"
+            android:textSize="36sp" />
+
+        <com.sy.swbt.SettingSwitchView
+            android:id="@+id/scAnnSf"
+            android:layout_width="95dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="36dp"
+            app:kswBackColor="@color/dab_switch_selector_color"
+            app:kswThumbHeight="50dp"
+            app:kswThumbWidth="50dp"/>
+    </RelativeLayout>
+
+
+    <!--开关-->
+    <RelativeLayout
+        android:id="@+id/rlAnnSFSl"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/rlAnnSF"
+        android:layout_marginStart="36dp">
+
+        <TextView
+            android:id="@+id/tvAnnSFSl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/dab_settings_sf_sl"
+            android:textColor="@color/dab_item_color"
+            android:textSize="36sp" />
+
+        <com.sy.swbt.SettingSwitchView
+            android:id="@+id/scAnnSFSl"
+            android:layout_width="95dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="36dp"
+            app:kswBackColor="@color/dab_switch_selector_color"
+            app:kswThumbHeight="50dp"
+            app:kswThumbWidth="50dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

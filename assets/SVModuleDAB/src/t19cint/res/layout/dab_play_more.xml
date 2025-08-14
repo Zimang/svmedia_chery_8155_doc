@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="955dp"
+        android:background="@mipmap/dab_more_bg">
+
+
+        <ImageView
+            android:id="@+id/ivDABSettings"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/dab_set">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/ivDABSearch"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="40dp"
+            android:layout_toEndOf="@id/ivDABSettings"
+            android:src="@drawable/dab_btn_search">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/ivDABRT"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="40dp"
+            android:layout_toEndOf="@id/ivDABSearch"
+            android:src="@drawable/dab_rt">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

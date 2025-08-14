@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRadioAMList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="120dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="16dp"
+        android:paddingEnd="@dimen/radio_list_pading_end"
+        android:paddingStart="@dimen/radio_list_pading_start"
+        android:scrollbarThumbVertical="@color/radio_scrollbar_color"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="vertical"
+        android:scrollbarSize="6dp"
+        android:layoutDirection="ltr"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rlRadioAMEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="360dp"
+            android:layout_height="360dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/img_default_resource"
+            android:scaleType="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="319dp"
+            android:text="@string/dab_playlist_no_list"
+            android:textSize="28sp"
+            android:textColor="@color/radio_loading_text_color" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlRadioAMScanning"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/radio_loading_bg"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivRadioLoading"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:src="@mipmap/icon_loading" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/ivRadioLoading"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/radio_loading"
+            android:textColor="@color/radio_loading_text_color"
+            android:textSize="26sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

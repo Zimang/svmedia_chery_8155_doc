@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="pop_bg">#262626</color>
+    <color name="pop_item_text0">#80FFFFFF</color>
+    <color name="pop_item_text1">#CCFFFFFF</color>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"فيديو "</string>
+    <string name="usbvideo_unknown">"غير معروف "</string>
+    <string name="no_video_show">"يحتوي الملف الذي يتم تشغيله حاليا على محتوى صوتي فقط "</string>
+    <string name="no_error_show">"ملف التشغيل الحالي غير صحيح "</string>
+    <string name="tab_usb">"فيديو "</string>
+    <string name="tab_usb1">"فيديو USB1 "</string>
+    <string name="tab_usb2">"فيديو USB2 "</string>
+    <string name="tab_video_mode">"وضع الفيديو "</string>
+    <string name="tab_folder_mode">"وضع المجلد "</string>
+    <string name="no_equipment_access">"لا يتوفر الوصول إلى الجهاز "</string>
+    <string name="no_content_access">"لا يوجد محتوى على الجهاز "</string>
+    <string name="loading">"جاري التحميل... "</string>
+    <string name="double_speed">"السرعة "</string>
+    <string name="anthology">مختارات</string>
+    <string name="speed_tips">من أجل سلامة القيادة، يوصى بعدم تشغيل مقاطع الفيديو أثناء القيادة!</string>
+    <string name="play_without_prompting">تشغيل بدون مطالبة</string>
+    <string name="exit_video">اخرج من الفيديو</string>
+    <string name="novice_guidance_left">سحب لأعلى ولأسفل بإصبع واحد لليسار</string>
+    <string name="novice_guidance_adjust_brightness">ضبط السطوع</string>
+    <string name="novice_guidance_content">سحب لليمين واليسار بإصبع واحد</string>
+    <string name="novice_guidance_adjust_forward_and_backward">سريع إلى الأمام والخلف</string>
+    <string name="novice_guidance_right">سحب لأعلى ولأسفل بإصبع واحد على اليمين</string>
+    <string name="novice_guidance_adjust_adjust_sound">ضبط الصوت</string>
+    <string name="novice_guidance_got_it">فهمت</string>
+    <string name="rv_list_line">لدي الخلاصة</string>
+
+
+    <string name="media_video_pre_time">&#160;&#160;/&#160;&#160;</string>
+    <string name="media_video_play_time">%1$s&#160;&#160;/&#160;&#160;%2$s</string>
+</resources>

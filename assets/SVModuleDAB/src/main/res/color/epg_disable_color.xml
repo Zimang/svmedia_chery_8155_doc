@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:color="@color/dab_disable_color"
+        android:state_enabled="false">
+
+    </item>
+
+    <item android:color="@color/dab_text_color3"
+        android:state_enabled="true">
+
+    </item>
+
+
+</selector>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlSearch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ivRadioSearchBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="36dp"
+        android:src="@mipmap/dab_playlist_back">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/ivRadioScSearch"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="26dp"
+        android:src="@mipmap/radio_search">
+
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/tvRadioScSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/svSearch"
+        android:textColor="@color/rds_enable_color"
+        android:textSize="30sp"
+        android:text="@string/radio_search_text">
+
+    </TextView>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/svSearch"
+        android:layout_width="898dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="20dp"
+        android:imeOptions="actionSearch"
+        app:iconifiedByDefault="false"
+        app:queryHint="@string/radio_search_hint"
+        android:paddingStart="60dp"
+        app:queryBackground="@null"
+        android:background="@drawable/radio_search_bg"
+        app:searchIcon="@null"
+        app:closeIcon="@mipmap/radio_search_close_icon"
+        android:theme="@style/radio_searchView_style">
+
+    </androidx.appcompat.widget.SearchView>
+
+    <RelativeLayout
+        android:id="@+id/rlSearchHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/svSearch"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="142dp"
+        android:layout_marginEnd="101dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="34sp"
+            android:textColor="@color/radio_text_sub_color"
+            android:text="@string/radio_search_history">
+
+        </TextView>
+        <ImageView
+            android:id="@+id/ivHistoryDelete"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_toEndOf="@id/tvHistory"
+            android:layout_marginStart="25dp"
+            android:src="@mipmap/history_deleted">
+
+        </ImageView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvHistoryList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivHistoryDelete"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="110dp"
+            android:scrollbarThumbVertical="@null"
+            android:scrollbars="vertical"
+            android:layoutDirection="ltr"><!--这里写死ltr，用于解决RTL下，item的textview显示不出来的问题，实际布局通过自定义的AutoLineFeedLayoutManager控制-->
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSearchResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/svSearch"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSearchResultList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="150dp"
+            android:layout_marginBottom="110dp"
+            android:scrollbars="none">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <RelativeLayout
+            android:id="@+id/rlSearchResultNone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/ivNoContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/radio_default_empty"
+                android:layout_centerHorizontal="true">
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:textSize="30sp"
+                android:textColor="@color/radio_text_main_color"
+                android:alpha="0.3"
+                android:text="@string/radio_search_no_result"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="320dp">
+
+            </TextView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

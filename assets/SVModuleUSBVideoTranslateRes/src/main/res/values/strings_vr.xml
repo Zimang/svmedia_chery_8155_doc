@@ -1,0 +1,17 @@
+<resources>
+    <string name="media_usbvideo_openusbvideo_playing">Playing USB video.</string>
+    <string name="media_usbvideo_openusbvideo_play">Ok, opening USB video for you.</string>
+    <string name="media_usbvideo_openusbvideo_empty">Sorry, I don\'t see any video I can play.</string>
+    <string name="media_usbvideo_continueplaying_empty">Sorry, I don\'t see any video I can play.</string>
+    <string name="media_usbvideo_previous_firstone">First one now.</string>
+    <string name="media_usbvideo_next_lastone">Last one now.</string>
+    <string name="media_video_replay_playing">OK, replaying the video for you now.</string>
+    <string name="media_video_replay_noplaying">There is no video playing right now.</string>
+
+    <string name="general_uncollect_playing_nosupport">This media source does not support favorites.</string>
+    <string name="general_opencollect_nosupport">There is no favorite list I can open.</string>
+    <string name="general_openplaylist_open">Okay, here\'s the playlist.</string>
+    <string name="general_openplaylist_nosupport">Sorry, this media source does not support  playlist function.</string>
+    <string name="general_closeplaylist_close">Closed the playlist for you.</string>
+    <string name="general_closeplaylist_nosupport">Sorry, this media source does not support  playlist function.</string>
+</resources>

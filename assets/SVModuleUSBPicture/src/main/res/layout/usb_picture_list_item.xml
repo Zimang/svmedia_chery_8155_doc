@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="235dp"
+    android:layout_height="235dp"
+    android:soundEffectsEnabled="false">
+
+    <ImageView
+        android:id="@+id/imThumbnail"
+        android:layout_width="235dp"
+        android:layout_height="235dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:soundEffectsEnabled="false" />
+
+</RelativeLayout>
