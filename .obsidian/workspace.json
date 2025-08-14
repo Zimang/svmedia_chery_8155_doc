@@ -4,36 +4,83 @@
     "type": "split",
     "children": [
       {
-        "id": "b5298003c0a1451f",
+        "id": "c33f135b443fbf36",
         "type": "tabs",
         "children": [
           {
-            "id": "3fd5e83de6fc49dd",
+            "id": "7f842057dde105d6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "SVModuleUSBMusic.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "SVModuleUSBMusic"
             }
-          }
-        ]
-      },
-      {
-        "id": "2b61c9164cb46312",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "799986e2a3ac2419",
+            "id": "53e62c7d506e1eb5",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "MusicStatusUtils.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "MusicStatusUtils"
+            }
+          },
+          {
+            "id": "c8202600fcab264c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SVModuleRadio.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "SVModuleRadio"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -90,7 +137,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 219.5
+    "width": 200
   },
   "right": {
     "id": "f43d2c42d7464954",
@@ -175,7 +222,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 517.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -191,13 +238,43 @@
   },
   "active": "020c909354db21c9",
   "lastOpenFiles": [
-    "dd/dd.md",
+    "RadioStatusUtils.md",
+    "SVModuleRadio.md",
+    "SVLibMediaObserver.md",
+    "MusicStatusUtils.md",
+    "SVModuleUSBMusic.md",
+    "框架.canvas",
+    "MainActivity.md",
+    "runtimeOnly.md",
+    "api.md",
+    "implementation.md",
+    "compileOnly.md",
+    "SVLibLyrics.md",
+    "SVLibUSBBase.md",
+    "SVLibMediaStore.md",
+    "SVLibUSBMedia.md",
+    "recyclerview.md",
+    "SVModuleUSBVideo.md",
+    "SVUsbVideoApp.md",
+    "app_dependences_tracking_configs.gradle.md",
+    "SVLibFileOperation.md",
+    "SVLibUSBDialog.md",
+    "SVLibToast.md",
+    "glide.md",
+    "SVLibQueryMedia.md",
+    "SVLibMediaBean.md",
+    "SVUsbPictureApp.md",
+    "SVSDKLocalMedia.md",
+    "assets/image-20250814141632554.png",
+    "assets/image-20250814141546279.png",
+    "assets/{A51B890F-3BDB-45A1-8BC8-F513BB675F0E}.png",
+    "assets/{0C88DEE7-97CD-41D3-86F9-D5CCA8F9165D}.png",
+    "assets/{7DC47B49-093D-4C16-B8DD-A2E57427AD82}.png",
+    "assets/{92FE77B4-1898-4FEE-893A-CC329EDD3081}.png",
+    "assets",
     "dd/assets/image-20250814114450974.png",
     "dd/assets",
-    "MainActivity.md",
     "dd",
-    "assets/image-20250814114432713.png",
-    "assets",
-    "欢迎.md"
+    "assets/image-20250814114432713.png"
   ]
 }

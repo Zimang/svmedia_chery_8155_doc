@@ -6,5 +6,6 @@
   "userIgnoreFilters": [
     "*.png",
     "*.jpg"
-  ]
+  ],
+  "alwaysUpdateLinks": true
 }
