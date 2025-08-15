@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c33f135b443fbf36",
+        "id": "6b43c934e287aa62",
         "type": "tabs",
         "children": [
           {
-            "id": "992a3e4f61202c4e",
+            "id": "0a7638c19a004bb2",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -30,79 +30,8 @@
               "icon": "lucide-file",
               "title": "ModuleUSBMusicTrigger"
             }
-          },
-          {
-            "id": "a3e5816e4dd9bf18",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
-            }
-          },
-          {
-            "id": "3d7ace8ce55968dc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MediaKeyActionManager.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "MediaKeyActionManager"
-            }
-          },
-          {
-            "id": "842fc6416e3a073d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MusicVrManager.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "MusicVrManager"
-            }
-          },
-          {
-            "id": "eb8287be62c21338",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "assets/{D006A6EB-46DD-453D-84B7-25C8D3B31E96} 1.png"
-              },
-              "icon": "lucide-image",
-              "title": "{D006A6EB-46DD-453D-84B7-25C8D3B31E96} 1"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -258,24 +187,42 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "a3e5816e4dd9bf18",
+  "active": "0a7638c19a004bb2",
   "lastOpenFiles": [
-    "MediaKeyActionManager.md",
+    "MusicUsbFragment.md",
     "ModuleUSBMusicTrigger.md",
     "MusicVrManager.md",
-    "assets/{D006A6EB-46DD-453D-84B7-25C8D3B31E96} 1.png",
-    "IGetControlTool.md",
-    "assets/{D006A6EB-46DD-453D-84B7-25C8D3B31E96}.png",
+    "assets/{DA1466CD-8662-4130-A2F3-A1F8FD97B2B8}.png",
+    "LocalMusicPlayFragment.md",
+    "MusicPlaybackService.md",
+    "assets/{0B060330-432E-46AB-B5A7-49AEDFA6ECE8}.png",
+    "USBMusicListSearchTrigger.md",
+    "MusicControlUtils.md",
+    "assets/{0AE47552-C615-4F32-AD5A-113DC5F71144}.png",
+    "assets/{DA97B4C9-4710-4332-9E3A-024A5260657E}.png",
+    "MusicFolderListAdapter.md",
+    "MusicLocalFragment.md",
+    "IRequestMediaPlayer.md",
+    "MediaControlAction.md",
+    "assets/{902D9212-2414-4927-95C7-18769CC230D2} 1.png",
+    "assets/{902D9212-2414-4927-95C7-18769CC230D2}.png",
+    "MediaPlayer.md",
+    "IStatusTool.md",
+    "IControlTool.md",
+    "MusicPlayListAdapter.md",
+    "MusicListAdapter.md",
     "MusicStatusUtils.md",
+    "MediaObserverManager.md",
+    "MainActivity.md",
+    "MediaInfoBean.md",
+    "SVLibMediaObserver.md",
+    "IMediaObserver.md",
+    "SVLibMediaCommon.md",
     "IMediaStatusChange.md",
     "SVModuleUSBMusic.md",
-    "SVSDKLocalMedia.md",
-    "IAIDLMediaManager.md",
-    "IAIDLMediaInfoCallback.md",
-    "MusicAidlService.md",
-    "MediaPlaybackService.md",
-    "DsvMusicServiceProxy.md",
-    "AIDL.md",
+    "MediaKeyActionManager.md",
+    "assets/{D006A6EB-46DD-453D-84B7-25C8D3B31E96} 1.png",
+    "assets/{D006A6EB-46DD-453D-84B7-25C8D3B31E96}.png",
     "assets/SVModuleRadioRes1/src/main/AndroidManifest.xml",
     "assets/SVModuleRadioRes1/src/main",
     "assets/SVModuleRadioRes1/src",
@@ -288,24 +235,6 @@
     "assets/SVModuleRadio/src/t19cint/java/com/desaysv/moduleradio/view/cursor/OnFrequencyChangedListener.java",
     "assets/SVModuleRadio/src/t19cint/res/mipmap-ldrtl/radio_player_singarm.png",
     "assets/SVModuleRadio/src/t19cint/res/mipmap-ldrtl/radio_more_bg.png",
-    "assets/SVModuleRadio/src/t19cint/res/mipmap-ldrtl/icon_player_previous_n.png",
-    "assets/SVModuleRadio/src/t19cint/res/mipmap-ldrtl/img_bg_player.png",
-    "assets/SVModuleRadio/src/t19cint/res/mipmap-ldrtl/icon_player_next_n.png",
-    "assets/SVModuleRadio/src/t19cint/res/mipmap-ldrtl-night/radio_player_singarm.png",
-    "assets/SVModuleRadio/src/t19cint/res/mipmap-ldrtl-night/radio_more_bg.png",
-    "assets/SVModuleRadio/src/t19cint/res/mipmap-ldrtl-night/icon_player_previous_n.png",
-    "SVModuleRadio.md",
-    "RadioStatusUtils.md",
-    "SVLibMediaObserver.md",
-    "框架.canvas",
-    "MainActivity.md",
-    "runtimeOnly.md",
-    "api.md",
-    "implementation.md",
-    "compileOnly.md",
-    "SVLibLyrics.md",
-    "SVLibUSBBase.md",
-    "SVLibMediaStore.md",
-    "SVLibUSBMedia.md"
+    "框架.canvas"
   ]
 }

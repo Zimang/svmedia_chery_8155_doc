@@ -7,3 +7,4 @@
 3. mUSB2MediaStatusChange
 4. mRecentMediaStatusChange
 这四个回调注册在[[ModuleUSBMusicTrigger]]中的四个不同类型的[[IGetControlTool]]中
+这些回调存在调用[[MusicStatusUtils]]的行为

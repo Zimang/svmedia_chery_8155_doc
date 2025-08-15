@@ -5,4 +5,7 @@
 2. [[MediaPlaybackService]]
 
 
-SVModuleUSBMusic 它co [[SVSDKLocalMedia]]
+SVModuleUSBMusic 它co [[SVSDKLocalMedia]]，也就是说他是后者的下游
+
+
+关于[[MediaKeyActionManager]]，该manager为[[vdbug]]注册回调，使得按键可用

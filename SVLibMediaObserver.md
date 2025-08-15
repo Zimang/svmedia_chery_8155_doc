@@ -1,4 +1,4 @@
-MediaObserverManager
+[[MediaObserverManager]]
 
 具体来说，`MediaObserverManager` 通过注册多个 `IMediaObserver` 观察者来监听媒体信息的变更，包括播放状态、专辑图、当前播放内容等，并在这些信息发生变化时通知所有已注册的观察者。它还支持界面切换时的通知功能，确保主界面能够实时显示各个媒体模块的播放信息。
 
@@ -9,5 +9,5 @@ MediaObserverManager
 - `addObserver`  : [[MainActivity]] 
   - MainActivity内部存在一个observer，在initViewListener这个地方，在onCreate的时候设置
   - 意义在于，MainActivity可以以此订阅这里的信息源
-- setPlayStatus [[RadioStatusUtils]]  [[MusicStatusUtils]]
+- setPlayStatus被各种tools调用 [[RadioStatusUtils]]  [[MusicStatusUtils]]
 	- 
