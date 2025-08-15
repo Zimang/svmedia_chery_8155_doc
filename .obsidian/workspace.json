@@ -103,8 +103,7 @@
               "title": "QueryStateObserver"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -196,12 +195,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SourceDialogUtil.md",
+                "file": "QueryStateManager.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "SourceDialogUtil 的出链列表"
+              "title": "QueryStateManager 的出链列表"
             }
           },
           {
@@ -262,11 +261,13 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "d395ddd3fe90548d",
+  "active": "d8aafc36419298f1",
   "lastOpenFiles": [
-    "SourceDialog.md",
-    "assets/{876DD016-3D61-43AD-949A-814A1AB1F131}.png",
     "SourceDialogUtil.md",
+    "SourceDialog.md",
+    "USB1DeviceStateObserver.md",
+    "USB2DeviceStateObserver.md",
+    "assets/{876DD016-3D61-43AD-949A-814A1AB1F131}.png",
     "QueryStateManager.md",
     "QueryStateObserver.md",
     "IQueryPictureStateChangedListener.md",
@@ -294,7 +295,6 @@
     "assets/{0AE47552-C615-4F32-AD5A-113DC5F71144}.png",
     "assets/{DA97B4C9-4710-4332-9E3A-024A5260657E}.png",
     "MusicFolderListAdapter.md",
-    "MusicLocalFragment.md",
     "assets/{902D9212-2414-4927-95C7-18769CC230D2} 1.png",
     "assets/{902D9212-2414-4927-95C7-18769CC230D2}.png",
     "assets/{D006A6EB-46DD-453D-84B7-25C8D3B31E96} 1.png",
