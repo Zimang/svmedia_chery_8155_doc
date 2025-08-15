@@ -7,5 +7,7 @@
     "*.png",
     "*.jpg"
   ],
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": false
 }
