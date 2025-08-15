@@ -6,7 +6,7 @@
 
 总之，`MediaObserverManager` 的作用是充当一个媒体数据变更的通知中心，确保各个模块能够及时感知并更新其显示内容。
 
-- `addObserver`  : [[MainActivity]] 
+- `addObserver`  : [[SVAudioApp.MainActivity]] 
   - MainActivity内部存在一个observer，在initViewListener这个地方，在onCreate的时候设置
   - 意义在于，MainActivity可以以此订阅这里的信息源
 - setPlayStatus被各种tools调用 [[RadioStatusUtils]]  [[MusicStatusUtils]]

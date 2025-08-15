@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0a7638c19a004bb2",
+            "id": "d8aafc36419298f1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ModuleUSBMusicTrigger.md",
+                "file": "QueryStateManager.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,83 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "ModuleUSBMusicTrigger"
+              "title": "QueryStateManager"
+            }
+          },
+          {
+            "id": "d395ddd3fe90548d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SourceDialogUtil.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "SourceDialogUtil"
+            }
+          },
+          {
+            "id": "ad54d11e93e9cbcc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SourceDialog.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "SourceDialog"
+            }
+          },
+          {
+            "id": "a1345742829e5792",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "QueryStateObserver.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "QueryStateObserver"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -63,7 +136,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#SVLibUSBDialog",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,7 +161,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "f43d2c42d7464954",
@@ -122,11 +196,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "SourceDialogUtil.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "SourceDialogUtil 的出链列表"
             }
           },
           {
@@ -187,10 +262,28 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "0a7638c19a004bb2",
+  "active": "d395ddd3fe90548d",
   "lastOpenFiles": [
-    "MusicUsbFragment.md",
+    "SourceDialog.md",
+    "assets/{876DD016-3D61-43AD-949A-814A1AB1F131}.png",
+    "SourceDialogUtil.md",
+    "QueryStateManager.md",
+    "QueryStateObserver.md",
+    "IQueryPictureStateChangedListener.md",
+    "USB1QueryStateObserver.md",
+    "USB2QueryStateObserver.md",
+    "BootCompleteReceiver.md",
+    "USBStateReceiver.md",
+    "SVUsbPictureApp.md",
+    "ProjectUtils.md",
+    "keepLiveService.md",
+    "USBDeviceReceiver.md",
     "ModuleUSBMusicTrigger.md",
+    "框架.canvas",
+    "SVAudioApp.MainActivity.md",
+    "SVUsbPictureApp.MainActivity.md",
+    "MediaPlaybackService.md",
+    "MusicUsbFragment.md",
     "MusicVrManager.md",
     "assets/{DA1466CD-8662-4130-A2F3-A1F8FD97B2B8}.png",
     "LocalMusicPlayFragment.md",
@@ -202,25 +295,8 @@
     "assets/{DA97B4C9-4710-4332-9E3A-024A5260657E}.png",
     "MusicFolderListAdapter.md",
     "MusicLocalFragment.md",
-    "IRequestMediaPlayer.md",
-    "MediaControlAction.md",
     "assets/{902D9212-2414-4927-95C7-18769CC230D2} 1.png",
     "assets/{902D9212-2414-4927-95C7-18769CC230D2}.png",
-    "MediaPlayer.md",
-    "IStatusTool.md",
-    "IControlTool.md",
-    "MusicPlayListAdapter.md",
-    "MusicListAdapter.md",
-    "MusicStatusUtils.md",
-    "MediaObserverManager.md",
-    "MainActivity.md",
-    "MediaInfoBean.md",
-    "SVLibMediaObserver.md",
-    "IMediaObserver.md",
-    "SVLibMediaCommon.md",
-    "IMediaStatusChange.md",
-    "SVModuleUSBMusic.md",
-    "MediaKeyActionManager.md",
     "assets/{D006A6EB-46DD-453D-84B7-25C8D3B31E96} 1.png",
     "assets/{D006A6EB-46DD-453D-84B7-25C8D3B31E96}.png",
     "assets/SVModuleRadioRes1/src/main/AndroidManifest.xml",
@@ -233,8 +309,6 @@
     "assets/SVModuleRadio/src/t19cint/java/com/desaysv/moduleradio/view/cursor/RadioCursor.java",
     "assets/SVModuleRadio/src/t19cint/java/com/desaysv/moduleradio/view/cursor/HorizontalCursorView.java",
     "assets/SVModuleRadio/src/t19cint/java/com/desaysv/moduleradio/view/cursor/OnFrequencyChangedListener.java",
-    "assets/SVModuleRadio/src/t19cint/res/mipmap-ldrtl/radio_player_singarm.png",
-    "assets/SVModuleRadio/src/t19cint/res/mipmap-ldrtl/radio_more_bg.png",
-    "框架.canvas"
+    "assets/SVModuleRadio/src/t19cint/res/mipmap-ldrtl/radio_player_singarm.png"
   ]
 }
