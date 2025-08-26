@@ -87,3 +87,10 @@ private void initRadio() {
     Log.d(TAG, "initRadio: end initSuccess = " + initSuccess);  
 }
 ```
+
+1. 标志位设置
+2. 获取mRadioManager,获取不到重新initRadio
+3. 清空`private final List<RadioManager.ModuleProperties> mModules = new ArrayList<>();`
+	1. [[ArrayList]] 的clear
+	2. [[RadioManager]]
+4. 

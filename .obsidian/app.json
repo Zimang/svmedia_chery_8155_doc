@@ -9,5 +9,6 @@
   ],
   "alwaysUpdateLinks": true,
   "newLinkFormat": "relative",
-  "useMarkdownLinks": false
+  "useMarkdownLinks": false,
+  "strictLineBreaks": true
 }

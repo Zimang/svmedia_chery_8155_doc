@@ -81,9 +81,57 @@
               "icon": "lucide-file",
               "title": "RadioControlAction"
             }
+          },
+          {
+            "id": "d9a2f00c6887e552",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "RadioManager.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "RadioManager"
+            }
+          },
+          {
+            "id": "63f1451152d6a36d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ArrayList.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "ArrayList"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -242,8 +290,11 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "02f57e44edd4708c",
+  "active": "d9a2f00c6887e552",
   "lastOpenFiles": [
+    "RadioManager.md",
+    "RadioControlAction.md",
+    "ArrayList.md",
     "框架.canvas",
     "RadioControlAction.MyHandler.md",
     "RadioControlRegister.md",
@@ -253,7 +304,6 @@
     "RadioMessageSaveUtils.md",
     "CurrentRadioInfo.md",
     "RadioControlTool.md",
-    "RadioControlAction.md",
     "IRequestMediaPlayer.md",
     "ModuleUSBMusicTrigger.md",
     "MusicVrManager.md",
@@ -270,7 +320,6 @@
     "assets/{876DD016-3D61-43AD-949A-814A1AB1F131}.png",
     "QueryStateObserver.md",
     "IQueryPictureStateChangedListener.md",
-    "USB1QueryStateObserver.md",
     "assets/{DA1466CD-8662-4130-A2F3-A1F8FD97B2B8}.png",
     "assets/{0B060330-432E-46AB-B5A7-49AEDFA6ECE8}.png",
     "assets/{0AE47552-C615-4F32-AD5A-113DC5F71144}.png",
