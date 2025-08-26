@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SVUsbPictureApp.MainActivity.md",
+                "file": "IControlTool.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,43 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "SVUsbPictureApp.MainActivity"
+              "title": "IControlTool"
             }
           },
           {
             "id": "404245840a3ce104",
             "type": "leaf",
             "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
+            }
+          },
+          {
+            "id": "dce6e08bd018334d",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "框架.canvas",
+                "viewState": {
+                  "x": 5357.7222092187285,
+                  "y": 1435.9956909479197,
+                  "zoom": -0.5214514915600746
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "框架"
+            }
+          },
+          {
+            "id": "488ec90f7952f5c6",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "FileOperationManager.md",
+                "file": "RadioControlAction.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,11 +79,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "FileOperationManager"
+              "title": "RadioControlAction"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -88,7 +115,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#SVLibUSBDialog",
+                "query": "代码",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,12 +136,12 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "f43d2c42d7464954",
@@ -148,12 +175,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FileOperationManager.md",
+                "file": "SVUsbPictureApp.MainActivity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "FileOperationManager 的出链列表"
+              "title": "SVUsbPictureApp.MainActivity 的出链列表"
             }
           },
           {
@@ -200,10 +227,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 239.5
+    "width": 396.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -214,11 +242,25 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "020c909354db21c9",
+  "active": "02f57e44edd4708c",
   "lastOpenFiles": [
-    "FileOperationManager.md",
-    "SVUsbPictureApp.MainActivity.md",
+    "框架.canvas",
+    "RadioControlAction.MyHandler.md",
+    "RadioControlRegister.md",
+    "ModuleRadioTrigger.md",
+    "RadioCollectListAdapter.md",
+    "RadioCovertUtils.md",
+    "RadioMessageSaveUtils.md",
+    "CurrentRadioInfo.md",
+    "RadioControlTool.md",
+    "RadioControlAction.md",
+    "IRequestMediaPlayer.md",
     "ModuleUSBMusicTrigger.md",
+    "MusicVrManager.md",
+    "MediaKeyActionManager.md",
+    "SVUsbPictureApp.MainActivity.md",
+    "IControlTool.md",
+    "FileOperationManager.md",
     "BasePictureActivity.md",
     "QueryStateManager.md",
     "SourceDialogUtil.md",
@@ -229,23 +271,8 @@
     "QueryStateObserver.md",
     "IQueryPictureStateChangedListener.md",
     "USB1QueryStateObserver.md",
-    "USB2QueryStateObserver.md",
-    "BootCompleteReceiver.md",
-    "USBStateReceiver.md",
-    "SVUsbPictureApp.md",
-    "ProjectUtils.md",
-    "keepLiveService.md",
-    "USBDeviceReceiver.md",
-    "框架.canvas",
-    "SVAudioApp.MainActivity.md",
-    "MediaPlaybackService.md",
-    "MusicUsbFragment.md",
-    "MusicVrManager.md",
     "assets/{DA1466CD-8662-4130-A2F3-A1F8FD97B2B8}.png",
-    "LocalMusicPlayFragment.md",
-    "MusicPlaybackService.md",
     "assets/{0B060330-432E-46AB-B5A7-49AEDFA6ECE8}.png",
-    "USBMusicListSearchTrigger.md",
     "assets/{0AE47552-C615-4F32-AD5A-113DC5F71144}.png",
     "assets/{DA97B4C9-4710-4332-9E3A-024A5260657E}.png",
     "assets/{902D9212-2414-4927-95C7-18769CC230D2} 1.png",
