@@ -52,18 +52,18 @@
 		{"id":"a2d61eaee95042ee","type":"file","file":"ModuleRadioTrigger.md","x":4916,"y":-520,"width":1014,"height":336},
 		{"id":"c9550017ff0103ce","type":"file","file":"RadioControlAction.md","x":4780,"y":904,"width":1280,"height":636},
 		{"id":"88626f0d07b58f0c","type":"file","file":"RadioControlAction.MyHandler.md","x":4960,"y":1900,"width":920,"height":380},
-		{"id":"b3b0b627d74d5496","type":"file","file":"FMListFragment.md","x":6982,"y":-352,"width":618,"height":312},
-		{"id":"b015f551ab3b89b2","type":"file","file":"RadioControlTool.md","x":8075,"y":-421,"width":565,"height":461},
-		{"id":"c30e441248d543bd","type":"file","file":"RadioControlAction.md","x":8960,"y":-1200,"width":1136,"height":572},
 		{"id":"276c0a71c584c314","type":"file","file":"RadioControlAction.specifiestrAst.md","x":8960,"y":-362,"width":1136,"height":542},
-		{"id":"91bc373d6d365469","type":"file","file":"RadioControlAction.ast.md","x":8940,"y":452,"width":1180,"height":528},
 		{"id":"986b1c0b388b3e91","type":"text","text":"FM","x":11140,"y":500,"width":250,"height":80},
 		{"id":"10f07f0878a10d15","type":"text","text":"AM","x":10786,"y":500,"width":250,"height":80},
 		{"id":"abb195b05b636490","type":"text","text":"miniPlayer","x":10370,"y":520,"width":250,"height":60},
 		{"id":"34f88c1365cd4cbe","x":11240,"y":660,"width":250,"height":60,"type":"text","text":"search"},
 		{"id":"64dfae4bc00efc0c","x":10786,"y":744,"width":250,"height":60,"type":"text","text":"结束"},
 		{"id":"caa488c6d7ec59c4","x":10786,"y":920,"width":250,"height":60,"type":"text","text":"empt"},
-		{"id":"e6e8ca9e63357051","type":"file","file":"RadioControlAction.waitSearchMode.md","x":10620,"y":-350,"width":831,"height":519}
+		{"id":"b015f551ab3b89b2","type":"file","file":"RadioControlTool.md","x":8080,"y":-321,"width":565,"height":461},
+		{"id":"b3b0b627d74d5496","type":"file","file":"FMListFragment.md","x":6982,"y":-247,"width":618,"height":312},
+		{"id":"91bc373d6d365469","type":"file","file":"RadioControlAction.ast.md","x":8960,"y":276,"width":1136,"height":528},
+		{"id":"c30e441248d543bd","type":"file","file":"RadioControlAction.md","x":8960,"y":-1020,"width":1136,"height":572},
+		{"id":"e6e8ca9e63357051","type":"file","file":"RadioControlAction.waitSearchMode.md","x":10180,"y":-246,"width":831,"height":310}
 	],
 	"edges":[
 		{"id":"4c9a6ad80c859f14","fromNode":"fb3eb7c0f0cd9737","fromSide":"bottom","toNode":"bdb456a4009f6aba","toSide":"top","label":"toFragment"},
