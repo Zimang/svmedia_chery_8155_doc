@@ -1,0 +1,4 @@
+若isSeachSwitch为false
+占用mSeachModeLock,
+
+等待该线程，直到mSearchModeLock被Notify

@@ -49,9 +49,9 @@
               "state": {
                 "file": "框架.canvas",
                 "viewState": {
-                  "x": 5357.7222092187285,
-                  "y": 1435.9956909479197,
-                  "zoom": -0.5214514915600746
+                  "x": 10795.10109482797,
+                  "y": 83.95584357427744,
+                  "zoom": -0.5214514915600745
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -131,7 +131,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -290,8 +290,12 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "d9a2f00c6887e552",
+  "active": "dce6e08bd018334d",
   "lastOpenFiles": [
+    "RadioControlAction.ast.md",
+    "RadioControlAction.waitSearchMode.md",
+    "RadioControlAction.specifiestrAst.md",
+    "FMListFragment.md",
     "RadioManager.md",
     "RadioControlAction.md",
     "ArrayList.md",
@@ -315,11 +319,7 @@
     "QueryStateManager.md",
     "SourceDialogUtil.md",
     "SourceDialog.md",
-    "USB1DeviceStateObserver.md",
-    "USB2DeviceStateObserver.md",
     "assets/{876DD016-3D61-43AD-949A-814A1AB1F131}.png",
-    "QueryStateObserver.md",
-    "IQueryPictureStateChangedListener.md",
     "assets/{DA1466CD-8662-4130-A2F3-A1F8FD97B2B8}.png",
     "assets/{0B060330-432E-46AB-B5A7-49AEDFA6ECE8}.png",
     "assets/{0AE47552-C615-4F32-AD5A-113DC5F71144}.png",
